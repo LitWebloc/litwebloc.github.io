@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Pattaya&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i&subset=cyrillic');
+//var color
+$fspan: 'Pattaya';
+$fs: 'Roboto';
+$color_home: #596C92;
+$color_home_shadow: #3B4C6D;
+$color_button: linear-gradient(90deg, #F39A4A 0%, #F69173 100%);
+$color_button_revers: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
+
+@mixin tn(){
+	transition: background .6s ease-out;
+}

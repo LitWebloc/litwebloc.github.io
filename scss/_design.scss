@@ -1,0 +1,143 @@
+*{
+	font-family: $fs , sans-serif;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+a{
+	display:inline-block;
+}
+a.botton{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	padding: 8px 14px;
+	background: $color_button;
+	box-shadow: 0px 0px 10px rgba(246, 145, 115, 0.8);
+	@include tn();
+	&:hover{
+	background: $color_button_revers;
+	}
+}
+h1, h2, h3, h4, h5, h6, p , i, b, a, strong{
+	
+}
+p{
+	font-size: 16px;
+}
+input, textarea{
+	color: #ccc;
+}
+.wiggle{
+	position: absolute;
+
+	bottom: -5px;
+	height: 3px;
+	left: 22%;
+	width: 60%;
+	overflow: hidden;
+	transition: 2.45s;
+}
+.wiggle:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/icon/line.svg) repeat-x center center/7px 3px;
+}
+
+.conteiner{
+
+	.row{
+		max-width: 1300px;
+		margin: auto;
+		padding: 0 40px;
+	}
+}
+		header{
+			.communication{
+				.child{
+					display: inline-block;
+					margin-left: 40px;
+					img{
+						width: 13px;
+						height: 13px;
+						vertical-align: -1px;
+					}
+					#language{
+						font-style: normal;
+						font-weight: bold;
+						line-height: normal;
+						font-size: 13px;
+						text-transform: uppercase;
+						color: #FFFFFF;
+					}
+				}
+			}
+			nav{
+				a{
+					position: relative;
+					margin-right: 15px;
+					color: #fff;
+					text-decoration: none;
+					font-weight: 500;
+					font-size: 14px;
+					&:last-child{
+						margin: 0;
+					}
+				}
+			}
+			.conteiner{
+				.row{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					height: 76px
+			}
+		}
+	}
+.pagefirst{
+	background: $color_home;
+	height: 100vh;
+}
+div.h1{
+	position: absolute;
+	left: 35vw;
+	top: 35vh;
+	overflow: hidden;
+	width: 500px;
+	height: 200px;
+}
+span.h1{
+	font-family: $fspan , sans-serif;
+	font-size: 144px;
+	transform: rotate(-15deg);
+	position: absolute;
+	z-index: 3;
+	color:white;
+}
+span.h1.shadow{
+	color: $color_home_shadow;
+	position: absolute;
+	margin: 0 5px;
+	z-index: 3;
+}
+.homeimg{
+	position: absolute;
+	left: 30vw;
+	top: 10vh;
+	img{
+		position: absolute;
+	}
+	img.shadow{
+		margin: 0 25px;
+	}
+}

@@ -3,11 +3,11 @@
 //var color
 $fspan: 'Pattaya';
 $fs: 'Roboto';
-$color_home: #596C92;
-$color_home_shadow: #3B4C6D;
+$color_home: #7A78D6;
+$color_home_shadow: #382A50;
 $color_button: linear-gradient(90deg, #F39A4A 0%, #F69173 100%);
 $color_button_revers: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
 
 @mixin tn(){
-	transition: background .6s ease-out;
+	transition: .6s ease-out;
 }

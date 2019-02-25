@@ -11,11 +11,19 @@ a {
     display: inline-block;
 }
 
+.logo{
+    width: 15%;
+    img{
+        width: 80%;
+        margin-top: 2%;
+    }
+}
+
 a.botton {
     color: #fff;
     display: block;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     line-height: normal;
     font-size: 12px;
     letter-spacing: 0.05em;
@@ -24,9 +32,10 @@ a.botton {
     background: $color_button;
     box-shadow: 0px 0px 10px rgba(246, 145, 115, 0.8);
     @include tn();
-
     &:hover {
         background: $color_button_revers;
+        box-shadow: 0px 0px 15px rgb(255, 171, 145);
+        text-shadow: 0 0 15px rgb(255, 171, 145);
     }
 }
 
@@ -89,36 +98,38 @@ header {
             margin-right: 15px;
             color: #fff;
             text-decoration: none;
-            font-weight: 500;
             font-size: 14px;
-            &:hover span{
+
+            &:hover span {
                 width: 60%;
             }
+
             &:last-child {
                 margin: 0;
             }
         }
     }
-.wiggle {
-    position: absolute;
 
-    bottom: -5px;
-    height: 3px;
-    left: 22%;
-    width: 0;
-    overflow: hidden;
-    transition: 2.45s;
-}
+    .wiggle {
+        position: absolute;
+        bottom: -7px;
+        height: 4px;
+        left: 22%;
+        width: 0;
+        overflow: hidden;
+        @include tn();
+    }
 
-.wiggle:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../img/icon/line.svg) repeat-x center center/7px 3px;
-}
+    .wiggle:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/icon/line.svg) repeat-x center center/7px 3px;
+    }
+
     .conteiner {
         .row {
             display: flex;
@@ -136,36 +147,40 @@ header {
 
 div.h1 {
     position: absolute;
-    left: 35vw;
-    top: 35vh;
+    left: 7vw;
+    top: 25vh;
     overflow: hidden;
-    width: 500px;
-    height: 200px;
+    width: 35vw;
+    height: 30vh;
 }
 
 span.h1 {
     font-family: $fspan, sans-serif;
-    font-size: 144px;
+    font-size: 7vw;
     transform: rotate(-15deg);
     position: absolute;
     z-index: 3;
     color: white;
+    margin-top: 20px;
 }
 
 span.h1.shadow {
     color: $color_home_shadow;
     position: absolute;
-    margin: 0 5px;
+    margin: 20px 5px;
     z-index: 3;
 }
 
 .homeimg {
     position: absolute;
-    left: 30vw;
+    left: 25vw;
     top: 10vh;
-
     img {
-        position: absolute;
+        width: 38vw;
+        margin-top: 10vh;
+        margin-left: 5vw;
+        transform-style: preserve-3d;
+        transform: translateZ(20px);
     }
 
     img.shadow {

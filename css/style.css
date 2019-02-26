@@ -1,32 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Pattaya&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i&subset=cyrillic");
 /* line 1, ../scss/_design.scss */
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-/* line 5, ../scss/_design.scss */
 body {
   margin: 0;
   padding: 0;
 }
 
-/* line 10, ../scss/_design.scss */
+/* line 6, ../scss/_design.scss */
 a {
   display: inline-block;
 }
 
-/* line 14, ../scss/_design.scss */
+/* line 10, ../scss/_design.scss */
 .logo {
   width: 15%;
 }
-/* line 16, ../scss/_design.scss */
+/* line 13, ../scss/_design.scss */
 .logo img {
   width: 80%;
   margin-top: 2%;
 }
 
-/* line 22, ../scss/_design.scss */
+/* line 19, ../scss/_design.scss */
 a.botton {
   color: #fff;
   display: block;
@@ -41,11 +36,26 @@ a.botton {
   box-shadow: 0px 0px 10px rgba(246, 145, 115, 0.8);
   transition: .6s ease-out;
 }
-/* line 35, ../scss/_design.scss */
+/* line 33, ../scss/_design.scss */
 a.botton:hover {
   background: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
   box-shadow: 0px 0px 15px #ffab91;
   text-shadow: 0 0 15px #ffab91;
+}
+
+/* line 40, ../scss/_design.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i,
+b,
+a,
+strong {
+  font-family: "Roboto", sans-serif;
 }
 
 /* line 54, ../scss/_design.scss */
@@ -65,19 +75,24 @@ textarea {
   margin: auto;
   padding: 0 40px;
 }
+/* line 70, ../scss/_design.scss */
+.conteiner .row.flex {
+  display: flex;
+  justify-content: space-between;
+}
 
-/* line 74, ../scss/_design.scss */
+/* line 79, ../scss/_design.scss */
 header .communication .child {
   display: inline-block;
   margin-left: 40px;
 }
-/* line 78, ../scss/_design.scss */
+/* line 83, ../scss/_design.scss */
 header .communication .child img {
   width: 13px;
   height: 13px;
   vertical-align: -1px;
 }
-/* line 84, ../scss/_design.scss */
+/* line 89, ../scss/_design.scss */
 header .communication .child #language {
   font-style: normal;
   font-weight: bold;
@@ -86,7 +101,7 @@ header .communication .child #language {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-/* line 96, ../scss/_design.scss */
+/* line 101, ../scss/_design.scss */
 header nav a {
   position: relative;
   margin-right: 15px;
@@ -94,15 +109,15 @@ header nav a {
   text-decoration: none;
   font-size: 14px;
 }
-/* line 103, ../scss/_design.scss */
+/* line 108, ../scss/_design.scss */
 header nav a:hover span {
   width: 60%;
 }
-/* line 107, ../scss/_design.scss */
+/* line 112, ../scss/_design.scss */
 header nav a:last-child {
   margin: 0;
 }
-/* line 113, ../scss/_design.scss */
+/* line 118, ../scss/_design.scss */
 header .wiggle {
   position: absolute;
   bottom: -7px;
@@ -112,7 +127,7 @@ header .wiggle {
   overflow: hidden;
   transition: .6s ease-out;
 }
-/* line 123, ../scss/_design.scss */
+/* line 128, ../scss/_design.scss */
 header .wiggle:before {
   content: '';
   position: absolute;
@@ -122,7 +137,7 @@ header .wiggle:before {
   height: 100%;
   background: url(../img/icon/line.svg) repeat-x center center/7px 3px;
 }
-/* line 134, ../scss/_design.scss */
+/* line 139, ../scss/_design.scss */
 header .conteiner .row {
   display: flex;
   justify-content: space-between;
@@ -130,13 +145,13 @@ header .conteiner .row {
   height: 76px;
 }
 
-/* line 143, ../scss/_design.scss */
+/* line 148, ../scss/_design.scss */
 .pagefirst {
   background: #7A78D6;
   height: 100vh;
 }
 
-/* line 148, ../scss/_design.scss */
+/* line 153, ../scss/_design.scss */
 div.h1 {
   position: absolute;
   left: 7vw;
@@ -146,7 +161,7 @@ div.h1 {
   height: 30vh;
 }
 
-/* line 157, ../scss/_design.scss */
+/* line 162, ../scss/_design.scss */
 span.h1 {
   font-family: "Pattaya", sans-serif;
   font-size: 7vw;
@@ -157,7 +172,7 @@ span.h1 {
   margin-top: 20px;
 }
 
-/* line 167, ../scss/_design.scss */
+/* line 172, ../scss/_design.scss */
 span.h1.shadow {
   color: #382A50;
   position: absolute;
@@ -165,21 +180,62 @@ span.h1.shadow {
   z-index: 3;
 }
 
-/* line 174, ../scss/_design.scss */
+/* line 179, ../scss/_design.scss */
 .homeimg {
   position: absolute;
   left: 25vw;
   top: 10vh;
 }
-/* line 178, ../scss/_design.scss */
+/* line 184, ../scss/_design.scss */
 .homeimg img {
-  width: 38vw;
+  width: 67vh;
   margin-top: 10vh;
   margin-left: 5vw;
   transform-style: preserve-3d;
   transform: translateZ(20px);
 }
-/* line 186, ../scss/_design.scss */
+/* line 192, ../scss/_design.scss */
 .homeimg img.shadow {
   margin: 0 25px;
+}
+
+/* line 197, ../scss/_design.scss */
+.left-p,
+.right-p {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+/* line 203, ../scss/_design.scss */
+.left-p p,
+.right-p p {
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  transform: rotate(-15deg);
+  font-size: 13px;
+}
+/* line 213, ../scss/_design.scss */
+.left-p .h3,
+.right-p .h3 {
+  font-size: 36px;
+}
+/* line 217, ../scss/_design.scss */
+.left-p .shadow,
+.right-p .shadow {
+  position: absolute;
+  margin: -2px 3px 0;
+}
+/* line 221, ../scss/_design.scss */
+.left-p .shadow p,
+.right-p .shadow p {
+  color: #382A50;
+}
+
+/* line 227, ../scss/_design.scss */
+.right-p {
+  margin-right: 50px;
+  transform: rotate(-15deg);
 }

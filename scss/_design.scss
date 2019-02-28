@@ -152,16 +152,13 @@ header {
 
 div.h1 {
     position: absolute;
-    left: 7vw;
-    top: 25vh;
-    overflow: hidden;
-    width: 35vw;
-    height: 30vh;
+    margin-left: -25%;
+    margin-top: -5%;
 }
 
 span.h1 {
     font-family: $fspan, sans-serif;
-    font-size: 7vw;
+    font-size: 8em;
     transform: rotate(-15deg);
     position: absolute;
     z-index: 3;
@@ -178,13 +175,20 @@ span.h1.shadow {
 
 .homeimg {
     position: absolute;
-    left: 25vw;
     top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 85vh;
+    z-index: 5;
+    width: 95%;
+    overflow: hidden;
+    max-width: 1300px;
 
     img {
-        width: 67vh;
-        margin-top: 10vh;
-        margin-left: 5vw;
+        max-width: 50%;
+        margin-top: 0;
         transform-style: preserve-3d;
         transform: translateZ(20px);
     }
@@ -226,5 +230,5 @@ span.h1.shadow {
 
 .right-p {
     margin-right: 50px;
-    transform: rotate(-15deg);
+    transform: rotate(-4deg);
 }

@@ -1,241 +1,83 @@
 @import url("https://fonts.googleapis.com/css?family=Pattaya&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i&subset=cyrillic");
 /* line 1, ../scss/_design.scss */
-body {
-  margin: 0;
-  padding: 0;
-}
+body { margin: 0; padding: 0; }
 
 /* line 6, ../scss/_design.scss */
-a {
-  display: inline-block;
-}
+a { display: inline-block; }
 
 /* line 10, ../scss/_design.scss */
-.logo {
-  width: 15%;
-}
+.logo { width: 15%; }
 /* line 13, ../scss/_design.scss */
-.logo img {
-  width: 80%;
-  margin-top: 2%;
-}
+.logo img { width: 80%; margin-top: 2%; }
 
 /* line 19, ../scss/_design.scss */
-a.botton {
-  color: #fff;
-  display: block;
-  text-decoration: none;
-  font-weight: 500;
-  line-height: normal;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 8px 14px;
-  background: linear-gradient(90deg, #F39A4A 0%, #F69173 100%);
-  box-shadow: 0px 0px 10px rgba(246, 145, 115, 0.8);
-  transition: .6s ease-out;
-}
+a.botton { color: #fff; display: block; text-decoration: none; font-weight: 500; line-height: normal; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; padding: 8px 14px; background: linear-gradient(90deg, #F39A4A 0%, #F69173 100%); box-shadow: 0px 0px 10px rgba(246, 145, 115, 0.8); transition: .6s ease-out; }
 /* line 33, ../scss/_design.scss */
-a.botton:hover {
-  background: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
-  box-shadow: 0px 0px 15px #ffab91;
-  text-shadow: 0 0 15px #ffab91;
-}
+a.botton:hover { background: linear-gradient(90deg, #F69173 0%, #F39A4A 100%); box-shadow: 0px 0px 15px #ffab91; text-shadow: 0 0 15px #ffab91; }
 
 /* line 40, ../scss/_design.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-i,
-b,
-a,
-strong {
-  font-family: "Roboto", sans-serif;
-}
+h1, h2, h3, h4, h5, h6, p, i, b, a, strong { font-family: "Roboto", sans-serif; }
 
 /* line 54, ../scss/_design.scss */
-p {
-  font-size: 16px;
-}
+p { font-size: 16px; }
 
 /* line 58, ../scss/_design.scss */
-input,
-textarea {
-  color: #ccc;
-}
+input, textarea { color: #ccc; }
 
 /* line 65, ../scss/_design.scss */
-.conteiner .row {
-  max-width: 1300px;
-  margin: auto;
-  padding: 0 40px;
-}
+.conteiner .row { max-width: 1300px; margin: auto; padding: 0 40px; }
 /* line 70, ../scss/_design.scss */
-.conteiner .row.flex {
-  display: flex;
-  justify-content: space-between;
-}
+.conteiner .row.flex { display: flex; justify-content: space-between; }
 
 /* line 79, ../scss/_design.scss */
-header .communication .child {
-  display: inline-block;
-  margin-left: 40px;
-}
+header .communication .child { display: inline-block; margin-left: 40px; }
 /* line 83, ../scss/_design.scss */
-header .communication .child img {
-  width: 13px;
-  height: 13px;
-  vertical-align: -1px;
-}
+header .communication .child img { width: 13px; height: 13px; vertical-align: -1px; }
 /* line 89, ../scss/_design.scss */
-header .communication .child #language {
-  font-style: normal;
-  font-weight: bold;
-  line-height: normal;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
+header .communication .child #language { font-style: normal; font-weight: bold; line-height: normal; font-size: 13px; text-transform: uppercase; color: #FFFFFF; }
 /* line 101, ../scss/_design.scss */
-header nav a {
-  position: relative;
-  margin-right: 15px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-}
+header nav a { position: relative; margin-right: 15px; color: #fff; text-decoration: none; font-size: 14px; }
 /* line 108, ../scss/_design.scss */
-header nav a:hover span {
-  width: 60%;
-}
+header nav a:hover span { width: 60%; }
 /* line 112, ../scss/_design.scss */
-header nav a:last-child {
-  margin: 0;
-}
+header nav a:last-child { margin: 0; }
 /* line 118, ../scss/_design.scss */
-header .wiggle {
-  position: absolute;
-  bottom: -7px;
-  height: 4px;
-  left: 22%;
-  width: 0;
-  overflow: hidden;
-  transition: .6s ease-out;
-}
+header .wiggle { position: absolute; bottom: -7px; height: 4px; left: 22%; width: 0; overflow: hidden; transition: .6s ease-out; }
 /* line 128, ../scss/_design.scss */
-header .wiggle:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/icon/line.svg) repeat-x center center/7px 3px;
-}
+header .wiggle:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/icon/line.svg) repeat-x center center/7px 3px; }
 /* line 139, ../scss/_design.scss */
-header .conteiner .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 76px;
-}
+header .conteiner .row { display: flex; justify-content: space-between; align-items: center; height: 76px; }
 
 /* line 148, ../scss/_design.scss */
-.pagefirst {
-  background: #7A78D6;
-  height: 100vh;
-}
+.pagefirst { background: #554D4E; height: 100vh; }
 
 /* line 153, ../scss/_design.scss */
-div.h1 {
-  position: absolute;
-  left: 7vw;
-  top: 25vh;
-  overflow: hidden;
-  width: 35vw;
-  height: 30vh;
-}
+div.h1 { position: absolute; margin-left: -25%; margin-top: -5%; }
 
-/* line 162, ../scss/_design.scss */
-span.h1 {
-  font-family: "Pattaya", sans-serif;
-  font-size: 7vw;
-  transform: rotate(-15deg);
-  position: absolute;
-  z-index: 3;
-  color: white;
-  margin-top: 20px;
-}
+/* line 159, ../scss/_design.scss */
+span.h1 { font-family: "Pattaya", sans-serif; font-size: 8em; transform: rotate(-15deg); position: absolute; z-index: 3; color: white; margin-top: 20px; }
 
-/* line 172, ../scss/_design.scss */
-span.h1.shadow {
-  color: #382A50;
-  position: absolute;
-  margin: 20px 5px;
-  z-index: 3;
-}
+/* line 169, ../scss/_design.scss */
+span.h1.shadow { color: #393939; position: absolute; margin: 20px 5px; z-index: 3; }
 
-/* line 179, ../scss/_design.scss */
-.homeimg {
-  position: absolute;
-  left: 25vw;
-  top: 10vh;
-}
-/* line 184, ../scss/_design.scss */
-.homeimg img {
-  width: 67vh;
-  margin-top: 10vh;
-  margin-left: 5vw;
-  transform-style: preserve-3d;
-  transform: translateZ(20px);
-}
-/* line 192, ../scss/_design.scss */
-.homeimg img.shadow {
-  margin: 0 25px;
-}
+/* line 176, ../scss/_design.scss */
+.homeimg { position: absolute; top: 10vh; display: flex; justify-content: center; align-items: center; height: 100%; max-height: 85vh; z-index: 5; width: 95%; overflow: hidden; max-width: 1300px; }
+/* line 189, ../scss/_design.scss */
+.homeimg img { max-width: 50%; margin-top: 0; transform-style: preserve-3d; transform: translateZ(20px); }
+/* line 196, ../scss/_design.scss */
+.homeimg img.shadow { margin: 0 25px; }
 
-/* line 197, ../scss/_design.scss */
-.left-p,
-.right-p {
-  display: flex;
-  align-items: center;
-  margin-top: 100px;
-}
-/* line 203, ../scss/_design.scss */
-.left-p p,
-.right-p p {
-  margin: 0;
-  font-style: italic;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-  transform: rotate(-15deg);
-  font-size: 13px;
-}
-/* line 213, ../scss/_design.scss */
-.left-p .h3,
-.right-p .h3 {
-  font-size: 36px;
-}
+/* line 201, ../scss/_design.scss */
+.left-p, .right-p { display: flex; align-items: center; margin-top: 100px; }
+/* line 207, ../scss/_design.scss */
+.left-p p, .right-p p { margin: 0; font-style: italic; font-weight: bold; letter-spacing: 0.05em; color: #FFFFFF; transform: rotate(-15deg); font-size: 13px; }
 /* line 217, ../scss/_design.scss */
-.left-p .shadow,
-.right-p .shadow {
-  position: absolute;
-  margin: -2px 3px 0;
-}
+.left-p .h3, .right-p .h3 { font-size: 36px; }
 /* line 221, ../scss/_design.scss */
-.left-p .shadow p,
-.right-p .shadow p {
-  color: #382A50;
-}
+.left-p .shadow, .right-p .shadow { position: absolute; margin: -2px 3px 0; }
+/* line 225, ../scss/_design.scss */
+.left-p .shadow p, .right-p .shadow p { color: #393939; }
 
-/* line 227, ../scss/_design.scss */
-.right-p {
-  margin-right: 50px;
-  transform: rotate(-15deg);
-}
+/* line 231, ../scss/_design.scss */
+.right-p { margin-right: 50px; transform: rotate(-4deg); }

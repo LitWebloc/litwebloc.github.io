@@ -3,8 +3,8 @@
 //var color
 $fspan: 'Pattaya';
 $fs: 'Roboto';
-$color_home: #554D4E;
-$color_home_shadow: #393939;
+$color_home: #504D55;
+$color_home_shadow: #000;
 $color_button: linear-gradient(90deg, #F39A4A 0%, #F69173 100%);
 $color_button_revers: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
 
@@ -12,3 +12,5 @@ $color_button_revers: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
 	transition: .6s ease-out;
 }
 $h3: 36px;
+
+.fadeBox { opacity: var(--o); }

@@ -53,7 +53,7 @@
                 </div>
             </div>
         </header>
-        <div class="conteiner">
+        <div class="conteiner fadeBox">
             <div class="row flex">
                 <div class="left-p">
                     <div class="shadow">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="homeimg js-tilt">
                     <!--<img src="img/characters/homeimg2.png" alt="" class="shadow">-->
-                    <img class="" src="img/characters/homeimg.png" alt="">
+                    <img class="" src="img/characters/homeimg2.png" alt="">
                     <div class="h1">
                         <span class="h1 shadow">Yoursite.pro</span>
                         <span class="h1">Yoursite.pro</span>
@@ -98,17 +98,54 @@
                     </div>
                 </div>
             </div>
+            <span class="arrow_down">
+                <a href="#!">
+                    <svg class="arrow_down_top" width="27" height="9" viewBox="0 0 27 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L13.5 7L26 1" stroke="#d8d5d5" stroke-width="2" />
+                    </svg>
+                    <svg width="27" height="9" viewBox="0 0 27 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L13.5 7L26 1" stroke="white" stroke-width="2" />
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </section>
+    <section class="page_bg">
+        <div class="conteiner">
+            <div class="row description flex center wrap">
+                <div class="description-title"><img src="img/icon/line_long.svg" alt="line_long">
+                    <h1>Главные принципы в работе</h1>
+                </div>
+                <div class="description-body">
+                    <h2>Скороть загрузки сайта, дизайн и удобство интерфейса</h2>
+                </div>
+            </div>
         </div>
     </section>
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/tilt.js"></script>
+    <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
     <script>
         $('.js-tilt').tilt({
             glare: true,
             reset: false,
             perspective: 10000,
             maxGlare: 0
-        })
+        });
+        const fadeBox = basicScroll.create({
+            elem: document.querySelector('.fadeBox'),
+            from: 'top-top',
+            to: 'middle-top',
+            inside: (instance, percentage) => console.log('fadeBox is animating'),
+            outside: (instance, percentage) => console.log('fadeBox is not animating'),
+            props: {
+                '--o': {
+                    from: .99,
+                    to: .01
+                }
+            }
+        });
+        fadeBox.start();
 
     </script>
 </body>

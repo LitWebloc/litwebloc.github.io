@@ -47,6 +47,7 @@ p,
 i,
 b,
 a,
+span,
 strong {
     font-family: $fs, sans-serif;
 }
@@ -70,6 +71,15 @@ textarea {
         &.flex {
             display: flex;
             justify-content: space-between;
+            &.center{
+               justify-content: center;
+            }
+            &.left{
+               justify-content: flex-start;
+            }
+            &.wrap{
+               flex-wrap: wrap;
+            }
         }
     }
 }
@@ -140,7 +150,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 76px
+            height: 76px;
         }
     }
 }
@@ -148,6 +158,10 @@ header {
 .pagefirst {
     background: $color_home;
     height: 100vh;
+}
+
+.page_bg{
+    background: $color_home;
 }
 
 div.h1 {
@@ -169,7 +183,7 @@ span.h1 {
 span.h1.shadow {
     color: $color_home_shadow;
     position: absolute;
-    margin: 20px 5px;
+    margin: 15px 7px;
     z-index: 3;
 }
 
@@ -217,10 +231,12 @@ span.h1.shadow {
     .h3 {
         font-size: $h3;
     }
+}
 
+.left-p {
     .shadow {
         position: absolute;
-        margin: -2px 3px 0;
+        margin: -4px -4px 0;
 
         p {
             color: $color_home_shadow;
@@ -231,4 +247,50 @@ span.h1.shadow {
 .right-p {
     margin-right: 50px;
     transform: rotate(-4deg);
+
+    .shadow {
+        position: absolute;
+        margin: -4px 4px 0;
+
+        p {
+            color: $color_home_shadow;
+        }
+    }
+}
+
+.arrow_down {
+    position: absolute;
+    left: 50%;
+    z-index: 10;
+    bottom: 10px;
+
+    a {
+        position: relative;
+        animation: arrow_down 1.3s infinite ease-in-out;
+    }
+}
+
+svg.arrow_down_top {
+    position: absolute;
+}
+.description{
+    width: 50%;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 180px 0 !important;
+    .description-title{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 15px;
+        h1{font-size: 24px; margin: 0;}
+        img{
+            margin-right: 17px;
+        }
+    }
+    .description-body{
+        width: 100%;
+        text-align: center;
+        h2{font-size: 36px; margin: 0;}
+    }
 }

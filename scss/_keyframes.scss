@@ -1,0 +1,14 @@
+@keyframes arrow_down {
+    0% {
+        opacity: 0;
+        top: -5px;
+    }
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: 5px;
+    }
+}

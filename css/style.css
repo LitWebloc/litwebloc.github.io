@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Pattaya&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i&subset=cyrillic");
 /* line 16, ../scss/_var.scss */
-.fadeBox { opacity: var(--o); }
+.fadeBox { opacity: var(--o); transform: scale(var(--t)); transition: 1s; height: 50%; }
+
+/* line 17, ../scss/_var.scss */
+.AppearBox { opacity: var(--op); transition: 1s; }
 
 @keyframes arrow_down { 0% { opacity: 0; top: -5px; }
   20% { opacity: 1; }
@@ -42,83 +45,87 @@ input, textarea { color: #ccc; }
 /* line 80, ../scss/_design.scss */
 .conteiner .row.flex.wrap { flex-wrap: wrap; }
 
-/* line 89, ../scss/_design.scss */
+/* line 87, ../scss/_design.scss */
+header { position: fixed; z-index: 999; right: 0; left: 0; top: 0; transition: 1s; }
+/* line 94, ../scss/_design.scss */
+header.navFixed { background: rgba(0, 0, 0, 0.3); }
+/* line 98, ../scss/_design.scss */
 header .communication .child { display: inline-block; margin-left: 40px; }
-/* line 93, ../scss/_design.scss */
+/* line 102, ../scss/_design.scss */
 header .communication .child img { width: 13px; height: 13px; vertical-align: -1px; }
-/* line 99, ../scss/_design.scss */
+/* line 108, ../scss/_design.scss */
 header .communication .child #language { font-style: normal; font-weight: bold; line-height: normal; font-size: 13px; text-transform: uppercase; color: #FFFFFF; }
-/* line 111, ../scss/_design.scss */
+/* line 120, ../scss/_design.scss */
 header nav a { position: relative; margin-right: 15px; color: #fff; text-decoration: none; font-size: 14px; }
-/* line 118, ../scss/_design.scss */
+/* line 127, ../scss/_design.scss */
 header nav a:hover span { width: 60%; }
-/* line 122, ../scss/_design.scss */
+/* line 131, ../scss/_design.scss */
 header nav a:last-child { margin: 0; }
-/* line 128, ../scss/_design.scss */
+/* line 137, ../scss/_design.scss */
 header .wiggle { position: absolute; bottom: -7px; height: 4px; left: 22%; width: 0; overflow: hidden; transition: .6s ease-out; }
-/* line 138, ../scss/_design.scss */
+/* line 147, ../scss/_design.scss */
 header .wiggle:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/icon/line.svg) repeat-x center center/7px 3px; }
-/* line 149, ../scss/_design.scss */
+/* line 158, ../scss/_design.scss */
 header .conteiner .row { display: flex; justify-content: space-between; align-items: center; height: 76px; }
 
-/* line 158, ../scss/_design.scss */
-.pagefirst { background: #504D55; height: 100vh; }
-
-/* line 163, ../scss/_design.scss */
-.page_bg { background: #504D55; }
-
 /* line 167, ../scss/_design.scss */
-div.h1 { position: absolute; margin-left: -25%; margin-top: -5%; }
+.pagefirst { padding-top: 70px; background: #504D55; height: 100vh; }
 
 /* line 173, ../scss/_design.scss */
-span.h1 { font-family: "Pattaya", sans-serif; font-size: 8em; transform: rotate(-15deg); position: absolute; z-index: 3; color: white; margin-top: 20px; }
+.page_bg { background: #504D55; }
+
+/* line 177, ../scss/_design.scss */
+div.h1 { position: absolute; margin-left: -25%; margin-top: -5%; }
 
 /* line 183, ../scss/_design.scss */
+span.h1 { font-family: "Pattaya", sans-serif; font-size: 8em; transform: rotate(-15deg); position: absolute; z-index: 3; color: white; margin-top: 20px; }
+
+/* line 193, ../scss/_design.scss */
 span.h1.shadow { color: #000; position: absolute; margin: 15px 7px; z-index: 3; }
 
-/* line 190, ../scss/_design.scss */
-.homeimg { position: absolute; top: 10vh; display: flex; justify-content: center; align-items: center; height: 100%; max-height: 85vh; z-index: 5; width: 95%; overflow: hidden; max-width: 1300px; }
-/* line 203, ../scss/_design.scss */
-.homeimg img { max-width: 50%; margin-top: 0; transform-style: preserve-3d; transform: translateZ(20px); }
-/* line 210, ../scss/_design.scss */
+/* line 200, ../scss/_design.scss */
+.homeimg { position: absolute; top: 10vh; display: flex; justify-content: center; align-items: center; height: 100%; max-height: 85vh; z-index: 5; width: 95%; max-width: 1300px; }
+/* line 212, ../scss/_design.scss */
+.homeimg img { max-width: 40%; margin-top: 0; transform-style: preserve-3d; transform: translateZ(20px); }
+/* line 219, ../scss/_design.scss */
 .homeimg img.shadow { margin: 0 25px; }
 
-/* line 215, ../scss/_design.scss */
+/* line 224, ../scss/_design.scss */
 .left-p, .right-p { display: flex; align-items: center; margin-top: 100px; }
-/* line 221, ../scss/_design.scss */
+/* line 230, ../scss/_design.scss */
 .left-p p, .right-p p { margin: 0; font-style: italic; font-weight: bold; letter-spacing: 0.05em; color: #FFFFFF; transform: rotate(-15deg); font-size: 13px; }
-/* line 231, ../scss/_design.scss */
+/* line 240, ../scss/_design.scss */
 .left-p .h3, .right-p .h3 { font-size: 36px; }
 
-/* line 237, ../scss/_design.scss */
+/* line 246, ../scss/_design.scss */
 .left-p .shadow { position: absolute; margin: -4px -4px 0; }
-/* line 241, ../scss/_design.scss */
+/* line 250, ../scss/_design.scss */
 .left-p .shadow p { color: #000; }
 
-/* line 247, ../scss/_design.scss */
+/* line 256, ../scss/_design.scss */
 .right-p { margin-right: 50px; transform: rotate(-4deg); }
-/* line 251, ../scss/_design.scss */
+/* line 260, ../scss/_design.scss */
 .right-p .shadow { position: absolute; margin: -4px 4px 0; }
-/* line 255, ../scss/_design.scss */
+/* line 264, ../scss/_design.scss */
 .right-p .shadow p { color: #000; }
 
-/* line 261, ../scss/_design.scss */
-.arrow_down { position: absolute; left: 50%; z-index: 10; bottom: 10px; }
-/* line 267, ../scss/_design.scss */
+/* line 270, ../scss/_design.scss */
+.arrow_down { position: absolute; left: 50%; z-index: 10; top: 170%; }
+/* line 276, ../scss/_design.scss */
 .arrow_down a { position: relative; animation: arrow_down 1.3s infinite ease-in-out; }
 
-/* line 273, ../scss/_design.scss */
+/* line 282, ../scss/_design.scss */
 svg.arrow_down_top { position: absolute; }
 
-/* line 276, ../scss/_design.scss */
-.description { width: 50%; text-transform: uppercase; color: #fff; padding: 180px 0 !important; }
-/* line 281, ../scss/_design.scss */
+/* line 285, ../scss/_design.scss */
+.description { width: 50%; text-transform: uppercase; color: #fff; padding: 0px 0 180px !important; }
+/* line 290, ../scss/_design.scss */
 .description .description-title { display: flex; justify-content: flex-end; align-items: center; margin-bottom: 15px; }
-/* line 286, ../scss/_design.scss */
+/* line 295, ../scss/_design.scss */
 .description .description-title h1 { font-size: 24px; margin: 0; }
-/* line 287, ../scss/_design.scss */
+/* line 296, ../scss/_design.scss */
 .description .description-title img { margin-right: 17px; }
-/* line 291, ../scss/_design.scss */
+/* line 300, ../scss/_design.scss */
 .description .description-body { width: 100%; text-align: center; }
-/* line 294, ../scss/_design.scss */
+/* line 303, ../scss/_design.scss */
 .description .description-body h2 { font-size: 36px; margin: 0; }

@@ -112,7 +112,7 @@
     </section>
     <section class="page_bg">
         <div class="conteiner">
-            <div class="row description flex center wrap">
+            <div class="row description flex AppearBox center wrap">
                 <div class="description-title"><img src="img/icon/line_long.svg" alt="line_long">
                     <h1>Главные принципы в работе</h1>
                 </div>
@@ -125,7 +125,15 @@
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/tilt.js"></script>
     <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script>
+        $('.fadeBox').waypoint(function(){
+            if($('header').hasClass("navFixed")){
+            $('header').removeClass('navFixed');}else{
+              $('header').addClass('navFixed');  
+            }
+        });
+        
         $('.js-tilt').tilt({
             glare: true,
             reset: false,
@@ -135,17 +143,35 @@
         const fadeBox = basicScroll.create({
             elem: document.querySelector('.fadeBox'),
             from: 'top-top',
-            to: 'middle-top',
+            to: 'top-top',
             inside: (instance, percentage) => console.log('fadeBox is animating'),
             outside: (instance, percentage) => console.log('fadeBox is not animating'),
             props: {
                 '--o': {
-                    from: .99,
-                    to: .01
+                    from: 1,
+                    to: .0
+                },
+                '--t': {
+                    from: 1,
+                    to: 0.8
+                }
+            }
+        });
+        const appearBox = basicScroll.create({
+            elem: document.querySelector('.AppearBox'),
+            from: 'top-middle',
+            to: 'middle-bottom',
+            inside: (instance, percentage) => console.log('fadeBox is animating'),
+            outside: (instance, percentage) => console.log('fadeBox is not animating'),
+            props: {
+                '--op': {
+                    from: 1,
+                    to: 0
                 }
             }
         });
         fadeBox.start();
+        appearBox.start();
 
     </script>
 </body>

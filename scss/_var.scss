@@ -13,4 +13,5 @@ $color_button_revers: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
 }
 $h3: 36px;
 
-.fadeBox { opacity: var(--o); }
+.fadeBox { opacity: var(--o); transform: scale(var(--t)); transition: 1s; height: 50%;}
+.AppearBox { opacity: var(--op); transition: 1s;}

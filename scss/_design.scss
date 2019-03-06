@@ -85,6 +85,15 @@ textarea {
 }
 
 header {
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    left: 0;
+    top: 0;
+    transition: 1s;
+    &.navFixed{
+        background: rgba(0, 0, 0, 0.3);;
+    }
     .communication {
         .child {
             display: inline-block;
@@ -156,6 +165,7 @@ header {
 }
 
 .pagefirst {
+    padding-top: 70px;
     background: $color_home;
     height: 100vh;
 }
@@ -197,11 +207,10 @@ span.h1.shadow {
     max-height: 85vh;
     z-index: 5;
     width: 95%;
-    overflow: hidden;
     max-width: 1300px;
 
     img {
-        max-width: 50%;
+        max-width: 40%;
         margin-top: 0;
         transform-style: preserve-3d;
         transform: translateZ(20px);
@@ -262,7 +271,7 @@ span.h1.shadow {
     position: absolute;
     left: 50%;
     z-index: 10;
-    bottom: 10px;
+    top: 170%;
 
     a {
         position: relative;
@@ -277,7 +286,7 @@ svg.arrow_down_top {
     width: 50%;
     text-transform: uppercase;
     color: #fff;
-    padding: 180px 0 !important;
+    padding: 0px 0 180px !important;
     .description-title{
         display: flex;
         justify-content: flex-end;

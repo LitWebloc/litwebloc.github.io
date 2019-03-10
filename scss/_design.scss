@@ -5,6 +5,7 @@ body {
 
 a {
     display: inline-block;
+    text-decoration: none;
 }
 
 .logo {
@@ -14,6 +15,16 @@ a {
         width: 80%;
         margin-top: 2%;
     }
+}
+
+div,
+a,
+section,
+h1,
+h2,
+h3,
+h4 {
+    position: relative;
 }
 
 a.botton {
@@ -71,14 +82,44 @@ textarea {
         &.flex {
             display: flex;
             justify-content: space-between;
-            &.center{
-               justify-content: center;
+
+            &.center {
+                justify-content: center;
             }
-            &.left{
-               justify-content: flex-start;
+
+            &.left {
+                justify-content: flex-start;
             }
-            &.wrap{
-               flex-wrap: wrap;
+
+            &.wrap {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+.onload {
+    position: fixed;
+    background: $color_home;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .onload_logo {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        svg{
+        width: 3vw;
+            path{
+                stroke-dasharray: 2500;
+                fill: #fff;
+                animation: onload 2s ease-in-out;
             }
         }
     }
@@ -91,9 +132,13 @@ header {
     left: 0;
     top: 0;
     transition: 1s;
-    &.navFixed{
-        background: rgba(0, 0, 0, 0.3);;
+    animation: opacity_revers .8s ease-in-out;
+
+    &.navFixed {
+        background: rgba(0, 0, 0, 0.3);
+        ;
     }
+
     .communication {
         .child {
             display: inline-block;
@@ -118,11 +163,11 @@ header {
 
     nav {
         a {
-            position: relative;
             margin-right: 15px;
             color: #fff;
             text-decoration: none;
             font-size: 14px;
+            position: relative;
 
             &:hover span {
                 width: 60%;
@@ -131,6 +176,27 @@ header {
             &:last-child {
                 margin: 0;
             }
+
+            &:nth-child(1) {
+                animation: navdown .4s ease-in-out;
+            }
+
+            &:nth-child(2) {
+                animation: navdown .5s ease-in-out;
+            }
+
+            &:nth-child(3) {
+                animation: navdown .6s ease-in-out;
+            }
+
+            &:nth-child(4) {
+                animation: navdown .7s ease-in-out;
+            }
+
+            &:nth-child(5) {
+                animation: navdown .8s ease-in-out;
+            }
+
         }
     }
 
@@ -170,8 +236,10 @@ header {
     height: 100vh;
 }
 
-.page_bg{
+.page_bg {
     background: $color_home;
+    position: relative;
+    overflow: hidden;
 }
 
 div.h1 {
@@ -274,7 +342,6 @@ span.h1.shadow {
     top: 170%;
 
     a {
-        position: relative;
         animation: arrow_down 1.3s infinite ease-in-out;
     }
 }
@@ -282,24 +349,163 @@ span.h1.shadow {
 svg.arrow_down_top {
     position: absolute;
 }
-.description{
+
+.description {
     width: 50%;
     text-transform: uppercase;
     color: #fff;
     padding: 0px 0 180px !important;
-    .description-title{
+
+    .description-title {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         margin-bottom: 15px;
-        h1{font-size: 24px; margin: 0;}
-        img{
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        img {
             margin-right: 17px;
         }
     }
-    .description-body{
+
+    .description-body {
         width: 100%;
         text-align: center;
-        h2{font-size: 36px; margin: 0;}
+
+        h2 {
+            font-size: 36px;
+            margin: 0;
+        }
     }
+}
+
+.ledge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    -webkit-transition: 0.55s cubic-bezier(.62, .02, .34, 1);
+    -moz-transition: 0.55s cubic-bezier(.62, .02, .34, 1);
+    transition: 0.55s cubic-bezier(.62, .02, .34, 1);
+}
+
+.ledge-27-deg::before {
+    -webkit-transform: rotate(27deg);
+    -moz-transform: rotate(27deg);
+    -ms-transform: rotate(27deg);
+    -o-transform: rotate(27deg);
+    transform: rotate(var(--r));
+}
+
+.ledge > div,
+.ledge::before {
+    background: #44404A;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition: -webkit-transform 0.9s cubic-bezier(.52, .01, .16, 1), background 0.26s linear;
+    -moz-transition: -moz-transform 0.9s cubic-bezier(.52, .01, .16, 1), background 0.26s linear;
+    transition: transform 0.9s cubic-bezier(.52, .01, .16, 1), background 0.26s linear;
+    width: 300vw;
+    height: 300vh;
+    margin-left: -153vw;
+}
+
+.height-100 {
+    height: 100vh;
+}
+
+section .content {
+    margin: 40vh auto 0;
+    width: 60.5%;
+    text-align: center;
+
+    .shadow {
+        position: absolute;
+        margin: .4vw 0 0;
+
+        p {
+            color: #000;
+        }
+    }
+
+    p {
+        color: #fff;
+    }
+}
+
+.box-arrow-link {
+    display: inline;
+
+    .box-arrow-1 {
+        transition: .5s;
+        opacity: 0;
+        padding: 10px 0;
+
+        & img {
+            transition: 1s;
+            width: 0;
+        }
+    }
+
+    &:hover .box-arrow-1 {
+        opacity: 1;
+        //        animation: 1s alternate box-arrow-1;
+        padding: 10px;
+
+        & img {
+            width: 30px
+        }
+    }
+
+    .box-arrow-2 {
+        opacity: 1;
+        transition: .5s;
+
+        & img {
+            transition: 1s;
+            width: 30px
+        }
+    }
+
+    &:hover .box-arrow-2 {
+        //        animation: 1s alternate box-arrow-2;
+        opacity: 0;
+        padding: 10px 0;
+
+        & img {
+            width: 0
+        }
+    }
+}
+
+.box-arrow-link span {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid;
+    margin: -3px;
+}
+
+.box-arrow-link span img {
+    width: 30px;
+    height: 8px;
+    vertical-align: 2px;
+    transition: 1s;
+}
+
+.box-arrow-1 {
+    width: 0px;
 }

@@ -8,10 +8,28 @@ $color_home_shadow: #000;
 $color_button: linear-gradient(90deg, #F39A4A 0%, #F69173 100%);
 $color_button_revers: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
 
-@mixin tn(){
-	transition: .6s ease-out;
+@mixin tn() {
+    transition: .6s ease-out;
 }
+
 $h3: 36px;
 
-.fadeBox { opacity: var(--o); transform: scale(var(--t)); transition: 1s; height: 50%;}
-.AppearBox { opacity: var(--op); transition: 1s;}
+.fadeBox {
+    opacity: var(--o);
+    transform: scale(var(--t));
+    transition: 1s;
+    height: 50%;
+}
+
+.AppearBox {
+    opacity: var(--op);
+    transition: 1s;
+}
+
+.h2 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}

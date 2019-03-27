@@ -173,14 +173,47 @@
         </div>
 
     </section>
-    <section class="page_bg height-100">
-
+    <section class="page_bg_2">
+        <div class="content">
+            <p class="price">75$</p>
+            <div class="ledge-title">
+                <p>Создание сайта начинается от 75$</p>
+                <p class="h2">посмотреть<br>цены</p>
+            </div>
+            <div class="ledge-body">
+                <a href="#!" class="box-arrow-link">
+                    <span class="box-arrow-1"><img src="img/icon/%E2%86%92.svg" alt=""></span>
+                    <span class="box-text">посмотреть все</span>
+                    <span class="box-arrow-2"><img src="img/icon/%E2%86%92.svg" alt=""></span>
+                </a>
+            </div>
+            <img class="manprice" src="img/characters/manprice.png" alt="">
+        </div>
     </section>
+    <footer>
+        
+    </footer>
     <script src="js/lib/jquery.js"></script>
+    <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
     <script src="js/lib/tilt.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/lib/wow.min.js"></script>
     <script>
+//        const instance = basicScroll.create({
+//            elem: document.querySelector('.price'),
+//            from: 'top-top',
+//            to: 'bottom-bottom',
+//            direct: true,
+//            props: {
+//                '--ty': {
+//                    from: '-100px',
+//                    to: '0px'
+//                }
+//            }
+//        });
+//
+//        instance.start();
+
         $('.fadeBox').waypoint(function() {
             $('header').hasClass('navFixed') ? $('header').removeClass('navFixed') : $('header').addClass('navFixed');
             $('.fadeBox').hasClass('fade') ? $('.fadeBox').removeClass('fade') : $('.fadeBox').addClass('fade');

@@ -105,7 +105,7 @@ small{
 
 .onload {
     position: fixed;
-    background: $color_home;
+    background: $color;
     z-index: 9999999;
     top: 0;
     left: 0;
@@ -239,14 +239,21 @@ header {
 
 .pagefirst {
     padding-top: 70px;
-    background: $color_home;
+    background: $color;
     height: 100vh;
 }
 
 .page_bg {
-    background: $color_home;
-    position: relative;
+    background: $color;
     overflow: hidden;
+}
+
+.page_bg_2 {
+    background: $color2;
+    overflow: hidden;
+    .content{
+        margin: 15vh auto 0;
+    }
 }
 
 div.h1 {
@@ -415,7 +422,7 @@ svg.arrow_down_top {
 
 .ledge > div,
 .ledge::before {
-    background: #44404A;
+    background: $color2;
     content: '';
     position: absolute;
     top: 0;
@@ -595,4 +602,28 @@ section .content {
     z-index: 2;
     width: 100%;
     height: 100%;
+}
+.ledge-title{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.price {
+    color: $color !important;
+    position: absolute;
+    top: -472px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23rem;
+    padding: 0 20%;
+    font-weight: bold;
+//    transform: translateY(var(--ty));
+    transition: transform .1s linear;
+}
+.manprice{
+    position: relative;
+    margin-bottom: 100px;
+}
+footer{
+    height: 100vh;
 }

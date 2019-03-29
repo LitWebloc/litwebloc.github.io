@@ -73,7 +73,7 @@
                     </div>
 -->
                     <div class="">
-                        <p class="h3">РАЗРАБОТКА<br>
+                        <p class="h3 wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">РАЗРАБОТКА<br>
                             ДИЗАЙН<br>
                             МАРКЕТИНГ</p>
                     </div>
@@ -100,14 +100,14 @@
                     </div>
 -->
                     <div class="">
-                        <p class="h3">130+</p>
-                        <p>просмотров на<br>Behance</p>
+                        <p class="h3 wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">130+</p>
+                        <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">просмотров на<br>Behance</p>
                         <br>
-                        <p class="h3">350+</p>
-                        <p>выполненных<br>проектов</p>
+                        <p class="h3 wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">350+</p>
+                        <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">выполненных<br>проектов</p>
                         <br>
-                        <p class="h3">2года</p>
-                        <p>лет опыта<br>на рынке</p>
+                        <p class="h3 wow fadeIn" data-wow-duration="2s" data-wow-delay=".4s">2года</p>
+                        <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".4s">лет опыта<br>на рынке</p>
                     </div>
                 </div>
             </div>
@@ -126,7 +126,9 @@
     <section class="page_bg">
         <div class="conteiner">
             <div class="row description flex center wrap">
-                <div class="description-title"><img src="img/icon/line_long.svg" alt="line_long">
+                <div class="description-title">
+                    <!--                  <img src="img/icon/line_long.svg" alt="line_long">-->
+                    <div class="line white"></div>
                     <h1>Главные принципы в работе</h1>
                 </div>
                 <div class="description-body fadeBoxRecent">
@@ -171,7 +173,6 @@
                 </a>
             </div>
         </div>
-
     </section>
     <section class="page_bg_2">
         <div class="content">
@@ -191,7 +192,49 @@
         </div>
     </section>
     <footer>
-        
+        <div class="top-footer">
+            <div class="conteiner">
+                <div class="row flex">
+                    <div class="footer-text">
+                        <p class="h3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".3s">Не будь незнакомцем, просто поздоровайся.</p>
+                        <p class="text wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".4s">Не стесняйтесь связаться со мной. Я всегда открыт для обсуждения новых проектов, творческих идей или возможностей стать частью вашего видения.</p>
+                        <div class="line black wow fadeInLeft" data-wow-duration="1s" data-wow-delay="2s"></div>
+                        <div class="contact wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">
+                            <a href="#!">+375297521500</a>
+                            <a href="#!">test@test.test</a>
+                        </div>
+                    </div>
+                    <div class="image contact wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                        <img src="img/characters/peoplecontact.png" alt="">
+                    </div>
+                    <div class="forma">
+                        <p class="h4 wow fadeInRight" data-wow-duration="2s" data-wow-delay=".2s">Крутые проекты начинаются с заполнения этой формы</p>
+                        <form action="">
+                            <input type="text" required placeholder="Имя*" class="wow fadeInRight" data-wow-duration="2s" data-wow-delay=".3s">
+                            <input type="phone" required placeholder="Телефон*" class="wow fadeInRight" data-wow-duration="2s" data-wow-delay=".4s">
+                            <input type="email" placeholder="Email" class="wow fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
+                            <button class="botton wow fadeInRight" data-wow-duration="2s" data-wow-delay=".6s">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteiner">
+            <div class="row flex footer">
+                <p class="links">
+                    <a href="">Сотрудничество</a>
+                    <a href="">Вакансии</a>
+                </p>
+                <p class="contact">
+                    <a href="#!">+375297521500</a>
+                    <a href="#!">test@test.test</a>
+                </p>
+            </div>
+            <div class="row">
+                <hr>
+                <p class="copy">©Yoursite, 2018–2019.</p>
+            </div>
+        </div>
     </footer>
     <script src="js/lib/jquery.js"></script>
     <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
@@ -199,36 +242,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/lib/wow.min.js"></script>
     <script>
-//        const instance = basicScroll.create({
-//            elem: document.querySelector('.price'),
-//            from: 'top-top',
-//            to: 'bottom-bottom',
-//            direct: true,
-//            props: {
-//                '--ty': {
-//                    from: '-100px',
-//                    to: '0px'
-//                }
-//            }
-//        });
-//
-//        instance.start();
-
         $('.fadeBox').waypoint(function() {
             $('header').hasClass('navFixed') ? $('header').removeClass('navFixed') : $('header').addClass('navFixed');
             $('.fadeBox').hasClass('fade') ? $('.fadeBox').removeClass('fade') : $('.fadeBox').addClass('fade');
         });
         $('.fadeBoxRecent').waypoint(function() {
-            if ($('.recent_work').hasClass("fade")) {
-                $('.recent_work').removeClass('fade');
-            } else {
-                $('.recent_work').addClass('fade');
-            }
-            if ($('.ledge').hasClass('ledge-deg')) {
-                $('.ledge').removeClass('ledge-deg');
-            } else {
-                $('.ledge').addClass('ledge-deg');
-            }
+            $('.recent_work').hasClass("fade") ? $('.recent_work').removeClass('fade') : $('.recent_work').addClass('fade');
+            $('.ledge').hasClass('ledge-deg') ? $('.ledge').removeClass('ledge-deg') : $('.ledge').addClass('ledge-deg');
         });
         $('.js-tilt').tilt({
             glare: true,
@@ -240,7 +260,6 @@
         $(window).on('load', function() {
             $('.onload').fadeOut('slow');
         });
-
     </script>
 </body>
 

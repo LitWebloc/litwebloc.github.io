@@ -8,12 +8,13 @@ $color2: #44404A;
 $color_home_shadow: #000;
 $color_button: linear-gradient(90deg, #F39A4A 0%, #F69173 100%);
 $color_button_revers: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
-
+$footer_bg: #E5E5E5;
 @mixin tn() {
     transition: .6s ease-out;
 }
 
 $h3: 36px;
+$h4: 24px;
 
 .fadeBox {
     transition: 1s;
@@ -40,4 +41,14 @@ $h3: 36px;
     line-height: 60px;
     text-transform: uppercase;
     margin: 0 0 20px;
+}
+.h3{
+   font-size: $h3; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.h4{
+   font-size: $h4; 
+    text-transform: uppercase;
+    font-weight: bold;
 }

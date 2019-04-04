@@ -1,0 +1,68 @@
+.pagefirst {
+    background: $color;
+}
+
+.page_bg {
+    background: $color;
+}
+
+.left-p {
+
+    p {
+        position: absolute;
+        left: 5%;
+        top: 15%;
+        z-index: 2;
+        font-size: 9vw;
+        transform: rotate(-15deg);
+        color: #fff;
+    }
+}
+.homeimg img {
+    width: 100%;
+}
+div,
+a,
+section,
+h1,
+h2,
+h3,
+h4 {
+    position: relative;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #B3B1B7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p,
+i,
+b,
+a,
+small,
+span,
+strong {
+    font-family: $fs, sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+input,
+textarea {
+    color: #ccc;
+}

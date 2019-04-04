@@ -146,176 +146,189 @@ span.h1 { font-family: "Pattaya", sans-serif; font-size: 8em; transform: rotate(
 span.h1.shadow { color: #000; position: absolute; margin: 15px 7px; z-index: 3; }
 
 /* line 298, ../scss/_design.scss */
-.homeimg { position: absolute; top: 10vh; display: flex; justify-content: center; align-items: center; height: 100%; max-height: 85vh; z-index: 5; width: 95%; max-width: 1300px; }
-/* line 310, ../scss/_design.scss */
+.homeimg { position: absolute; display: flex; justify-content: center; align-items: center; height: 85vh; z-index: 5; width: 95%; max-width: 1300px; }
+/* line 308, ../scss/_design.scss */
 .homeimg img { max-width: 40%; margin-top: 0; transform-style: preserve-3d; transform: translateZ(20px); }
-/* line 317, ../scss/_design.scss */
+/* line 315, ../scss/_design.scss */
 .homeimg img.shadow { margin: 0 25px; }
 
-/* line 322, ../scss/_design.scss */
+/* line 320, ../scss/_design.scss */
 .left-p, .right-p { display: flex; align-items: center; margin-top: 100px; }
-/* line 328, ../scss/_design.scss */
+/* line 326, ../scss/_design.scss */
 .left-p p, .right-p p { margin: 0; font-style: italic; font-weight: bold; letter-spacing: 0.05em; color: #FFFFFF; transform: rotate(-15deg); font-size: 13px; }
-/* line 338, ../scss/_design.scss */
+/* line 336, ../scss/_design.scss */
 .left-p .h3, .right-p .h3 { font-size: 36px; }
 
-/* line 344, ../scss/_design.scss */
+/* line 342, ../scss/_design.scss */
 .left-p .shadow { position: absolute; margin: -4px -4px 0; }
-/* line 348, ../scss/_design.scss */
+/* line 346, ../scss/_design.scss */
 .left-p .shadow p { color: #000; }
 
-/* line 354, ../scss/_design.scss */
+/* line 352, ../scss/_design.scss */
 .right-p { margin-right: 50px; transform: rotate(-4deg); }
-/* line 358, ../scss/_design.scss */
+/* line 356, ../scss/_design.scss */
 .right-p .shadow { position: absolute; margin: -4px 4px 0; }
-/* line 362, ../scss/_design.scss */
+/* line 360, ../scss/_design.scss */
 .right-p .shadow p { color: #000; }
 
-/* line 368, ../scss/_design.scss */
+/* line 366, ../scss/_design.scss */
 .arrow_down { position: absolute; left: 50%; z-index: 10; top: 170%; }
-/* line 374, ../scss/_design.scss */
+/* line 372, ../scss/_design.scss */
 .arrow_down a { animation: arrow_down 1.3s infinite ease-in-out; }
 
-/* line 379, ../scss/_design.scss */
+/* line 377, ../scss/_design.scss */
 svg.arrow_down_top { position: absolute; }
 
-/* line 383, ../scss/_design.scss */
+/* line 381, ../scss/_design.scss */
 .description { width: 50%; text-transform: uppercase; color: #fff; padding-bottom: 100px; transition: 1s; }
-/* line 390, ../scss/_design.scss */
+/* line 388, ../scss/_design.scss */
 .description.fade { opacity: 0; }
-/* line 394, ../scss/_design.scss */
+/* line 392, ../scss/_design.scss */
 .description .description-title { display: flex; justify-content: flex-end; align-items: center; margin-bottom: 15px; }
-/* line 400, ../scss/_design.scss */
+/* line 398, ../scss/_design.scss */
 .description .description-title h1 { font-size: 24px; margin: 0; }
-/* line 405, ../scss/_design.scss */
+/* line 403, ../scss/_design.scss */
 .description .description-title img { margin-right: 17px; }
-/* line 410, ../scss/_design.scss */
+/* line 408, ../scss/_design.scss */
 .description .description-body { width: 100%; text-align: center; }
-/* line 414, ../scss/_design.scss */
+/* line 412, ../scss/_design.scss */
 .description .description-body h2 { font-size: 36px; margin: 0; }
 
-/* line 421, ../scss/_design.scss */
+/* line 419, ../scss/_design.scss */
 .ledge { position: absolute; top: 50%; left: 50%; pointer-events: none; width: 0; height: 0; -webkit-transition: 0.55s cubic-bezier(0.62, 0.02, 0.34, 1); -moz-transition: 0.55s cubic-bezier(0.62, 0.02, 0.34, 1); transition: 0.55s cubic-bezier(0.62, 0.02, 0.34, 1); }
 
-/* line 433, ../scss/_design.scss */
+/* line 431, ../scss/_design.scss */
 .ledge-deg::before { -webkit-transform: rotate(21deg); -moz-transform: rotate(21deg); -ms-transform: rotate(21deg); -o-transform: rotate(21deg); transform: rotate(21deg); }
 
-/* line 441, ../scss/_design.scss */
+/* line 439, ../scss/_design.scss */
 .ledge > div, .ledge::before { background: #44404A; content: ''; position: absolute; top: 0; left: 0; -webkit-transform-origin: 50% 0; -moz-transform-origin: 50% 0; -ms-transform-origin: 50% 0; -o-transform-origin: 50% 0; transform-origin: 50% 0; -webkit-transition: -webkit-transform 0.9s cubic-bezier(0.52, 0.01, 0.16, 1), background 0.26s linear; -moz-transition: -moz-transform 0.9s cubic-bezier(0.52, 0.01, 0.16, 1), background 0.26s linear; transition: transform 0.9s cubic-bezier(0.52, 0.01, 0.16, 1), background 0.26s linear; width: 300vw; height: 300vh; margin-left: -153vw; }
 
-/* line 461, ../scss/_design.scss */
+/* line 459, ../scss/_design.scss */
 .height-100 { height: 100vh; }
 
-/* line 465, ../scss/_design.scss */
+/* line 463, ../scss/_design.scss */
 section .content { margin: 40vh auto 0; width: 60.5%; text-align: center; }
-/* line 470, ../scss/_design.scss */
+/* line 468, ../scss/_design.scss */
 section .content .shadow { position: absolute; margin: .4vw 0 0; }
-/* line 474, ../scss/_design.scss */
+/* line 472, ../scss/_design.scss */
 section .content .shadow p { color: #000; }
-/* line 479, ../scss/_design.scss */
+/* line 477, ../scss/_design.scss */
 section .content p { color: #fff; }
 
-/* line 484, ../scss/_design.scss */
+/* line 482, ../scss/_design.scss */
 .box-arrow-link { display: inline; }
-/* line 487, ../scss/_design.scss */
+/* line 485, ../scss/_design.scss */
 .box-arrow-link .box-arrow-1 { transition: .5s; opacity: 0; padding: 10px 0; }
-/* line 492, ../scss/_design.scss */
+/* line 490, ../scss/_design.scss */
 .box-arrow-link .box-arrow-1 img { transition: 1s; width: 0; }
-/* line 498, ../scss/_design.scss */
+/* line 496, ../scss/_design.scss */
 .box-arrow-link:hover .box-arrow-1 { opacity: 1; padding: 10px; }
-/* line 503, ../scss/_design.scss */
+/* line 501, ../scss/_design.scss */
 .box-arrow-link:hover .box-arrow-1 img { width: 30px; }
-/* line 508, ../scss/_design.scss */
+/* line 506, ../scss/_design.scss */
 .box-arrow-link .box-arrow-2 { opacity: 1; transition: .5s; }
-/* line 512, ../scss/_design.scss */
+/* line 510, ../scss/_design.scss */
 .box-arrow-link .box-arrow-2 img { transition: 1s; width: 30px; }
-/* line 518, ../scss/_design.scss */
+/* line 516, ../scss/_design.scss */
 .box-arrow-link:hover .box-arrow-2 { opacity: 0; padding: 10px 0; }
-/* line 523, ../scss/_design.scss */
+/* line 521, ../scss/_design.scss */
 .box-arrow-link:hover .box-arrow-2 img { width: 0; }
 
-/* line 529, ../scss/_design.scss */
+/* line 527, ../scss/_design.scss */
 .box-arrow-link span { padding: 10px; text-transform: uppercase; color: #fff; border: 2px solid; margin: -3px; }
 
-/* line 537, ../scss/_design.scss */
+/* line 535, ../scss/_design.scss */
 .box-arrow-link span img { width: 30px; height: 8px; vertical-align: 2px; transition: 1s; }
 
-/* line 544, ../scss/_design.scss */
+/* line 542, ../scss/_design.scss */
 .box-arrow-1 { width: 0px; }
 
-/* line 548, ../scss/_design.scss */
+/* line 546, ../scss/_design.scss */
 .recent_work { width: 242px; height: 242px; position: absolute; border-radius: 100%; overflow: hidden; border: 1px solid #000000; box-sizing: border-box; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); opacity: 0; transition: .3s; }
-/* line 560, ../scss/_design.scss */
+/* line 558, ../scss/_design.scss */
 .recent_work:hover .recent_info { opacity: 1; }
-/* line 564, ../scss/_design.scss */
+/* line 562, ../scss/_design.scss */
 .recent_work.fade { opacity: 1; transition: .3s .5s; }
-/* line 569, ../scss/_design.scss */
+/* line 567, ../scss/_design.scss */
 .recent_work:hover .bg-black { opacity: 1; height: 100%; top: 0; }
-/* line 575, ../scss/_design.scss */
+/* line 573, ../scss/_design.scss */
 .recent_work img { transform: scale(1.4); height: 100%; }
-/* line 580, ../scss/_design.scss */
+/* line 578, ../scss/_design.scss */
 .recent_work.one { top: -55vh; }
-/* line 584, ../scss/_design.scss */
+/* line 582, ../scss/_design.scss */
 .recent_work.two { top: 0; right: 0; }
-/* line 589, ../scss/_design.scss */
+/* line 587, ../scss/_design.scss */
 .recent_work .recent_info { opacity: 0; transition: 1s; }
-/* line 594, ../scss/_design.scss */
+/* line 592, ../scss/_design.scss */
 .recent_work .bg-black { top: 50%; opacity: 0; height: 0; transition: 1s; }
 
-/* line 602, ../scss/_design.scss */
+/* line 600, ../scss/_design.scss */
 .recent_info { position: absolute; width: 170px; z-index: 3; top: 33%; left: 20%; padding: 0%; text-transform: uppercase; color: #fff; }
-/* line 612, ../scss/_design.scss */
+/* line 610, ../scss/_design.scss */
 .recent_info p { margin-top: 5px; margin-bottom: 10px; }
-/* line 617, ../scss/_design.scss */
+/* line 615, ../scss/_design.scss */
 .recent_info .recent_next { font-size: 13px; }
-/* line 620, ../scss/_design.scss */
+/* line 618, ../scss/_design.scss */
 .recent_info .recent_next img { width: 10px; margin-left: 5px; vertical-align: 2px; }
 
-/* line 628, ../scss/_design.scss */
+/* line 626, ../scss/_design.scss */
 .bg-black { background: rgba(0, 0, 0, 0.6); position: absolute; z-index: 2; width: 100%; height: 100%; }
 
-/* line 636, ../scss/_design.scss */
+/* line 634, ../scss/_design.scss */
 .ledge-title { margin-bottom: 40px; text-transform: uppercase; }
 
-/* line 641, ../scss/_design.scss */
+/* line 639, ../scss/_design.scss */
 .price { color: #504D55 !important; position: absolute; top: -472px; display: flex; justify-content: center; align-items: center; font-size: 23rem; padding: 0 20%; font-weight: bold; transition: transform .1s linear; }
 
-/* line 654, ../scss/_design.scss */
+/* line 652, ../scss/_design.scss */
 .manprice { margin-bottom: 100px; width: 32vw; }
 
-/* line 659, ../scss/_design.scss */
+/* line 657, ../scss/_design.scss */
 button { color: #fff; display: block; text-decoration: none; font-weight: 500; line-height: normal; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; padding: 12px 57px; background: linear-gradient(90deg, #F39A4A 0%, #F69173 100%); box-shadow: 0px 0px 10px rgba(246, 145, 115, 0.8); transition: .6s ease-out; border: none; margin: 0 auto; }
 
-/* line 676, ../scss/_design.scss */
+/* line 674, ../scss/_design.scss */
 .line.white { border-bottom: 3px solid #fff; width: 100px; margin-right: 20px; }
 
-/* line 682, ../scss/_design.scss */
+/* line 680, ../scss/_design.scss */
 .line.black { border-bottom: 3px solid #000; width: 170px; margin-bottom: 114px; }
 
-/* line 689, ../scss/_design.scss */
+/* line 687, ../scss/_design.scss */
 .forma form { text-align: center; }
-/* line 692, ../scss/_design.scss */
+/* line 690, ../scss/_design.scss */
 .forma form input { display: block; padding: 11px 6px; width: 97%; border: 1px solid #C4C4C4; color: #000000; margin-bottom: 10px; }
-/* line 701, ../scss/_design.scss */
+/* line 699, ../scss/_design.scss */
 .forma form button { margin-top: 28px; }
 
-/* line 708, ../scss/_design.scss */
+/* line 706, ../scss/_design.scss */
 .footer-text .text { max-width: 550px; }
 
-/* line 713, ../scss/_design.scss */
+/* line 711, ../scss/_design.scss */
 .top-footer { background: #E5E5E5; padding-top: 50px; }
 
-/* line 718, ../scss/_design.scss */
+/* line 716, ../scss/_design.scss */
 .image.contact { position: relative; bottom: -90px; z-index: 1; }
 
-/* line 724, ../scss/_design.scss */
+/* line 722, ../scss/_design.scss */
 footer { overflow: hidden; }
-/* line 727, ../scss/_design.scss */
+/* line 725, ../scss/_design.scss */
 footer a { color: #000; }
-/* line 732, ../scss/_design.scss */
+/* line 730, ../scss/_design.scss */
 footer .contact a { margin-left: 34px; display: inline-block; font-weight: bold; }
-/* line 737, ../scss/_design.scss */
+/* line 735, ../scss/_design.scss */
 footer .contact a:first-child { margin-left: 0; }
 
-/* line 744, ../scss/_design.scss */
+/* line 742, ../scss/_design.scss */
 .links a { margin-right: 30px; }
+
+@media (min-height: 815px) { /* line 746, ../scss/_design.scss */
+  .homeimg img { max-width: 55%; }
+  /* line 749, ../scss/_design.scss */
+  span.h1 { font-size: 10em; }
+  /* line 752, ../scss/_design.scss */
+  div.h1 { margin-left: -30%; }
+  /* line 755, ../scss/_design.scss */
+  .left-p .h3, .right-p .h3 { font-size: 45px; }
+  /* line 758, ../scss/_design.scss */
+  header nav a { font-size: 16px; }
+  /* line 761, ../scss/_design.scss */
+  .recent_work.one { top: -30vh; } }

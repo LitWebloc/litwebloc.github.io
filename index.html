@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/lib/animate.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link media="(min-width: 981px)" rel="stylesheet" href="css/style.css">
+    <link media="(max-width: 980px)" rel="stylesheet" href="css/style_mob.css">
     <title>Document</title>
 </head>
 
@@ -111,8 +112,9 @@
                     </div>
                 </div>
             </div>
-            <span class="arrow_down wow fadeIn" data-wow-delay="2s">
-                <a href="#!">
+            <div id="description"></div>
+            <span class="arrow_down wow fadeIn" data-wow-delay="1s">
+                <a href="#description">
                     <svg class="arrow_down_top" width="27" height="9" viewBox="0 0 27 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L13.5 7L26 1" stroke="#d8d5d5" stroke-width="2" />
                     </svg>
@@ -260,6 +262,14 @@
         $(window).on('load', function() {
             $('.onload').fadeOut('slow');
         });
+        var $page = $('html, body');
+        $('a[href*="#"]').click(function() {
+            $page.animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1000);
+            return false;
+        });
+
     </script>
 </body>
 

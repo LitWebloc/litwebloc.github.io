@@ -244,6 +244,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/lib/wow.min.js"></script>
     <script>
+        $(window).on('load', function() {
+            $('.onload').fadeOut('slow');
+        });
         $('.fadeBox').waypoint(function() {
             $('header').hasClass('navFixed') ? $('header').removeClass('navFixed') : $('header').addClass('navFixed');
             $('.fadeBox').hasClass('fade') ? $('.fadeBox').removeClass('fade') : $('.fadeBox').addClass('fade');
@@ -259,9 +262,7 @@
             maxGlare: 0
         });
         new WOW().init();
-        $(window).on('load', function() {
-            $('.onload').fadeOut('slow');
-        });
+        
         var $page = $('html, body');
         $('a[href*="#"]').click(function() {
             $page.animate({

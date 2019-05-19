@@ -327,6 +327,7 @@ span.h1.shadow {
     align-items: center;
     margin-top: 100px;
     transition: 1s;
+
     p {
         margin: 0;
         font-style: italic;
@@ -816,6 +817,9 @@ footer {
 }
 
 @media (max-width: 720px) {
+    .onload .onload_logo svg {
+        width: 13vw;
+    }
 
     section .content {
         margin: 20vh auto 0;

@@ -352,7 +352,7 @@ footer .contact a:first-child { margin-left: 0; }
   /* line 833, ../scss/_design.scss */
   .homeimg img { max-width: 86%; }
   /* line 837, ../scss/_design.scss */
-  .left-p .h3 { font-size: 22px; }
+  .left-p .h3 { font-size: 5.5vw; }
   /* line 841, ../scss/_design.scss */
   .description { width: auto; }
   /* line 845, ../scss/_design.scss */

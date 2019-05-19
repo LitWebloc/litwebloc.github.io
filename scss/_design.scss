@@ -158,7 +158,6 @@ header {
 
     &.navFixed {
         background: rgba(0, 0, 0, 0.3);
-        ;
     }
 
     .communication {
@@ -274,13 +273,13 @@ header {
 
 div.h1 {
     position: absolute;
-    margin-left: -25%;
+    margin-left: calc(-11vw - 8vw);
     margin-top: -5%;
 }
 
 span.h1 {
     font-family: $fspan, sans-serif;
-    font-size: 8em;
+    font-size: 8vw;
     transform: rotate(-15deg);
     position: absolute;
     z-index: 3;
@@ -306,7 +305,7 @@ span.h1.shadow {
     max-width: 1300px;
 
     img {
-        max-width: 40%;
+        max-width: 50%;
         margin-top: 0;
         transform-style: preserve-3d;
         transform: translateZ(20px);
@@ -322,6 +321,7 @@ span.h1.shadow {
     display: flex;
     align-items: center;
     margin-top: 100px;
+    transition: 1s;
 
     p {
         margin: 0;
@@ -481,6 +481,7 @@ section .content {
 
 .box-arrow-link {
     display: inline;
+    z-index: 2;
 
     .box-arrow-1 {
         transition: .5s;
@@ -576,12 +577,12 @@ section .content {
     }
 
     &.one {
-        top: -55vh;
+        bottom: 110px;
     }
 
     &.two {
         top: 0;
-        right: 0;
+        right: 40px;
     }
 
     .recent_info {
@@ -634,17 +635,15 @@ section .content {
 .ledge-title {
     margin-bottom: 40px;
     text-transform: uppercase;
+    z-index: 2;
 }
 
 .price {
     color: $color !important;
     position: absolute;
-    top: -472px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 23rem;
-    padding: 0 20%;
+    top: calc(-46vw + 20vw);
+    font-size: 20vw;
+    left: calc(32vw - 20vw);
     font-weight: bold;
     transition: transform .1s linear;
 }
@@ -652,6 +651,8 @@ section .content {
 .manprice {
     margin-bottom: 100px;
     width: 32vw;
+    position: relative;
+    z-index: 1;
 }
 
 button {
@@ -742,23 +743,28 @@ footer {
 .links a {
     margin-right: 30px;
 }
-@media(min-height: 815px){
-    .homeimg img{
-        max-width: 55%;
+
+@media(max-width: 1400px) {
+    .homeimg img {
+        max-width: 40%;
     }
-    span.h1{
-        font-size: 10em;
+}
+
+@media(max-width: 1200px) {
+    .right-p {
+        display: none;
     }
-    div.h1{
-        margin-left: -30%;
+
+    .left-p,
+    .right-p {
+        margin-top: 25vh;
     }
-    .left-p .h3, .right-p .h3{
-        font-size: 45px;
+
+    div.h1 {
+        margin-left: calc(-11vw - 9vw);
     }
-    header nav a{
-        font-size: 16px;
-    }
-    .recent_work.one{
-        top: -30vh;
+
+    span.h1 {
+        font-size: 9vw;
     }
 }

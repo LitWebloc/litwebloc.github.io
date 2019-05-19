@@ -37,28 +37,16 @@
   80% { stroke-dasharray: 2500; fill: rgba(255, 255, 255, 0); }
   100% { fill: #fff; } }
 /* line 1, ../scss/_mobile.scss */
-.pagefirst { background: #504D55; }
+div.h1 { margin-top: -5%; margin-left: calc(-21vw - 16vw); }
 
-/* line 5, ../scss/_mobile.scss */
-.page_bg { background: #504D55; }
+/* line 6, ../scss/_mobile.scss */
+span.h1 { font-size: 16vw; }
 
-/* line 11, ../scss/_mobile.scss */
-.left-p p { position: absolute; left: 5%; top: 15%; z-index: 2; font-size: 9vw; transform: rotate(-15deg); color: #fff; }
+/* line 10, ../scss/_mobile.scss */
+.homeimg img { max-width: 86%; }
 
-/* line 21, ../scss/_mobile.scss */
-.homeimg img { width: 100%; }
+/* line 14, ../scss/_mobile.scss */
+.left-p .h3 { font-size: 60px; }
 
-/* line 24, ../scss/_mobile.scss */
-div, a, section, h1, h2, h3, h4 { position: relative; }
-
-/* line 34, ../scss/_mobile.scss */
-hr { border: none; border-bottom: 1px solid #B3B1B7; }
-
-/* line 39, ../scss/_mobile.scss */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, i, b, a, small, span, strong { font-family: "Roboto", sans-serif; }
-
-/* line 61, ../scss/_mobile.scss */
-p { font-size: 16px; }
-
-/* line 65, ../scss/_mobile.scss */
-input, textarea { color: #ccc; }
+/* line 17, ../scss/_mobile.scss */
+.left-p p { margin-top: -76px; }

@@ -1,68 +1,19 @@
-.pagefirst {
-    background: $color;
+div.h1 {
+    margin-top: -5%;
+    margin-left: calc(-21vw - 16vw);
 }
 
-.page_bg {
-    background: $color;
+span.h1 {
+    font-size: 16vw;
 }
 
-.left-p {
-
-    p {
-        position: absolute;
-        left: 5%;
-        top: 15%;
-        z-index: 2;
-        font-size: 9vw;
-        transform: rotate(-15deg);
-        color: #fff;
-    }
-}
 .homeimg img {
-    width: 100%;
-}
-div,
-a,
-section,
-h1,
-h2,
-h3,
-h4 {
-    position: relative;
+    max-width: 86%;
 }
 
-hr {
-    border: none;
-    border-bottom: 1px solid #B3B1B7;
+.left-p .h3 {
+    font-size: 60px;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-p,
-i,
-b,
-a,
-small,
-span,
-strong {
-    font-family: $fs, sans-serif;
-}
-
-p {
-    font-size: 16px;
-}
-
-input,
-textarea {
-    color: #ccc;
+.left-p p{
+    margin-top: -76px;
 }

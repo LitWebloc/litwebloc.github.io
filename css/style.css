@@ -150,7 +150,7 @@ span.h1.shadow { color: #000; position: absolute; margin: 15px 7px; z-index: 3; 
 .homeimg img.shadow { margin: 0 25px; }
 
 /* line 324, ../scss/_design.scss */
-.left-p, .right-p { display: flex; align-items: center; margin-top: 100px; transition: 1s; }
+.left-p, .right-p { display: flex; align-items: center; margin-top: 100px; transition: 1s; z-index: 3; }
 /* line 331, ../scss/_design.scss */
 .left-p p, .right-p p { margin: 0; font-style: italic; font-weight: bold; letter-spacing: 0.05em; color: #FFFFFF; transform: rotate(-15deg); font-size: 13px; }
 /* line 341, ../scss/_design.scss */

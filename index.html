@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/lib/animate.min.css">
     <link media="" rel="stylesheet" href="css/style.css">
-    <link media="(max-width: 1110px)" rel="stylesheet" href="css/style_mob.css">
+    <link media="(max-width: 720px)" rel="stylesheet" href="css/style_mob.css">
     <title>Document</title>
 </head>
 
@@ -248,7 +248,7 @@
             $('header').hasClass('navFixed') ? $('header').removeClass('navFixed') : $('header').addClass('navFixed');
             $('.fadeBox').hasClass('fade') ? $('.fadeBox').removeClass('fade') : $('.fadeBox').addClass('fade');
         });
-        $('.fadeBoxRecent').waypoint(function() {
+        $('.description').waypoint(function() {
             $('.recent_work').hasClass("fade") ? $('.recent_work').removeClass('fade') : $('.recent_work').addClass('fade');
             $('.ledge').hasClass('ledge-deg') ? $('.ledge').removeClass('ledge-deg') : $('.ledge').addClass('ledge-deg');
         });

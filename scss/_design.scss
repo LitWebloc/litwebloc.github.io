@@ -26,7 +26,9 @@ h3,
 h4 {
     position: relative;
 }
-
+section{
+    margin: -1px;
+}
 hr {
     border: none;
     border-bottom: 1px solid #B3B1B7;
@@ -761,10 +763,14 @@ footer {
     }
 
     div.h1 {
-        margin-left: calc(-11vw - 9vw);
+        margin-left: calc(-15vw - 11vw);
     }
 
     span.h1 {
-        font-size: 9vw;
+        font-size: 11vw;
+    }
+
+    .homeimg img {
+        max-width: 55%;
     }
 }

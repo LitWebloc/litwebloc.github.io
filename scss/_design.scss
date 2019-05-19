@@ -26,9 +26,11 @@ h3,
 h4 {
     position: relative;
 }
-section{
+
+section {
     margin: -1px;
 }
+
 hr {
     border: none;
     border-bottom: 1px solid #B3B1B7;
@@ -303,7 +305,7 @@ span.h1.shadow {
     align-items: center;
     height: 85vh;
     z-index: 5;
-    width: 95%;
+    width: calc(100% - 80px);
     max-width: 1300px;
 
     img {
@@ -746,13 +748,13 @@ footer {
     margin-right: 30px;
 }
 
-@media(max-width: 1400px) {
+@media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
     }
 }
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
     .right-p {
         display: none;
     }
@@ -772,5 +774,87 @@ footer {
 
     .homeimg img {
         max-width: 55%;
+    }
+}
+
+@media (max-width: 720px) {
+    .h2 {
+        font-size: 36px;
+        line-height: 39px;
+    }
+
+    section .content {
+        margin: 20vh auto 0;
+    }
+
+    div.h1 {
+        margin-top: -10%;
+        margin-left: calc(-21vw - 16vw);
+    }
+
+    span.h1 {
+        font-size: 16vw;
+    }
+
+    .homeimg img {
+        max-width: 86%;
+    }
+
+    .left-p .h3 {
+        font-size: 24px;
+    }
+
+    .description {
+        width: auto;
+    }
+
+    .description .description-title h1 {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .conteiner .row.flex.center {
+        justify-content: flex-start;
+    }
+
+    .description .description-body,
+    .description .description-title {
+        text-align: left;
+    }
+
+    .description .description-body h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+
+    .manprice {
+        width: 66vw;
+    }
+
+    .price-title {
+        font-size: 11px;
+    }
+
+    .box-arrow-link span {
+        padding: 9px 6px;
+    }
+
+    .footer-text,
+    .image.contact,
+    .footer .contact,
+    .price,
+    .line.white,
+    .recent_work {
+        display: none;
+    }
+
+    .forma {
+        margin-bottom: 25%;
+    }
+
+    footer .h4 {
+        font-size: 18px;
+        line-height: 21px;
     }
 }

@@ -313,6 +313,7 @@ span.h1.shadow {
         margin-top: 0;
         transform-style: preserve-3d;
         transform: translateZ(20px);
+        z-index: 1;
     }
 
     img.shadow {
@@ -777,11 +778,45 @@ footer {
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
     .h2 {
         font-size: 36px;
         line-height: 39px;
     }
+
+    .description .description-title h1 {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .description .description-body h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .price-title {
+        font-size: 11px;
+    }
+
+    footer .h4 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .footer-text,
+    .image.contact,
+    .recent_work {
+        display: none;
+    }
+
+    .forma {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 720px) {
 
     section .content {
         margin: 20vh auto 0;
@@ -808,11 +843,6 @@ footer {
         width: auto;
     }
 
-    .description .description-title h1 {
-        font-size: 10px;
-        line-height: 14px;
-    }
-
     .conteiner .row.flex.center {
         justify-content: flex-start;
     }
@@ -822,39 +852,30 @@ footer {
         text-align: left;
     }
 
-    .description .description-body h2 {
-        font-size: 18px;
-        line-height: 25px;
-    }
-
-
     .manprice {
         width: 66vw;
     }
 
-    .price-title {
-        font-size: 11px;
-    }
-
     .box-arrow-link span {
-        padding: 9px 6px;
+        padding: 10px 6px;
+        font-size: 12px;
     }
 
-    .footer-text,
-    .image.contact,
+    .box-arrow-link .box-arrow-1 img,
+    .box-arrow-link .box-arrow-2 img {
+        vertical-align: middle;
+    }
+
+    .box-arrow-link:hover .box-arrow-1 {
+        opacity: 1;
+        padding: 10px 6px;
+
+    }
+
     .footer .contact,
     .price,
-    .line.white,
-    .recent_work {
+    .line.white {
         display: none;
     }
 
-    .forma {
-        margin-bottom: 25%;
-    }
-
-    footer .h4 {
-        font-size: 18px;
-        line-height: 21px;
-    }
 }

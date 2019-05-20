@@ -346,7 +346,7 @@ footer .contact a:first-child { margin-left: 0; }
   .footer-text, .image.contact, .recent_work { display: none; }
   /* line 819, ../scss/_design.scss */
   .forma { margin: auto; margin-bottom: 50px; } }
-@media (max-width: 720px) { /* line 827, ../scss/_design.scss */
+@media (max-width: 770px) { /* line 827, ../scss/_design.scss */
   .onload .onload_logo svg { width: 13vw; }
   /* line 831, ../scss/_design.scss */
   header .conteiner .row { height: 90px; }

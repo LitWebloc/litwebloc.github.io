@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -160,9 +161,11 @@ header {
     transition: 1s;
     animation: opacity_revers .8s ease-in-out;
 
-    &.navFixed {
+    &.navFixed,
+    &.navFixed2 {
         background: rgba(0, 0, 0, 0.3);
     }
+
 
     .communication {
         .child {
@@ -749,6 +752,10 @@ footer {
     margin-right: 30px;
 }
 
+.revers {
+    display: none;
+}
+
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -821,6 +828,95 @@ footer {
         width: 13vw;
     }
 
+    header .conteiner .row {
+        height: 90px;
+    }
+
+    header .communication {
+        bottom: -12px;
+
+        .child {
+            display: none;
+
+            &:nth-child(3n) {
+                display: block;
+                margin-left: 0;
+                margin-top: 6px;
+                text-align: center
+            }
+        }
+    }
+
+    header nav {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        padding-top: 0px;
+        height: 0px;
+        transition: 1s;
+
+        &.active {
+            background: rgba(0, 0, 0, 0.3);
+            padding-top: 30px;
+            height: 100%;
+        }
+
+        a {
+            display: block;
+            font-size: 24px;
+            text-align: right;
+            padding: 10px 40px;
+        }
+    }
+
+    .nav_mob {
+        width: 22px;
+        height: 18px;
+    }
+
+    .nav_mob span {
+        height: 2px;
+        width: 100%;
+        display: block;
+        background: white;
+        border-radius: 3px;
+        transition: 1s;
+
+        &.n2 {
+            margin: 6px 0;
+        }
+    }
+
+    .navFixed2 {
+        .n1 {
+            transform: rotate(-45deg);
+            position: relative;
+            top: 8px;
+        }
+
+        .nav_mob span.n2 {
+            margin: 0;
+            opacity: 0;
+        }
+
+        .n3 {
+            transform: rotate(45deg);
+            position: relative;
+            top: 4px;
+        }
+    }
+
+    header .conteiner .row {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
     section .content {
         margin: 20vh auto 0;
     }
@@ -881,4 +977,24 @@ footer {
         display: none;
     }
 
+}
+
+@media (max-height: 450px) {
+    .revers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 9999;
+        background: black;
+        color: white;
+
+        & p {
+            margin-right: 15px;
+        }
+    }
 }

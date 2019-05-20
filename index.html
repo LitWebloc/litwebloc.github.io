@@ -10,6 +10,9 @@
 </head>
 
 <body>
+   <div class="revers">
+       <p>Переверните устройство вертикально</p><img height="30" src="/img/icon/vertically.svg" alt="">
+   </div>
     <div class="onload">
         <div class="onload_logo">
             <svg width="2629" height="1835" viewBox="0 0 2629 1835" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +34,7 @@
                     <div class="logo">
                         <img src="img/logo.svg" alt="">
                     </div>
-                    <nav>
+                    <nav id="menu">
                         <a href="#!" class="">Стоимость услуг
                             <span class="wiggle"></span>
                         </a>
@@ -46,6 +49,11 @@
                         </a>
                     </nav>
                     <div class="communication">
+                        <div class="nav_mob">
+                            <span class="n1"></span>
+                            <span class="n2"></span>
+                            <span class="n3"></span>
+                        </div>
                         <div class="child">
                             <i class="phone">
                                 <img src="img/icon/phone.svg" alt="phone">
@@ -244,6 +252,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/lib/wow.min.js"></script>
     <script>
+        "use strict";
+
+        $('.nav_mob').click(function() {
+            $('header nav').hasClass("active") ? $('header nav').removeClass('active') : $('header nav').addClass('active');
+            $('header').hasClass('navFixed2') ? $('header').removeClass('navFixed2') : $('header').addClass('navFixed2');
+            
+        });
+
         $(window).on('load', function() {
             $('.onload').fadeOut('slow');
         });
@@ -262,16 +278,13 @@
             maxGlare: 0
         });
         new WOW().init();
-        
-        var $page = $('html, body');
+
+        let $page = $('html, body');
         $('a[href*="#"]').click(function() {
             $page.animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 1000);
             return false;
         });
-
     </script>
-</body>
-
-</html>
+</body></html>

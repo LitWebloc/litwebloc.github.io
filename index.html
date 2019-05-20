@@ -257,7 +257,7 @@
         $('.nav_mob').click(function() {
             $('header nav').hasClass("active") ? $('header nav').removeClass('active') : $('header nav').addClass('active');
             $('header').hasClass('navFixed2') ? $('header').removeClass('navFixed2') : $('header').addClass('navFixed2');
-            
+            $('html').css('overflow') == 'hidden' ? $('html').css('overflow', 'auto') : $('html').css('overflow', 'hidden');
         });
 
         $(window).on('load', function() {

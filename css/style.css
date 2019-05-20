@@ -92,7 +92,7 @@ small { font-size: 11px; }
 /* line 155, ../scss/_design.scss */
 header { position: fixed; z-index: 999; right: 0; left: 0; top: 0; transition: 1s; animation: opacity_revers .8s ease-in-out; }
 /* line 164, ../scss/_design.scss */
-header.navFixed, header.navFixed2 { background: rgba(0, 0, 0, 0.3); }
+header.navFixed, header.navFixed2 { background: rgba(0, 0, 0, 0.5); }
 /* line 171, ../scss/_design.scss */
 header .communication .child { display: inline-block; margin-left: 40px; }
 /* line 175, ../scss/_design.scss */
@@ -359,7 +359,7 @@ footer .contact a:first-child { margin-left: 0; }
   /* line 850, ../scss/_design.scss */
   header nav { position: fixed; top: 90px; left: 0; right: 0; bottom: 0; overflow: hidden; padding-top: 0px; height: 0px; transition: 1s; }
   /* line 861, ../scss/_design.scss */
-  header nav.active { background: rgba(0, 0, 0, 0.3); padding-top: 30px; height: 100%; }
+  header nav.active { background: rgba(0, 0, 0, 0.5); padding-top: 30px; height: 100%; }
   /* line 867, ../scss/_design.scss */
   header nav a { display: block; font-size: 24px; text-align: right; padding: 10px 40px; }
   /* line 875, ../scss/_design.scss */

@@ -163,7 +163,7 @@ header {
 
     &.navFixed,
     &.navFixed2 {
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.5);
     }
 
 
@@ -859,7 +859,7 @@ footer {
         transition: 1s;
 
         &.active {
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.5);
             padding-top: 30px;
             height: 100%;
         }

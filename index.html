@@ -300,10 +300,10 @@
         //        $('.blocker').click(function() {
         //            $('.blur').removeClass('active');
         //        });
-        $('.modal').on($.modal.BLOCK, function(event, modal) {
+        $('.modal').on($.modal.BLOCK, function(event) {
             $('.blur').addClass('active');
         });
-        $('.modal').on($.modal.CLOSE, function(event, modal) {
+        $('.modal').on($.modal.CLOSE, function(event) {
             $('.blur').removeClass('active');
         });
                 $('.link-modal').click(function(event) {

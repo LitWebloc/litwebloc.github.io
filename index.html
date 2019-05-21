@@ -297,10 +297,10 @@
 
         $('.link-modal').click(function(event) {
             $('.blur').hasClass("active") ? $('.blur').removeClass('active') : $('.blur').addClass('active');
-            $('.jquery-modal.blocker.current').click(function(event) {
+            $('.blocker').click(function() {
                 $('.blur').hasClass("active") ? $('.blur').removeClass('active') : $('.blur').addClass('active');
             });
-            $('.close-modal').click(function(event) {
+            $('.close-modal').click(function() {
                 $('.blur').hasClass("active") ? $('.blur').removeClass('active') : $('.blur').addClass('active');
             });
 

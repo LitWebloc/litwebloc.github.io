@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/lib/animate.min.css">
     <link media="" rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-   <div class="revers">
-       <p>Переверните устройство вертикально</p><img height="30" src="/img/icon/vertically.svg" alt="">
-   </div>
+    <div class="revers">
+        <p>Переверните устройство вертикально</p><img height="30" src="/img/icon/vertically.svg" alt="">
+    </div>
     <div class="onload">
         <div class="onload_logo">
             <svg width="2629" height="1835" viewBox="0 0 2629 1835" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +65,7 @@
                             <span id="language">EN</span>
                         </div>
                         <div class="child">
-                            <a href="" class="botton">
+                            <a href="modal.html" rel="modal:open" class="botton link-modal">
                                 ОСТАВИТЬ ЗАЯВКУ
                             </a>
                         </div>
@@ -250,6 +252,7 @@
     <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
     <script src="js/lib/tilt.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="js/lib/wow.min.js"></script>
     <script>
         "use strict";
@@ -286,5 +289,16 @@
             }, 1000);
             return false;
         });
+
+        $('.link-modal').click(function(event) {
+            event.preventDefault();
+            this.blur(); // Manually remove focus from clicked link.
+            $.get(this.href, function(html) {
+                $(html).appendTo('body').modal();
+            });
+        });
+
     </script>
-</body></html>
+</body>
+
+</html>

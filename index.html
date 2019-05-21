@@ -294,15 +294,16 @@
             }, 1000);
             return false;
         });
-
+        $('.jquery-modal').click(function() {
+            $('.blur').removeClass('active');
+        });
+        $('.blocker').click(function() {
+            $('.blur').removeClass('active');
+        });
         $('.link-modal').click(function(event) {
             $('.blur').hasClass("active") ? $('.blur').removeClass('active') : $('.blur').addClass('active');
-            $('.blocker').click(function() {
-                $('.blur').hasClass("active") ? $('.blur').removeClass('active') : $('.blur').addClass('active');
-            });
-            $('.close-modal').click(function() {
-                $('.blur').hasClass("active") ? $('.blur').removeClass('active') : $('.blur').addClass('active');
-            });
+
+
 
             event.preventDefault();
             this.blur(); // Manually remove focus from clicked link.

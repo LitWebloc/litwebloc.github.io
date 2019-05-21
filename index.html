@@ -12,6 +12,7 @@
 </head>
 
 <body>
+   <span class="blur">
     <div class="revers">
         <p>Переверните устройство вертикально</p><img height="30" src="/img/icon/vertically.svg" alt="">
     </div>
@@ -248,6 +249,7 @@
             </div>
         </div>
     </footer>
+    </span>
     <script src="js/lib/jquery.js"></script>
     <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
     <script src="js/lib/tilt.js"></script>
@@ -291,6 +293,7 @@
         });
 
         $('.link-modal').click(function(event) {
+            $('.blur').hasClass("active") ? $('.blur').removeClass('active') : $('.blur').addClass('active');
             event.preventDefault();
             this.blur(); // Manually remove focus from clicked link.
             $.get(this.href, function(html) {

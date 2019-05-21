@@ -30,51 +30,53 @@
 
         </div>
     </div>
-    <section class="pagefirst">
-        <header>
-            <div class="conteiner">
-                <div class="row">
-                    <div class="logo">
-                        <img src="img/logo.svg" alt="">
-                    </div>
-                    <nav id="menu">
-                        <a href="#!" class="">Стоимость услуг
-                            <span class="wiggle"></span>
-                        </a>
-                        <a href="#!" class="">Портфолио
-                            <span class="wiggle"></span>
-                        </a>
-                        <a href="#!" class="">О нас
-                            <span class="wiggle"></span>
-                        </a>
-                        <a href="#!" class="">Отзывы
-                            <span class="wiggle"></span>
-                        </a>
-                    </nav>
-                    <div class="communication">
-                        <div class="nav_mob">
-                            <span class="n1"></span>
-                            <span class="n2"></span>
-                            <span class="n3"></span>
+
+  
+        <section class="pagefirst">
+            <header>
+                <div class="conteiner">
+                    <div class="row">
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="">
                         </div>
-                        <div class="child">
-                            <i class="phone">
-                                <img src="img/icon/phone.svg" alt="phone">
-                            </i>
-                        </div>
-                        <div class="child">
-                            <span id="language">EN</span>
-                        </div>
-                        <div class="child">
-                            <a href="/modal.html" class="botton link-modal">
-                                ОСТАВИТЬ ЗАЯВКУ
+                        <nav id="menu">
+                            <a href="#!" class="">Стоимость услуг
+                                <span class="wiggle"></span>
                             </a>
+                            <a href="#!" class="">Портфолио
+                                <span class="wiggle"></span>
+                            </a>
+                            <a href="#!" class="">О нас
+                                <span class="wiggle"></span>
+                            </a>
+                            <a href="#!" class="">Отзывы
+                                <span class="wiggle"></span>
+                            </a>
+                        </nav>
+                        <div class="communication">
+                            <div class="nav_mob">
+                                <span class="n1"></span>
+                                <span class="n2"></span>
+                                <span class="n3"></span>
+                            </div>
+                            <div class="child">
+                                <i class="phone">
+                                    <img src="img/icon/phone.svg" alt="phone">
+                                </i>
+                            </div>
+                            <div class="child">
+                                <span id="language">EN</span>
+                            </div>
+                            <div class="child">
+                                <a href="#ex1" data-modal class="botton link-modal">
+                                    ОСТАВИТЬ ЗАЯВКУ
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <div class="blur">
+            </header>
+              <div class="blur">
             <div class="conteiner fadeBox">
                 <div class="row flex">
                     <div class="left-p">
@@ -136,9 +138,9 @@
                     </a>
                 </span>
             </div>
-        </div>
-    </section>
-    <div class="blur">
+            </div>
+        </section>
+          <div class="blur">
         <section class="page_bg">
             <div class="conteiner">
                 <div class="row description flex center wrap">
@@ -253,6 +255,10 @@
             </div>
         </footer>
     </div>
+    <div id="ex1" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" rel="modal:close">Close</a>
+    </div>
     <script src="js/lib/jquery.js"></script>
     <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
     <script src="js/lib/tilt.js"></script>
@@ -288,35 +294,28 @@
         new WOW().init();
 
         let $page = $('html, body');
-        $('a[href*="#"]').click(function() {
+        $('.arrow_down a[href*="#"]').click(function() {
             $page.animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 1000);
             return false;
         });
-        //        $('.jquery-modal').click(function() {
-        //            $('.blur').removeClass('active');
-        //        });
-        //        $('.blocker').click(function() {
-        //            $('.blur').removeClass('active');
-        //        });
+
         $('.modal').on($.modal.BLOCK, function(event) {
             $('.blur').addClass('active');
+            
+            $('header').addClass('active');
         });
         $('.modal').on($.modal.CLOSE, function(event) {
             $('.blur').removeClass('active');
+            
+            $('header').removeClass('active');
         });
-                $('.link-modal').click(function(event) {
-        //            $('.blur').hasClass("active") ? $('.blur').removeClass('active') : $('.blur').addClass('active');
-
-
-
-        event.preventDefault();
-        this.blur(); // Manually remove focus from clicked link.
-        $.get(this.href, function(html) {
-        $(html).appendTo('body').modal();
+        $('a[data-modal]').click(function(event) {
+            $(this).modal();
+            return false;
         });
-        });
+
 
     </script>
 </body>

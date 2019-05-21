@@ -375,7 +375,7 @@ span.h1.shadow {
     position: absolute;
     left: 50%;
     z-index: 10;
-    top: 170%;
+    top: calc(100vh - 130px);
 
     a {
         animation: arrow_down 1.3s infinite ease-in-out;
@@ -755,7 +755,13 @@ footer {
 .revers {
     display: none;
 }
-
+.blur, header.navFixed, header.navFixed2{
+    transition: 1s;
+    &.active{
+        filter: blur(3px);
+        transform: scale(1.006);
+    }
+}
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -979,13 +985,7 @@ footer {
     }
 
 }
-.blur{
-    transition: 1s;
-    &.active{
-        filter: blur(3px) contrast(.8)
-brightness(.8);
-    }
-}
+
 @media (max-height: 450px) {
     .revers {
         display: flex;

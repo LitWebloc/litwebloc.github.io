@@ -981,8 +981,9 @@ footer {
 }
 .blur{
     transition: 1s;
-    .active{
-        filter: blur(3px) contrast(.8) brightness(.8);
+    &.active{
+        filter: blur(3px) contrast(.8)
+brightness(.8);
     }
 }
 @media (max-height: 450px) {

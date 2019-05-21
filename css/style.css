@@ -407,9 +407,9 @@ footer .contact a:first-child { margin-left: 0; }
 /* line 982, ../scss/_design.scss */
 .blur { transition: 1s; }
 /* line 984, ../scss/_design.scss */
-.blur .active { filter: blur(3px) contrast(0.8) brightness(0.8); }
+.blur.active { filter: blur(3px) contrast(0.8) brightness(0.8); }
 
-@media (max-height: 450px) { /* line 989, ../scss/_design.scss */
+@media (max-height: 450px) { /* line 990, ../scss/_design.scss */
   .revers { display: flex; justify-content: center; align-items: center; position: fixed; top: 0; bottom: 0; right: 0; left: 0; z-index: 9999; background: black; color: white; }
-  /* line 1002, ../scss/_design.scss */
+  /* line 1003, ../scss/_design.scss */
   .revers p { margin-right: 15px; } }

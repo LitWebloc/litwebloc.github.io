@@ -18,6 +18,13 @@ a {
     }
 }
 
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
 div,
 a,
 section,
@@ -37,7 +44,8 @@ hr {
     border-bottom: 1px solid #B3B1B7;
 }
 
-a.botton {
+a.button,
+button {
     color: #fff;
     display: block;
     text-decoration: none;
@@ -170,7 +178,7 @@ header {
     .communication {
         .child {
             display: inline-block;
-            margin-left: 40px;
+            margin-left: 25px;
 
             img {
                 width: 13px;
@@ -658,26 +666,18 @@ section .content {
 
 .manprice {
     margin-bottom: 100px;
-    width: 32vw;
+    width: 28vw;
     position: relative;
     z-index: 1;
 }
 
 button {
-    color: #fff;
     display: block;
-    text-decoration: none;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 12px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     padding: 12px 57px;
-    background: linear-gradient(90deg, #F39A4A 0%, #F69173 100%);
-    box-shadow: 0px 0px 10px rgba(246, 145, 115, 0.8);
-    transition: .6s ease-out;
     border: none;
     margin: 0 auto;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .line.white {
@@ -722,6 +722,34 @@ button {
     padding-top: 50px;
 }
 
+.modal {
+    max-width: 1300px;
+    z-index: 999999;
+
+    .top-footer {
+        background: white;
+    }
+
+    .conteiner .row {
+        padding: 0;
+    }
+
+    .image.contact {
+        bottom: 0;
+        left: -15px;
+    }
+
+    .line.black {
+        margin-bottom: 60px;
+    }
+
+    .contact a {
+        color: black;
+        margin-right: 25px;
+        font-weight: bold;
+    }
+}
+
 .image.contact {
     position: relative;
     bottom: -90px;
@@ -755,13 +783,30 @@ footer {
 .revers {
     display: none;
 }
-.blur, header.navFixed, header.navFixed2{
+
+.blur,
+header.navFixed,
+header.navFixed2 {
     transition: 1s;
-    &.active{
+
+    &.active {
         filter: blur(3px);
         transform: scale(1.006);
     }
 }
+
+.phone {
+    img {
+        width: 14px;
+        margin-right: 5px;
+    }
+}
+
+.blocker {
+    background: none;
+    z-index: 99999;
+}
+
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -832,6 +877,12 @@ footer {
 @media (max-width: 770px) {
     .onload .onload_logo svg {
         width: 13vw;
+    }
+
+    .arrow_down {
+        top: calc(100vh - 150px);
+        left: calc(50% - 11px);
+
     }
 
     header .conteiner .row {
@@ -959,7 +1010,9 @@ footer {
     }
 
     .manprice {
-        width: 66vw;
+        width: 50vw;
+        margin-bottom: 50px;
+        margin-top: 20px;
     }
 
     .box-arrow-link span {
@@ -978,13 +1031,28 @@ footer {
 
     }
 
-    .footer .contact,
+
     .price,
     .line.white {
         display: none;
     }
 
+    p.links {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    p.links a {
+        width: calc(50% - 30px);
+    }
+
+    .row.flex.footer {
+        flex-wrap: wrap;
+    }
 }
+
+
 
 @media (max-height: 450px) {
     .revers {

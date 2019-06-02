@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Pattaya&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i&subset=cyrillic');
+//var color
+$fspan: 'Pattaya';
+$fs: 'Roboto';
+$color: #3B5B51;
+$color2: #345047;
+$color_home_shadow: #000;
+$color_button: linear-gradient(90deg, #F39A4A 0%, #F69173 100%);
+$color_button_revers: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
+$footer_bg: #E5E5E5;
+@mixin tn() {
+    transition: .6s ease-out;
+}
+
+$h3: 36px;
+$h4: 24px;
+
+.fadeBox {
+    transition: 1s;
+    height: 50%;
+
+    &.fade {
+        opacity: 0;
+        transform: scale(.8);
+    }
+}
+
+.h2 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+.h3{
+   font-size: $h3; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.h4{
+   font-size: $h4; 
+    text-transform: uppercase;
+    font-weight: bold;
+}

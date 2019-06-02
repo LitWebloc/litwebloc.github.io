@@ -434,12 +434,12 @@ footer .contact a:first-child { margin-left: 0; }
   /* line 1035, ../scss/_design.scss */
   .price, .line.white { display: none; }
   /* line 1040, ../scss/_design.scss */
-  p.links { display: flex; flex-wrap: wrap; width: 100%; }
-  /* line 1046, ../scss/_design.scss */
-  p.links a { width: calc(50% - 30px); }
-  /* line 1050, ../scss/_design.scss */
+  p.links { display: flex; flex-wrap: wrap; }
+  /* line 1045, ../scss/_design.scss */
+  p.links a { margin-right: 15px; }
+  /* line 1049, ../scss/_design.scss */
   .row.flex.footer { flex-wrap: wrap; } }
-@media (max-height: 450px) { /* line 1058, ../scss/_design.scss */
+@media (max-height: 450px) { /* line 1057, ../scss/_design.scss */
   .revers { display: flex; justify-content: center; align-items: center; position: fixed; top: 0; bottom: 0; right: 0; left: 0; z-index: 9999; background: black; color: white; }
-  /* line 1071, ../scss/_design.scss */
+  /* line 1070, ../scss/_design.scss */
   .revers p { margin-right: 15px; } }

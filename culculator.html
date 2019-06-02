@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/lib/jquery.js"></script>
+    <script>
+
+    </script>
+    <style>
+        .cul {
+            display: inline-block;
+                position: relative;
+        }
+
+        .cul .todo__state {
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: 0;
+        }
+
+        .cul .c {
+            width: 185px;
+    height: 120px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url() bottom no-repeat / cover;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+            cursor: pointer;
+    justify-content: center;
+            transition: 1s;
+                color: white;
+            
+        }
+
+        .cul .todo__state:checked ~ .c {
+            box-shadow: 0 0 0 2px #000;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <label class="cul"><input type="checkbox" class="todo__state">
+        <div class="c">
+            <p>SEO</p>
+        </div>
+    </label>
+
+</body>
+
+</html>

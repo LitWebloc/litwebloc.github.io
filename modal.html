@@ -1,3 +1,26 @@
-<div class="modal">
-    <p>тут модальное окно</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!--
+<link rel="stylesheet" type="text/css" href="tmp.css" />
+-->
+<style type="text/css">
+</style>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<div class="inline">13</div>
+<div class="inline">1.56</div>
+<div class="inline">12.45</div>
+<div class="inline">4</div>
+<script>
+var myArray = [];
+$('div').each(function (i){
+    myArray[i]=$(this).text();
+});
+alert(myArray);
+</script>
+</body>
+</html>

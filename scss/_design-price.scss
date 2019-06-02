@@ -13,7 +13,7 @@ a {
     width: 15%;
 
     img {
-        width: 80%;
+        width: 90%;
         margin-top: 2%;
     }
 }
@@ -44,10 +44,18 @@ hr {
     border-bottom: 1px solid #B3B1B7;
 }
 
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
 a.button,
 button {
     color: #fff;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     font-weight: 500;
     line-height: normal;
@@ -84,7 +92,8 @@ b,
 a,
 small,
 span,
-strong {
+strong,
+div {
     font-family: $fs, sans-serif;
 }
 
@@ -280,21 +289,19 @@ header {
 .page_bg_2 {
     background: $color2;
     overflow: hidden;
-
-    .content {
-        margin: 15vh auto 0;
-    }
 }
 
 div.h1 {
     position: absolute;
-    margin-left: calc(-11vw - 8vw);
-    margin-top: -5%;
+    margin-left: calc(-10vw - 7vw);
+    margin-top: -2%;
+    line-height: .9;
+    ;
 }
 
 span.h1 {
     font-family: $fspan, sans-serif;
-    font-size: 8vw;
+    font-size: 7vw;
     transform: rotate(-15deg);
     position: absolute;
     z-index: 3;
@@ -423,7 +430,6 @@ svg.arrow_down_top {
 
     .description-body {
         width: 100%;
-        text-align: center;
 
         h2 {
             font-size: 36px;
@@ -648,29 +654,6 @@ section .content {
     height: 100%;
 }
 
-.ledge-title {
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    z-index: 2;
-}
-
-.price {
-    color: $color !important;
-    position: absolute;
-    top: calc(-46vw + 20vw);
-    font-size: 20vw;
-    left: calc(32vw - 20vw);
-    font-weight: bold;
-    transition: transform .1s linear;
-}
-
-.manprice {
-    margin-bottom: 100px;
-    width: 28vw;
-    position: relative;
-    z-index: 1;
-}
-
 button {
     display: block;
     padding: 12px 57px;
@@ -807,6 +790,127 @@ header.navFixed2 {
     z-index: 99999;
 }
 
+.culculator {
+    color: white;
+}
+
+.services {
+    transition: 1s;
+    overflow: hidden;
+    display: block;
+    padding-left: 5px;
+}
+
+.services-list {
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin: 10px 0;
+    margin-right: 30px;
+}
+
+.services-list .services-check {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.services-list .services-content {
+    width: calc(185px - 40px);
+    height: 120px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 22px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 1s;
+
+    &:hover {
+        box-shadow: 0 0 0 2px #c7c7c7;
+    }
+
+}
+
+.culculator-description {
+    p {
+        color: #C4C4C4;
+        font-size: 14px;
+    }
+}
+
+.culculator-description,
+.currency {
+    width: 49%;
+}
+
+.services-list .services-check:checked ~ .services-content {
+    box-shadow: 0 0 0 5px #fff;
+
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    span {
+        display: block;
+        background: url("../img/icon/currency.svg") center no-repeat / cover;
+        text-align: center;
+        position: relative;
+
+        p {
+            width: 40px;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+
+}
+
+#the-cost {
+    font-weight: bold;
+
+    a.button {
+        padding: 14px 65px;
+    }
+}
+
+#top-the-cost {
+    margin-top: 44px;
+    margin-bottom: 34px;
+}
+
+#dev-site {
+    margin-right: 50px;
+}
+
+#total-cost {
+    margin-bottom: 40px;
+}
+
+.culculator {
+    margin-top: 200px !important;
+}
+
+.culculator-description .h4 {
+    margin-top: 25px;
+}
+
+input.services-check[disabled] ~ div {
+    opacity: 0.5;
+    background: #3b5b51;
+}
+
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -821,6 +925,7 @@ header.navFixed2 {
     .left-p,
     .right-p {
         margin-top: 25vh;
+        margin-left: auto;
     }
 
     div.h1 {

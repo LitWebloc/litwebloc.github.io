@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/lib/animate.min.css">
-    <link media="" rel="stylesheet" href="css/style.css">
+    <link media="" rel="stylesheet" href="css/style-price.css">
     <title>Document</title>
 </head>
 
@@ -18,6 +17,7 @@
     </div>
     <div class="onload">
         <div class="onload_logo">
+
             <svg width="2629" height="1835" viewBox="0 0 2629 1835" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1122.79 108.182H1426.26L853.373 1162.67L853.35 1162.71L853.331 1162.76L572.776 1823.62L716.521 895.529L1122.79 108.182Z" fill="white" stroke="white" stroke-width="30" />
                 <path d="M714.41 895.219L573.666 1170.45L1.67422 108.182H305.15L714.41 895.219Z" fill="white" stroke="white" stroke-width="30" />
@@ -37,7 +37,7 @@
             <div class="conteiner">
                 <div class="row">
                     <div class="logo">
-                        <img src="img/logo.svg" alt="">
+                        <a href="/"><img src="img/logo.svg" alt=""></a>
                     </div>
                     <nav id="menu">
                         <a href="#!" class="">Стоимость услуг
@@ -88,17 +88,15 @@
                     </div>
 -->
                         <div class="">
-                            <p class="h3 wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">РАЗРАБОТКА<br>
-                                ДИЗАЙН<br>
-                                МАРКЕТИНГ</p>
+                            <p class="h3 wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">СТОЙМОСТЬ<br>САЙТA ОТ 75$</p>
                         </div>
                     </div>
                     <div class="homeimg js-tilt">
                         <!--<img src="img/characters/homeimg2.png" alt="" class="shadow">-->
-                        <img class="" src="img/characters/homeimg2.png" alt="">
+                        <img class="" src="img/characters/dengi.png" alt="">
                         <div class="h1">
-                            <span class="h1 shadow">Yoursite.pro</span>
-                            <span class="h1">Yoursite.pro</span>
+                            <span class="h1 shadow">Расчитать стоймость</span>
+                            <span class="h1">Расчитать стоймость</span>
                         </div>
                     </div>
                     <div class="right-p">
@@ -143,7 +141,7 @@
     <div class="blur">
         <section class="page_bg">
             <div class="conteiner">
-                <div class="row description flex center wrap">
+                <div class="row description flex wrap">
                     <div class="description-title">
                         <!--                  <img src="img/icon/line_long.svg" alt="line_long">-->
                         <div class="line white"></div>
@@ -152,6 +150,180 @@
                     <div class="description-body fadeBoxRecent">
                         <h2>Скороть загрузки сайта, дизайн и удобство интерфейса</h2>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="page_bg">
+            <div class="conteiner">
+                <div class="row culculator flex wrap">
+                    <from style="width: 100%;">
+                        <div class="flex wrap">
+                            <div class="culculator-description">
+                                <div class="h3">Выберите что вам нужно</div>
+                                <p>Есть возможность комбенировать услуги</p>
+                            </div>
+                            <div class="currency">
+                                Выберите валюту <span>
+                                    <p>$</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services services-head">
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/site.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" value="20" class="services-check site" data-change="dev-site">
+                                    <div class="services-content">
+                                        <p>Создание сайта</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/design.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" value="20" class="services-check design" data-change="dev-design">
+                                    <div class="services-content">
+                                        <p>Дизайн</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/add.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" value="3" class="services-check add" data-change="add-dev">
+                                    <div class="services-content">
+                                        <p>Дополнительнае услуги</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="services dev-design hide">
+                        <div class="culculator-description">
+                            <div class="h4">Выберите что вам нужно</div>
+                            <p>Есть возможность комбенировать услуги</p>
+                        </div>
+                        <div class="">
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="1" class="services-check">
+                                    <div class="services-content">
+                                        <p>Создание сайта</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="30" class="services-check">
+                                    <div class="services-content">
+                                        <p>SEO</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="60" class="services-check">
+                                    <div class="services-content">
+                                        <p>Реклама</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="1" class="services-check">
+                                    <div class="services-content">
+                                        <p>Дополнительнае услуги</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="services dev-site hide">
+                        <div class="culculator-description">
+                            <div class="h4">Выберите что вам нужно</div>
+                            <p>Есть возможность комбенировать услуги</p>
+                        </div>
+                        <div class="">
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="1" class="services-check">
+                                    <div class="services-content">
+                                        <p>Создание сайта</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="30" class="services-check">
+                                    <div class="services-content">
+                                        <p>SEO</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="60" class="services-check">
+                                    <div class="services-content">
+                                        <p>Реклама</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="1" class="services-check">
+                                    <div class="services-content">
+                                        <p>Дополнительнае услуги</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="services add-dev hide">
+                        <div class="culculator-description">
+                            <div class="h4">Выберите что вам нужно</div>
+                            <p>Есть возможность комбенировать услуги</p>
+                        </div>
+                        <div class="">
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="1" class="services-check">
+                                    <div class="services-content">
+                                        <p>Создание сайта</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="30" class="services-check">
+                                    <div class="services-content">
+                                        <p>SEO</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="60" class="services-check">
+                                    <div class="services-content">
+                                        <p>Реклама</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                <label>
+                                    <input type="checkbox" name="contact" value="1" class="services-check">
+                                    <div class="services-content">
+                                        <p>Дополнительнае услуги</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="the-cost">
+                            <div id="top-the-cost">
+                                <span id="dev-site" class="hide">Разработка сайта: от <span>0</span>$</span>
+                                <span id="dev-design" class="hide">Дизайн: от <span>0</span>$</span>
+                                <span id="add-dev" class="hide">Доп. услуги по разработке сайта: от <span>0</span>$</span>
+                            </div>
+                            <div id="total-cost">Общая стоимость: от <span>0</span>$</div>
+                            <a href="#!" class="button link-modal">Заказать</a>
+                        </div>
+                    </from>
                 </div>
             </div>
         </section>
@@ -190,23 +362,6 @@
                         <img src="img/twowork.svg" alt="">
                     </a>
                 </div>
-            </div>
-        </section>
-        <section class="page_bg_2">
-            <div class="content">
-                <div class="ledge-title">
-                    <p class="price-title">Создание сайта начинается от 75$</p>
-                    <p class="h2">посмотреть<br>цены</p>
-                </div>
-                <div class="ledge-body">
-                    <a href="#!" class="box-arrow-link">
-                        <span class="box-arrow-1"><img src="img/icon/%E2%86%92.svg" alt=""></span>
-                        <span class="box-text">посмотреть все</span>
-                        <span class="box-arrow-2"><img src="img/icon/%E2%86%92.svg" alt=""></span>
-                    </a>
-                </div>
-                <p class="price">75$</p>
-                <img class="manprice" src="img/characters/manprice.png" alt="">
             </div>
         </section>
         <footer>
@@ -297,7 +452,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="js/lib/wow.min.js"></script>
     <script>
-        $('.description').waypoint(function() {
+        $('#the-cost').waypoint(function() {
             $('.recent_work').hasClass("fade") ? $('.recent_work').removeClass('fade') : $('.recent_work').addClass('fade');
             $('.ledge').hasClass('ledge-deg') ? $('.ledge').removeClass('ledge-deg') : $('.ledge').addClass('ledge-deg');
         });

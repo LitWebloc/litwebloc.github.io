@@ -58,14 +58,16 @@ $('a[data-modal]').click(function (event) {
 $(".services-head .services-check[data-change='dev-site']").change(function () {
     if ($(this).prop("checked") == true) {
         $(".services-head .services-check[data-change='dev-design']").prop("checked", true);
-            
+        $(".services-head .services-check[data-change='add-dev']").prop('disabled', true);
     } else {
         $(".services-head .services-check[data-change='dev-design']").prop("checked", false);
+        $(".services-head .services-check[data-change='add-dev']").prop('disabled', false);
     }
 });
 $(".services-head .services-check[data-change='dev-design']").change(function () {
     if ($(".services-head .services-check[data-change='dev-site']").prop("checked") == true && $(this).prop("checked") == false) {
         $(".services-head .services-check[data-change='dev-site']").prop("checked", false);
+        $(".services-head .services-check[data-change='add-dev']").prop('disabled', false);
     }
 });
 
@@ -77,10 +79,10 @@ $("#top-the-cost .hide").fadeOut(0);
 //Скрывание и появление элементов в калькуляторе
 
 $(".services-head").change(function () {
-let changeHide = [],
-    changedView = [];
-//Переюираем все input внутри .services-head
-$(this).find("input").each(function (i) {
+    let changeHide = [],
+        changedView = [];
+    //Переюираем все input внутри .services-head
+    $(this).find("input").each(function (i) {
         //Если input == checked, то запмсываем в массив changeHide и записываем все input == false в массив changedView
         if ($(this).prop("checked") == true) {
             changeHide[i] = $(this).attr('data-change');
@@ -92,36 +94,36 @@ $(this).find("input").each(function (i) {
 
             for (let i = 0; i < changePrice.length; i++) {
                 if ($(this).prop("checked", true) && $("." + changePrice[i]).hasClass("hide")) {
-                $("." + changePrice[i]).removeClass("hide");
-                $("." + changePrice[i]).css("max-height", "100%");
-//                $("#" + changePrice[i]).removeClass("hide");
-                $("#" + changePrice[i]).fadeIn(500);
+                    $("." + changePrice[i]).removeClass("hide");
+                    $("." + changePrice[i]).css("max-height", "100%");
+                    //                $("#" + changePrice[i]).removeClass("hide");
+                    $("#" + changePrice[i]).fadeIn(500);
+                }
             }
-        }
-    }else {
-    changedView[i] = $(this).attr('data-change');
+        } else {
+            changedView[i] = $(this).attr('data-change');
 
-    let changePrice = changedView.filter(function (el) {
-        return el != null;
+            let changePrice = changedView.filter(function (el) {
+                return el != null;
+            });
+
+            for (let i = 0; i < changePrice.length; i++) {
+                if ($(this).prop("checked", false) && !$("." + changePrice[i]).hasClass("hide")) {
+                    $("." + changePrice[i]).addClass("hide");
+                    $("." + changePrice[i]).css("max-height", "0");
+                    //            $("#" + changePrice[i]).addClass("hide");
+                    $("#" + changePrice[i]).fadeOut(300);
+                    $("." + changePrice[i]).find("input").prop("checked", false);
+                }
+            }
+
+
+        }
+
+
+
+
     });
-
-    for (let i = 0; i < changePrice.length; i++) {
-        if ($(this).prop("checked", false) && !$("." + changePrice[i]).hasClass("hide")) {
-            $("." + changePrice[i]).addClass("hide");
-            $("." + changePrice[i]).css("max-height", "0");
-//            $("#" + changePrice[i]).addClass("hide");
-            $("#" + changePrice[i]).fadeOut(300);
-            $("." + changePrice[i]).find("input").prop("checked", false);
-        }
-    }
-
-
-}
-
-
-
-
-});
 });
 
 

@@ -5,8 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
     <link rel="stylesheet" href="css/lib/animate.min.css">
-    <link media="" rel="stylesheet" href="css/style-price.css">
+    <link rel="stylesheet" href="css/style-price.css">
+    <link media="(max-width: 1000px)" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <style media="(max-width: 1000px)">
+        .swiper-slide {
+            width: 185px;
+            height: 120px;
+            
+        }
+        .services {overflow-x: visible;}
+        .services:first-child{
+            overflow:visible;
+        }
+        .culculator-description, .currency{
+            width: 100%;
+        }
+        .slide-mob-price{
+            overflow: hidden;
+        }
+    </style>
     <title>Document</title>
 </head>
 
@@ -168,151 +187,159 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="services services-head">
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/site.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" value="20" class="services-check site" data-change="dev-site">
-                                    <div class="services-content">
-                                        <p>Создание сайта</p>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/design.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" value="20" class="services-check design" data-change="dev-design">
-                                    <div class="services-content">
-                                        <p>Дизайн</p>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/add.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" value="3" class="services-check add" data-change="add-dev">
-                                    <div class="services-content">
-                                        <p>Дополнительнае услуги</p>
-                                    </div>
-                                </label>
+                        <div class="slide-mob-price">
+                            <div class="swiper-wrapper services services-head">
+                                <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/site.jpg') bottom no-repeat / cover;">
+                                    <label>
+                                        <input type="checkbox" value="20" class="services-check site" data-change="dev-site">
+                                        <div class="services-content">
+                                            <p>Создание сайта</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/design.jpg') bottom no-repeat / cover;">
+                                    <label>
+                                        <input type="checkbox" value="20" class="services-check design" data-change="dev-design">
+                                        <div class="services-content">
+                                            <p>Дизайн</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/add.jpg') bottom no-repeat / cover;">
+                                    <label>
+                                        <input type="checkbox" value="3" class="services-check add" data-change="add-dev">
+                                        <div class="services-content">
+                                            <p>Дополнительнае услуги</p>
+                                        </div>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="services dev-design hide">
-                        <div class="culculator-description">
-                            <div class="h4">Выберите что вам нужно</div>
-                            <p>Есть возможность комбенировать услуги</p>
-                        </div>
-                        <div class="">
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="1" class="services-check">
-                                    <div class="services-content">
-                                        <p>Создание сайта</p>
-                                    </div>
-                                </label>
+                            <div class="culculator-description">
+                                <div class="h4">Выберите что вам нужно</div>
+                                <p>Есть возможность комбенировать услуги</p>
                             </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="30" class="services-check">
-                                    <div class="services-content">
-                                        <p>SEO</p>
+                            <div class="slide-mob-price">
+                                <div class="swiper-wrapper">
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="1" class="services-check">
+                                            <div class="services-content">
+                                                <p>Создание сайта</p>
+                                            </div>
+                                        </label>
                                     </div>
-                                </label>
-                            </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="60" class="services-check">
-                                    <div class="services-content">
-                                        <p>Реклама</p>
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="30" class="services-check">
+                                            <div class="services-content">
+                                                <p>SEO</p>
+                                            </div>
+                                        </label>
                                     </div>
-                                </label>
-                            </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="1" class="services-check">
-                                    <div class="services-content">
-                                        <p>Дополнительнае услуги</p>
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="60" class="services-check">
+                                            <div class="services-content">
+                                                <p>Реклама</p>
+                                            </div>
+                                        </label>
                                     </div>
-                                </label>
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="1" class="services-check">
+                                            <div class="services-content">
+                                                <p>Дополнительнае услуги</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div class="services dev-site hide">
-                        <div class="culculator-description">
-                            <div class="h4">Выберите что вам нужно</div>
-                            <p>Есть возможность комбенировать услуги</p>
-                        </div>
-                        <div class="">
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="1" class="services-check">
-                                    <div class="services-content">
-                                        <p>Создание сайта</p>
-                                    </div>
-                                </label>
+                            <div class="culculator-description">
+                                <div class="h4">Выберите что вам нужно</div>
+                                <p>Есть возможность комбенировать услуги</p>
                             </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="30" class="services-check">
-                                    <div class="services-content">
-                                        <p>SEO</p>
+                            <div class="slide-mob-price">
+                                <div class="swiper-wrapper">
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="1" class="services-check">
+                                            <div class="services-content">
+                                                <p>Создание сайта</p>
+                                            </div>
+                                        </label>
                                     </div>
-                                </label>
-                            </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="60" class="services-check">
-                                    <div class="services-content">
-                                        <p>Реклама</p>
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="30" class="services-check">
+                                            <div class="services-content">
+                                                <p>SEO</p>
+                                            </div>
+                                        </label>
                                     </div>
-                                </label>
-                            </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="1" class="services-check">
-                                    <div class="services-content">
-                                        <p>Дополнительнае услуги</p>
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="60" class="services-check">
+                                            <div class="services-content">
+                                                <p>Реклама</p>
+                                            </div>
+                                        </label>
                                     </div>
-                                </label>
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="1" class="services-check">
+                                            <div class="services-content">
+                                                <p>Дополнительнае услуги</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div class="services add-dev hide">
-                        <div class="culculator-description">
-                            <div class="h4">Выберите что вам нужно</div>
-                            <p>Есть возможность комбенировать услуги</p>
-                        </div>
-                        <div class="">
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="1" class="services-check">
-                                    <div class="services-content">
-                                        <p>Создание сайта</p>
-                                    </div>
-                                </label>
+                            <div class="culculator-description">
+                                <div class="h4">Выберите что вам нужно</div>
+                                <p>Есть возможность комбенировать услуги</p>
                             </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="30" class="services-check">
-                                    <div class="services-content">
-                                        <p>SEO</p>
+                            <div class="slide-mob-price">
+                                <div class="swiper-wrapper">
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="1" class="services-check">
+                                            <div class="services-content">
+                                                <p>Создание сайта</p>
+                                            </div>
+                                        </label>
                                     </div>
-                                </label>
-                            </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="60" class="services-check">
-                                    <div class="services-content">
-                                        <p>Реклама</p>
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="30" class="services-check">
+                                            <div class="services-content">
+                                                <p>SEO</p>
+                                            </div>
+                                        </label>
                                     </div>
-                                </label>
-                            </div>
-                            <div class="services-list" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
-                                <label>
-                                    <input type="checkbox" name="contact" value="1" class="services-check">
-                                    <div class="services-content">
-                                        <p>Дополнительнае услуги</p>
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="60" class="services-check">
+                                            <div class="services-content">
+                                                <p>Реклама</p>
+                                            </div>
+                                        </label>
                                     </div>
-                                </label>
+                                    <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
+                                        <label>
+                                            <input type="checkbox" name="contact" value="1" class="services-check">
+                                            <div class="services-content">
+                                                <p>Дополнительнае услуги</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div id="the-cost">
                             <div id="top-the-cost">
@@ -450,12 +477,26 @@
     <script src="js/lib/tilt.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
     <script src="js/lib/wow.min.js"></script>
     <script>
         $('#the-cost').waypoint(function() {
             $('.recent_work').hasClass("fade") ? $('.recent_work').removeClass('fade') : $('.recent_work').addClass('fade');
             $('.ledge').hasClass('ledge-deg') ? $('.ledge').removeClass('ledge-deg') : $('.ledge').addClass('ledge-deg');
         });
+
+        function Slider() {
+            if ($(window).width() <= 1000) {
+//                $(".slide-mob-price .services-list").addClass("swiper-slide");
+                let swiper = new Swiper('.slide-mob-price', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    freeMode: true,
+                });
+            }
+        }
+        Slider();
 
     </script>
     <script src="js/script.js"></script>

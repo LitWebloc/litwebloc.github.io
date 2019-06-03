@@ -282,12 +282,12 @@ header {
 
 .page_bg {
     background: $color;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .page_bg_2 {
     background: $color2;
-    overflow: auto;
+    overflow: hidden;
 }
 
 div.h1 {
@@ -964,7 +964,9 @@ input.services-check[disabled] ~ div {
         font-size: 18px;
         line-height: 21px;
     }
-
+    .currency{
+        justify-content: flex-start;
+    }
     .footer-text,
     .image.contact,
     .recent_work {

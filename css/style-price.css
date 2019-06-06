@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Pattaya&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i&subset=cyrillic");
-/* line 19, ../scss/_var-price.scss */
+@import url("https://fonts.googleapis.com/css?family=Pattaya&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i&subset=cyrillic");
+/* line 18, ../scss/_var.scss */
 .fadeBox {
   transition: 1s;
   height: 50%;
 }
-/* line 23, ../scss/_var-price.scss */
+/* line 22, ../scss/_var.scss */
 .fadeBox.fade {
   opacity: 0;
   transform: scale(0.8);
 }
 
-/* line 29, ../scss/_var-price.scss */
+/* line 28, ../scss/_var.scss */
 .h2 {
   font-size: 60px;
   font-weight: bold;
@@ -20,14 +22,48 @@
   margin: 0 0 20px;
 }
 
-/* line 36, ../scss/_var-price.scss */
+/* line 35, ../scss/_var.scss */
 .h3 {
   font-size: 36px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 41, ../scss/_var-price.scss */
+/* line 40, ../scss/_var.scss */
+.h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 11, ../scss/_keyframes.scss */
+.fadeBox {
+  transition: 1s;
+  height: 50%;
+}
+/* line 15, ../scss/_keyframes.scss */
+.fadeBox.fade {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* line 21, ../scss/_keyframes.scss */
+.h2 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+/* line 28, ../scss/_keyframes.scss */
+.h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 33, ../scss/_keyframes.scss */
 .h4 {
   font-size: 24px;
   text-transform: uppercase;
@@ -103,29 +139,30 @@
     fill: #fff;
   }
 }
-/* line 1, ../scss/_design-price.scss */
+/* line 4, ../scss/_design-price.scss */
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
-/* line 6, ../scss/_design-price.scss */
+/* line 10, ../scss/_design-price.scss */
 a {
   display: inline-block;
   text-decoration: none;
 }
 
-/* line 11, ../scss/_design-price.scss */
+/* line 15, ../scss/_design-price.scss */
 .logo {
   width: 15%;
 }
-/* line 14, ../scss/_design-price.scss */
+/* line 18, ../scss/_design-price.scss */
 .logo img {
   width: 90%;
   margin-top: 2%;
 }
 
-/* line 20, ../scss/_design-price.scss */
+/* line 24, ../scss/_design-price.scss */
 :active,
 :hover,
 :focus {
@@ -133,7 +170,7 @@ a {
   outline-offset: 0;
 }
 
-/* line 27, ../scss/_design-price.scss */
+/* line 31, ../scss/_design-price.scss */
 div,
 a,
 section,
@@ -144,28 +181,28 @@ h4 {
   position: relative;
 }
 
-/* line 37, ../scss/_design-price.scss */
+/* line 41, ../scss/_design-price.scss */
 section {
   margin: -1px;
 }
 
-/* line 41, ../scss/_design-price.scss */
+/* line 45, ../scss/_design-price.scss */
 hr {
   border: none;
   border-bottom: 1px solid #B3B1B7;
 }
 
-/* line 46, ../scss/_design-price.scss */
+/* line 50, ../scss/_design-price.scss */
 .flex {
   display: flex;
 }
 
-/* line 50, ../scss/_design-price.scss */
+/* line 54, ../scss/_design-price.scss */
 .wrap {
   flex-wrap: wrap;
 }
 
-/* line 54, ../scss/_design-price.scss */
+/* line 58, ../scss/_design-price.scss */
 a.button,
 button {
   color: #fff;
@@ -181,7 +218,7 @@ button {
   box-shadow: 0px 0px 10px rgba(246, 145, 115, 0.8);
   transition: .6s ease-out;
 }
-/* line 69, ../scss/_design-price.scss */
+/* line 73, ../scss/_design-price.scss */
 a.button:hover,
 button:hover {
   background: linear-gradient(90deg, #F69173 0%, #F39A4A 100%);
@@ -189,7 +226,7 @@ button:hover {
   text-shadow: 0 0 15px #ffab91;
 }
 
-/* line 76, ../scss/_design-price.scss */
+/* line 80, ../scss/_design-price.scss */
 h1,
 h2,
 h3,
@@ -213,51 +250,51 @@ div {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 99, ../scss/_design-price.scss */
+/* line 103, ../scss/_design-price.scss */
 p {
   font-size: 16px;
 }
 
-/* line 103, ../scss/_design-price.scss */
+/* line 107, ../scss/_design-price.scss */
 input,
 textarea {
   color: #ccc;
 }
 
-/* line 110, ../scss/_design-price.scss */
+/* line 114, ../scss/_design-price.scss */
 .conteiner .row {
   max-width: 1300px;
   margin: auto;
   padding: 0 40px;
 }
-/* line 115, ../scss/_design-price.scss */
+/* line 119, ../scss/_design-price.scss */
 .conteiner .row.flex {
   display: flex;
   justify-content: space-between;
 }
-/* line 119, ../scss/_design-price.scss */
+/* line 123, ../scss/_design-price.scss */
 .conteiner .row.flex.center {
   justify-content: center;
 }
-/* line 123, ../scss/_design-price.scss */
+/* line 127, ../scss/_design-price.scss */
 .conteiner .row.flex.left {
   justify-content: flex-start;
 }
-/* line 127, ../scss/_design-price.scss */
+/* line 131, ../scss/_design-price.scss */
 .conteiner .row.flex.wrap {
   flex-wrap: wrap;
 }
-/* line 131, ../scss/_design-price.scss */
+/* line 135, ../scss/_design-price.scss */
 .conteiner .row.flex.align-center {
   align-items: center;
 }
 
-/* line 138, ../scss/_design-price.scss */
+/* line 142, ../scss/_design-price.scss */
 small {
   font-size: 11px;
 }
 
-/* line 142, ../scss/_design-price.scss */
+/* line 146, ../scss/_design-price.scss */
 .onload {
   position: fixed;
   background: #3B5B51;
@@ -267,7 +304,7 @@ small {
   right: 0;
   bottom: 0;
 }
-/* line 151, ../scss/_design-price.scss */
+/* line 155, ../scss/_design-price.scss */
 .onload .onload_logo {
   margin: 0;
   position: absolute;
@@ -276,18 +313,18 @@ small {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-/* line 159, ../scss/_design-price.scss */
+/* line 163, ../scss/_design-price.scss */
 .onload .onload_logo svg {
   width: 3vw;
 }
-/* line 162, ../scss/_design-price.scss */
+/* line 166, ../scss/_design-price.scss */
 .onload .onload_logo svg path {
   stroke-dasharray: 2500;
   fill: #fff;
   animation: onload 2s ease-in-out;
 }
 
-/* line 171, ../scss/_design-price.scss */
+/* line 175, ../scss/_design-price.scss */
 header {
   position: fixed;
   z-index: 999;
@@ -297,22 +334,22 @@ header {
   transition: 1s;
   animation: opacity_revers .8s ease-in-out;
 }
-/* line 180, ../scss/_design-price.scss */
+/* line 184, ../scss/_design-price.scss */
 header.navFixed, header.navFixed2 {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 187, ../scss/_design-price.scss */
+/* line 191, ../scss/_design-price.scss */
 header .communication .child {
   display: inline-block;
   margin-left: 25px;
 }
-/* line 191, ../scss/_design-price.scss */
+/* line 195, ../scss/_design-price.scss */
 header .communication .child img {
   width: 13px;
   height: 13px;
   vertical-align: -1px;
 }
-/* line 197, ../scss/_design-price.scss */
+/* line 201, ../scss/_design-price.scss */
 header .communication .child #language {
   font-style: normal;
   font-weight: bold;
@@ -321,7 +358,7 @@ header .communication .child #language {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-/* line 209, ../scss/_design-price.scss */
+/* line 213, ../scss/_design-price.scss */
 header nav a {
   margin-right: 15px;
   color: #fff;
@@ -329,35 +366,35 @@ header nav a {
   font-size: 14px;
   position: relative;
 }
-/* line 216, ../scss/_design-price.scss */
+/* line 220, ../scss/_design-price.scss */
 header nav a:hover span {
   width: 60%;
 }
-/* line 220, ../scss/_design-price.scss */
+/* line 224, ../scss/_design-price.scss */
 header nav a:last-child {
   margin: 0;
 }
-/* line 224, ../scss/_design-price.scss */
+/* line 228, ../scss/_design-price.scss */
 header nav a:nth-child(1) {
   animation: navdown .4s ease-in-out;
 }
-/* line 228, ../scss/_design-price.scss */
+/* line 232, ../scss/_design-price.scss */
 header nav a:nth-child(2) {
   animation: navdown .5s ease-in-out;
 }
-/* line 232, ../scss/_design-price.scss */
+/* line 236, ../scss/_design-price.scss */
 header nav a:nth-child(3) {
   animation: navdown .6s ease-in-out;
 }
-/* line 236, ../scss/_design-price.scss */
+/* line 240, ../scss/_design-price.scss */
 header nav a:nth-child(4) {
   animation: navdown .7s ease-in-out;
 }
-/* line 240, ../scss/_design-price.scss */
+/* line 244, ../scss/_design-price.scss */
 header nav a:nth-child(5) {
   animation: navdown .8s ease-in-out;
 }
-/* line 247, ../scss/_design-price.scss */
+/* line 251, ../scss/_design-price.scss */
 header .wiggle {
   position: absolute;
   bottom: -7px;
@@ -367,7 +404,7 @@ header .wiggle {
   overflow: auto;
   transition: .6s ease-out;
 }
-/* line 257, ../scss/_design-price.scss */
+/* line 261, ../scss/_design-price.scss */
 header .wiggle:before {
   content: '';
   position: absolute;
@@ -377,7 +414,7 @@ header .wiggle:before {
   height: 100%;
   background: url(../img/icon/line.svg) repeat-x center center/7px 3px;
 }
-/* line 268, ../scss/_design-price.scss */
+/* line 272, ../scss/_design-price.scss */
 header .conteiner .row {
   display: flex;
   justify-content: space-between;
@@ -385,26 +422,26 @@ header .conteiner .row {
   height: 76px;
 }
 
-/* line 277, ../scss/_design-price.scss */
+/* line 281, ../scss/_design-price.scss */
 .pagefirst {
   padding-top: 70px;
   background: #3B5B51;
   height: 100vh;
 }
 
-/* line 283, ../scss/_design-price.scss */
+/* line 287, ../scss/_design-price.scss */
 .page_bg {
   background: #3B5B51;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
-/* line 288, ../scss/_design-price.scss */
+/* line 292, ../scss/_design-price.scss */
 .page_bg_2 {
   background: #345047;
   overflow: hidden;
 }
 
-/* line 293, ../scss/_design-price.scss */
+/* line 297, ../scss/_design-price.scss */
 div.h1 {
   position: absolute;
   margin-left: calc(-10vw - 7vw);
@@ -412,7 +449,7 @@ div.h1 {
   line-height: .9;
 }
 
-/* line 301, ../scss/_design-price.scss */
+/* line 305, ../scss/_design-price.scss */
 span.h1 {
   font-family: "Pattaya", sans-serif;
   font-size: 7vw;
@@ -423,7 +460,7 @@ span.h1 {
   margin-top: 20px;
 }
 
-/* line 311, ../scss/_design-price.scss */
+/* line 315, ../scss/_design-price.scss */
 span.h1.shadow {
   color: #000;
   position: absolute;
@@ -431,7 +468,7 @@ span.h1.shadow {
   z-index: 3;
 }
 
-/* line 318, ../scss/_design-price.scss */
+/* line 322, ../scss/_design-price.scss */
 .homeimg {
   position: absolute;
   display: flex;
@@ -442,7 +479,7 @@ span.h1.shadow {
   width: calc(100% - 80px);
   max-width: 1300px;
 }
-/* line 328, ../scss/_design-price.scss */
+/* line 332, ../scss/_design-price.scss */
 .homeimg img {
   max-width: 50%;
   margin-top: 0;
@@ -450,12 +487,12 @@ span.h1.shadow {
   transform: translateZ(20px);
   z-index: 1;
 }
-/* line 336, ../scss/_design-price.scss */
+/* line 340, ../scss/_design-price.scss */
 .homeimg img.shadow {
   margin: 0 25px;
 }
 
-/* line 341, ../scss/_design-price.scss */
+/* line 345, ../scss/_design-price.scss */
 .left-p,
 .right-p {
   display: flex;
@@ -463,7 +500,7 @@ span.h1.shadow {
   margin-top: 100px;
   transition: 1s;
 }
-/* line 348, ../scss/_design-price.scss */
+/* line 352, ../scss/_design-price.scss */
 .left-p p,
 .right-p p {
   margin: 0;
@@ -474,55 +511,55 @@ span.h1.shadow {
   transform: rotate(-15deg);
   font-size: 13px;
 }
-/* line 358, ../scss/_design-price.scss */
+/* line 362, ../scss/_design-price.scss */
 .left-p .h3,
 .right-p .h3 {
   font-size: 36px;
 }
 
-/* line 364, ../scss/_design-price.scss */
+/* line 368, ../scss/_design-price.scss */
 .left-p .shadow {
   position: absolute;
   margin: -4px -4px 0;
 }
-/* line 368, ../scss/_design-price.scss */
+/* line 372, ../scss/_design-price.scss */
 .left-p .shadow p {
   color: #000;
 }
 
-/* line 374, ../scss/_design-price.scss */
+/* line 378, ../scss/_design-price.scss */
 .right-p {
   margin-right: 50px;
   transform: rotate(-4deg);
 }
-/* line 378, ../scss/_design-price.scss */
+/* line 382, ../scss/_design-price.scss */
 .right-p .shadow {
   position: absolute;
   margin: -4px 4px 0;
 }
-/* line 382, ../scss/_design-price.scss */
+/* line 386, ../scss/_design-price.scss */
 .right-p .shadow p {
   color: #000;
 }
 
-/* line 388, ../scss/_design-price.scss */
+/* line 392, ../scss/_design-price.scss */
 .arrow_down {
   position: absolute;
   left: 50%;
   z-index: 10;
   top: calc(100vh - 130px);
 }
-/* line 394, ../scss/_design-price.scss */
+/* line 398, ../scss/_design-price.scss */
 .arrow_down a {
   animation: arrow_down 1.3s infinite ease-in-out;
 }
 
-/* line 399, ../scss/_design-price.scss */
+/* line 403, ../scss/_design-price.scss */
 svg.arrow_down_top {
   position: absolute;
 }
 
-/* line 403, ../scss/_design-price.scss */
+/* line 407, ../scss/_design-price.scss */
 .description {
   width: 50%;
   text-transform: uppercase;
@@ -530,37 +567,37 @@ svg.arrow_down_top {
   padding-bottom: 100px;
   transition: 1s;
 }
-/* line 410, ../scss/_design-price.scss */
+/* line 414, ../scss/_design-price.scss */
 .description.fade {
   opacity: 0;
 }
-/* line 414, ../scss/_design-price.scss */
+/* line 418, ../scss/_design-price.scss */
 .description .description-title {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 15px;
 }
-/* line 420, ../scss/_design-price.scss */
+/* line 424, ../scss/_design-price.scss */
 .description .description-title h1 {
   font-size: 24px;
   margin: 0;
 }
-/* line 425, ../scss/_design-price.scss */
+/* line 429, ../scss/_design-price.scss */
 .description .description-title img {
   margin-right: 17px;
 }
-/* line 430, ../scss/_design-price.scss */
+/* line 434, ../scss/_design-price.scss */
 .description .description-body {
   width: 100%;
 }
-/* line 433, ../scss/_design-price.scss */
+/* line 437, ../scss/_design-price.scss */
 .description .description-body h2 {
   font-size: 36px;
   margin: 0;
 }
 
-/* line 440, ../scss/_design-price.scss */
+/* line 444, ../scss/_design-price.scss */
 .ledge {
   position: absolute;
   top: 50%;
@@ -573,7 +610,7 @@ svg.arrow_down_top {
   transition: 0.55s cubic-bezier(0.62, 0.02, 0.34, 1);
 }
 
-/* line 452, ../scss/_design-price.scss */
+/* line 456, ../scss/_design-price.scss */
 .ledge-deg::before {
   -webkit-transform: rotate(21deg);
   -moz-transform: rotate(21deg);
@@ -582,7 +619,7 @@ svg.arrow_down_top {
   transform: rotate(21deg);
 }
 
-/* line 460, ../scss/_design-price.scss */
+/* line 464, ../scss/_design-price.scss */
 .ledge > div,
 .ledge::before {
   background: #345047;
@@ -603,77 +640,77 @@ svg.arrow_down_top {
   margin-left: -153vw;
 }
 
-/* line 480, ../scss/_design-price.scss */
+/* line 484, ../scss/_design-price.scss */
 .height-100 {
   height: 100vh;
 }
 
-/* line 484, ../scss/_design-price.scss */
+/* line 488, ../scss/_design-price.scss */
 section .content {
   margin: 40vh auto 0;
   width: 60.5%;
   text-align: center;
 }
-/* line 489, ../scss/_design-price.scss */
+/* line 493, ../scss/_design-price.scss */
 section .content .shadow {
   position: absolute;
   margin: .4vw 0 0;
 }
-/* line 493, ../scss/_design-price.scss */
+/* line 497, ../scss/_design-price.scss */
 section .content .shadow p {
   color: #000;
 }
-/* line 498, ../scss/_design-price.scss */
+/* line 502, ../scss/_design-price.scss */
 section .content p {
   color: #fff;
 }
 
-/* line 503, ../scss/_design-price.scss */
+/* line 507, ../scss/_design-price.scss */
 .box-arrow-link {
   display: inline;
   z-index: 2;
 }
-/* line 507, ../scss/_design-price.scss */
+/* line 511, ../scss/_design-price.scss */
 .box-arrow-link .box-arrow-1 {
   transition: .5s;
   opacity: 0;
   padding: 10px 0;
 }
-/* line 512, ../scss/_design-price.scss */
+/* line 516, ../scss/_design-price.scss */
 .box-arrow-link .box-arrow-1 img {
   transition: 1s;
   width: 0;
 }
-/* line 518, ../scss/_design-price.scss */
+/* line 522, ../scss/_design-price.scss */
 .box-arrow-link:hover .box-arrow-1 {
   opacity: 1;
   padding: 10px;
 }
-/* line 523, ../scss/_design-price.scss */
+/* line 527, ../scss/_design-price.scss */
 .box-arrow-link:hover .box-arrow-1 img {
   width: 30px;
 }
-/* line 528, ../scss/_design-price.scss */
+/* line 532, ../scss/_design-price.scss */
 .box-arrow-link .box-arrow-2 {
   opacity: 1;
   transition: .5s;
 }
-/* line 532, ../scss/_design-price.scss */
+/* line 536, ../scss/_design-price.scss */
 .box-arrow-link .box-arrow-2 img {
   transition: 1s;
   width: 30px;
 }
-/* line 538, ../scss/_design-price.scss */
+/* line 542, ../scss/_design-price.scss */
 .box-arrow-link:hover .box-arrow-2 {
   opacity: 0;
   padding: 10px 0;
 }
-/* line 543, ../scss/_design-price.scss */
+/* line 547, ../scss/_design-price.scss */
 .box-arrow-link:hover .box-arrow-2 img {
   width: 0;
 }
 
-/* line 549, ../scss/_design-price.scss */
+/* line 553, ../scss/_design-price.scss */
 .box-arrow-link span {
   padding: 10px;
   text-transform: uppercase;
@@ -682,7 +719,7 @@ section .content p {
   margin: -3px;
 }
 
-/* line 557, ../scss/_design-price.scss */
+/* line 561, ../scss/_design-price.scss */
 .box-arrow-link span img {
   width: 30px;
   height: 8px;
@@ -690,59 +727,59 @@ section .content p {
   transition: 1s;
 }
 
-/* line 564, ../scss/_design-price.scss */
+/* line 568, ../scss/_design-price.scss */
 .box-arrow-1 {
   width: 0px;
 }
 
-/* line 568, ../scss/_design-price.scss */
+/* line 572, ../scss/_design-price.scss */
 .recent_work {
   width: 242px;
   height: 242px;
   position: absolute;
   border-radius: 100%;
-  overflow: auto;
+  overflow: hidden;
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   opacity: 0;
   transition: .3s;
 }
-/* line 580, ../scss/_design-price.scss */
+/* line 584, ../scss/_design-price.scss */
 .recent_work:hover .recent_info {
   opacity: 1;
 }
-/* line 584, ../scss/_design-price.scss */
+/* line 588, ../scss/_design-price.scss */
 .recent_work.fade {
   opacity: 1;
   transition: .3s .5s;
 }
-/* line 589, ../scss/_design-price.scss */
+/* line 593, ../scss/_design-price.scss */
 .recent_work:hover .bg-black {
   opacity: 1;
   height: 100%;
   top: 0;
 }
-/* line 595, ../scss/_design-price.scss */
+/* line 599, ../scss/_design-price.scss */
 .recent_work img {
   transform: scale(1.4);
   height: 100%;
 }
-/* line 600, ../scss/_design-price.scss */
+/* line 604, ../scss/_design-price.scss */
 .recent_work.one {
   bottom: 110px;
 }
-/* line 604, ../scss/_design-price.scss */
+/* line 608, ../scss/_design-price.scss */
 .recent_work.two {
   top: 0;
   right: 40px;
 }
-/* line 609, ../scss/_design-price.scss */
+/* line 613, ../scss/_design-price.scss */
 .recent_work .recent_info {
   opacity: 0;
   transition: 1s;
 }
-/* line 614, ../scss/_design-price.scss */
+/* line 618, ../scss/_design-price.scss */
 .recent_work .bg-black {
   top: 50%;
   opacity: 0;
@@ -750,7 +787,7 @@ section .content p {
   transition: 1s;
 }
 
-/* line 622, ../scss/_design-price.scss */
+/* line 626, ../scss/_design-price.scss */
 .recent_info {
   position: absolute;
   width: 170px;
@@ -761,23 +798,23 @@ section .content p {
   text-transform: uppercase;
   color: #fff;
 }
-/* line 632, ../scss/_design-price.scss */
+/* line 636, ../scss/_design-price.scss */
 .recent_info p {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-/* line 637, ../scss/_design-price.scss */
+/* line 641, ../scss/_design-price.scss */
 .recent_info .recent_next {
   font-size: 13px;
 }
-/* line 640, ../scss/_design-price.scss */
+/* line 644, ../scss/_design-price.scss */
 .recent_info .recent_next img {
   width: 10px;
   margin-left: 5px;
   vertical-align: 2px;
 }
 
-/* line 648, ../scss/_design-price.scss */
+/* line 652, ../scss/_design-price.scss */
 .bg-black {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -786,7 +823,7 @@ section .content p {
   height: 100%;
 }
 
-/* line 656, ../scss/_design-price.scss */
+/* line 660, ../scss/_design-price.scss */
 button {
   display: block;
   padding: 12px 57px;
@@ -796,25 +833,25 @@ button {
   font-weight: bold;
 }
 
-/* line 665, ../scss/_design-price.scss */
+/* line 669, ../scss/_design-price.scss */
 .line.white {
   border-bottom: 3px solid #fff;
   width: 100px;
   margin-right: 20px;
 }
 
-/* line 671, ../scss/_design-price.scss */
+/* line 675, ../scss/_design-price.scss */
 .line.black {
   border-bottom: 3px solid #000;
   width: 170px;
   margin-bottom: 114px;
 }
 
-/* line 678, ../scss/_design-price.scss */
+/* line 682, ../scss/_design-price.scss */
 .forma form {
   text-align: center;
 }
-/* line 681, ../scss/_design-price.scss */
+/* line 685, ../scss/_design-price.scss */
 .forma form input {
   display: block;
   padding: 11px 6px;
@@ -823,119 +860,136 @@ button {
   color: #000000;
   margin-bottom: 10px;
 }
-/* line 690, ../scss/_design-price.scss */
+/* line 694, ../scss/_design-price.scss */
 .forma form button {
   margin-top: 28px;
 }
 
-/* line 697, ../scss/_design-price.scss */
+/* line 701, ../scss/_design-price.scss */
 .footer-text .text {
   max-width: 550px;
 }
 
-/* line 702, ../scss/_design-price.scss */
+/* line 706, ../scss/_design-price.scss */
 .top-footer {
   background: #E5E5E5;
   padding-top: 50px;
 }
 
-/* line 707, ../scss/_design-price.scss */
+/* line 713, ../scss/_design-price.scss */
 .modal {
   max-width: 1300px;
   z-index: 999999;
 }
-/* line 711, ../scss/_design-price.scss */
+/* line 717, ../scss/_design-price.scss */
 .modal .top-footer {
   background: white;
 }
-/* line 715, ../scss/_design-price.scss */
+/* line 721, ../scss/_design-price.scss */
 .modal .conteiner .row {
   padding: 0;
 }
-/* line 719, ../scss/_design-price.scss */
+/* line 725, ../scss/_design-price.scss */
 .modal .image.contact {
   bottom: 0;
   left: -15px;
 }
-/* line 724, ../scss/_design-price.scss */
-.modal .line.black {
-  margin-bottom: 60px;
-}
-/* line 728, ../scss/_design-price.scss */
+/* line 731, ../scss/_design-price.scss */
 .modal .contact a {
   color: black;
   margin-right: 25px;
   font-weight: bold;
 }
+/* line 737, ../scss/_design-price.scss */
+.modal .line.black {
+  margin-bottom: 60px;
+}
 
-/* line 735, ../scss/_design-price.scss */
+/* line 744, ../scss/_design-price.scss */
+#ex2.modal {
+  max-width: 500px;
+}
+/* line 747, ../scss/_design-price.scss */
+#ex2.modal .contact {
+  margin-top: 20px;
+}
+/* line 750, ../scss/_design-price.scss */
+#ex2.modal .contact a {
+  color: black;
+  margin-right: 25px;
+  font-weight: bold;
+}
+
+/* line 758, ../scss/_design-price.scss */
 .image.contact {
   position: relative;
   bottom: -90px;
   z-index: 1;
 }
 
-/* line 741, ../scss/_design-price.scss */
+/* line 764, ../scss/_design-price.scss */
 footer {
-  overflow: auto;
+  overflow: hidden;
 }
-/* line 744, ../scss/_design-price.scss */
+/* line 767, ../scss/_design-price.scss */
 footer a {
   color: #000;
 }
-/* line 749, ../scss/_design-price.scss */
+/* line 772, ../scss/_design-price.scss */
 footer .contact a {
   margin-left: 34px;
   display: inline-block;
   font-weight: bold;
 }
-/* line 754, ../scss/_design-price.scss */
+/* line 777, ../scss/_design-price.scss */
 footer .contact a:first-child {
   margin-left: 0;
 }
 
-/* line 761, ../scss/_design-price.scss */
+/* line 784, ../scss/_design-price.scss */
 .links a {
   margin-right: 30px;
 }
 
-/* line 765, ../scss/_design-price.scss */
+/* line 788, ../scss/_design-price.scss */
 .revers {
   display: none;
 }
 
-/* line 769, ../scss/_design-price.scss */
+/* line 792, ../scss/_design-price.scss */
 .blur,
 header.navFixed,
+header,
 header.navFixed2 {
   transition: 1s;
 }
-/* line 774, ../scss/_design-price.scss */
+/* line 798, ../scss/_design-price.scss */
 .blur.active,
 header.navFixed.active,
+header.active,
 header.navFixed2.active {
   filter: blur(3px);
   transform: scale(1.006);
 }
 
-/* line 781, ../scss/_design-price.scss */
+/* line 805, ../scss/_design-price.scss */
 .phone img {
   width: 14px;
   margin-right: 5px;
 }
 
-/* line 787, ../scss/_design-price.scss */
+/* line 811, ../scss/_design-price.scss */
 .blocker {
   background: none;
   z-index: 99999;
 }
 
-/* line 792, ../scss/_design-price.scss */
+/* line 816, ../scss/_design-price.scss */
 .culculator {
   color: white;
 }
 
-/* line 796, ../scss/_design-price.scss */
+/* line 820, ../scss/_design-price.scss */
 .services {
   transition: 1s;
   overflow-y: auto;
@@ -943,7 +997,7 @@ header.navFixed2.active {
   padding-left: 5px;
 }
 
-/* line 803, ../scss/_design-price.scss */
+/* line 827, ../scss/_design-price.scss */
 .services-list {
   display: inline-block;
   position: relative;
@@ -953,7 +1007,7 @@ header.navFixed2.active {
   margin-right: 30px;
 }
 
-/* line 812, ../scss/_design-price.scss */
+/* line 836, ../scss/_design-price.scss */
 .services-list .services-check {
   position: absolute;
   opacity: 0;
@@ -961,7 +1015,7 @@ header.navFixed2.active {
   left: 0;
 }
 
-/* line 819, ../scss/_design-price.scss */
+/* line 843, ../scss/_design-price.scss */
 .services-list .services-content {
   width: calc(185px - 40px);
   height: 120px;
@@ -979,207 +1033,221 @@ header.navFixed2.active {
   font-weight: 500;
   transition: 1s;
 }
-/* line 836, ../scss/_design-price.scss */
+/* line 860, ../scss/_design-price.scss */
 .services-list .services-content:hover {
   box-shadow: 0 0 0 2px #c7c7c7;
 }
 
-/* line 843, ../scss/_design-price.scss */
+/* line 867, ../scss/_design-price.scss */
 .culculator-description p {
   color: #C4C4C4;
   font-size: 14px;
 }
 
-/* line 849, ../scss/_design-price.scss */
+/* line 873, ../scss/_design-price.scss */
 .culculator-description,
 .currency {
   width: 49%;
 }
 
-/* line 854, ../scss/_design-price.scss */
+/* line 878, ../scss/_design-price.scss */
 .services-list .services-check:checked ~ .services-content {
   box-shadow: 0 0 0 5px #fff;
 }
 
-/* line 859, ../scss/_design-price.scss */
+/* line 883, ../scss/_design-price.scss */
 .currency {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-/* line 864, ../scss/_design-price.scss */
+/* line 888, ../scss/_design-price.scss */
 .currency span {
   display: block;
   background: url("../img/icon/currency.svg") center no-repeat/cover;
   text-align: center;
   position: relative;
 }
-/* line 870, ../scss/_design-price.scss */
+/* line 894, ../scss/_design-price.scss */
 .currency span p {
   width: 40px;
   color: #fff;
   font-weight: bold;
 }
 
-/* line 879, ../scss/_design-price.scss */
+/* line 903, ../scss/_design-price.scss */
 #the-cost {
   font-weight: bold;
 }
-/* line 882, ../scss/_design-price.scss */
+/* line 906, ../scss/_design-price.scss */
 #the-cost a.button {
   padding: 14px 65px;
 }
 
-/* line 887, ../scss/_design-price.scss */
+/* line 911, ../scss/_design-price.scss */
 #top-the-cost {
   margin-top: 44px;
   margin-bottom: 34px;
 }
 
-/* line 892, ../scss/_design-price.scss */
+/* line 916, ../scss/_design-price.scss */
 #dev-site {
   margin-right: 50px;
 }
 
-/* line 896, ../scss/_design-price.scss */
+/* line 920, ../scss/_design-price.scss */
 #total-cost {
   margin-bottom: 40px;
 }
 
-/* line 900, ../scss/_design-price.scss */
+/* line 924, ../scss/_design-price.scss */
 .culculator {
   margin-top: 200px !important;
 }
 
-/* line 904, ../scss/_design-price.scss */
+/* line 928, ../scss/_design-price.scss */
 .culculator-description .h4 {
   margin-top: 25px;
 }
 
-/* line 908, ../scss/_design-price.scss */
+/* line 932, ../scss/_design-price.scss */
 input.services-check[disabled] ~ div {
   opacity: 0.5;
   background: #3b5b51;
 }
 
 @media (max-width: 1400px) {
-  /* line 914, ../scss/_design-price.scss */
+  /* line 938, ../scss/_design-price.scss */
   .homeimg img {
     max-width: 40%;
   }
 }
 @media (max-width: 1200px) {
-  /* line 920, ../scss/_design-price.scss */
+  /* line 944, ../scss/_design-price.scss */
   .right-p {
     display: none;
   }
 
-  /* line 924, ../scss/_design-price.scss */
+  /* line 948, ../scss/_design-price.scss */
   .left-p,
   .right-p {
     margin-top: 25vh;
     margin-left: auto;
   }
 
-  /* line 930, ../scss/_design-price.scss */
+  /* line 954, ../scss/_design-price.scss */
   div.h1 {
     margin-left: calc(-15vw - 11vw);
   }
 
-  /* line 934, ../scss/_design-price.scss */
+  /* line 958, ../scss/_design-price.scss */
   span.h1 {
     font-size: 11vw;
   }
 
-  /* line 938, ../scss/_design-price.scss */
+  /* line 962, ../scss/_design-price.scss */
   .homeimg img {
     max-width: 55%;
   }
 }
 @media (max-width: 1000px) {
-  /* line 944, ../scss/_design-price.scss */
+  /* line 968, ../scss/_design-price.scss */
   .h2 {
     font-size: 36px;
     line-height: 39px;
   }
 
-  /* line 949, ../scss/_design-price.scss */
+  /* line 973, ../scss/_design-price.scss */
   .description .description-title h1 {
     font-size: 10px;
     line-height: 14px;
   }
 
-  /* line 954, ../scss/_design-price.scss */
+  /* line 978, ../scss/_design-price.scss */
   .description .description-body h2 {
     font-size: 18px;
     line-height: 25px;
   }
 
-  /* line 959, ../scss/_design-price.scss */
+  /* line 983, ../scss/_design-price.scss */
   .price-title {
     font-size: 11px;
   }
 
-  /* line 963, ../scss/_design-price.scss */
-  footer .h4 {
+  /* line 987, ../scss/_design-price.scss */
+  footer .h4, #ex2 .h4 {
     font-size: 18px;
     line-height: 21px;
   }
 
-  /* line 967, ../scss/_design-price.scss */
+  /* line 991, ../scss/_design-price.scss */
+  #ex2 p {
+    font-size: 12px;
+  }
+
+  /* line 994, ../scss/_design-price.scss */
   .currency {
     justify-content: flex-start;
   }
 
-  /* line 970, ../scss/_design-price.scss */
+  /* line 998, ../scss/_design-price.scss */
   .footer-text,
   .image.contact,
   .recent_work {
     display: none;
   }
 
-  /* line 976, ../scss/_design-price.scss */
+  /* line 1004, ../scss/_design-price.scss */
   .forma {
     margin: auto;
     margin-bottom: 50px;
   }
 
-  /* line 980, ../scss/_design-price.scss */
+  /* line 1010, ../scss/_design-price.scss */
+  #ex2 .top-footer {
+    padding-top: 0;
+  }
+  /* line 1013, ../scss/_design-price.scss */
+  #ex2 .forma {
+    margin-bottom: 0;
+  }
+
+  /* line 1018, ../scss/_design-price.scss */
   .slide-mob-price {
     width: 100%;
   }
 
-  /* line 984, ../scss/_design-price.scss */
+  /* line 1023, ../scss/_design-price.scss */
   #top-the-cost .hide {
     display: block;
   }
 }
 @media (max-width: 770px) {
-  /* line 992, ../scss/_design-price.scss */
+  /* line 1031, ../scss/_design-price.scss */
   .onload .onload_logo svg {
     width: 13vw;
   }
 
-  /* line 996, ../scss/_design-price.scss */
+  /* line 1035, ../scss/_design-price.scss */
   .arrow_down {
     top: calc(100vh - 150px);
     left: calc(50% - 11px);
   }
 
-  /* line 1002, ../scss/_design-price.scss */
+  /* line 1041, ../scss/_design-price.scss */
   header .conteiner .row {
     height: 90px;
   }
 
-  /* line 1006, ../scss/_design-price.scss */
+  /* line 1045, ../scss/_design-price.scss */
   header .communication {
     bottom: -12px;
   }
-  /* line 1009, ../scss/_design-price.scss */
+  /* line 1048, ../scss/_design-price.scss */
   header .communication .child {
     display: none;
   }
-  /* line 1012, ../scss/_design-price.scss */
+  /* line 1051, ../scss/_design-price.scss */
   header .communication .child:nth-child(3n) {
     display: block;
     margin-left: 0;
@@ -1187,7 +1255,7 @@ input.services-check[disabled] ~ div {
     text-align: center;
   }
 
-  /* line 1021, ../scss/_design-price.scss */
+  /* line 1060, ../scss/_design-price.scss */
   header nav {
     position: fixed;
     top: 90px;
@@ -1199,14 +1267,14 @@ input.services-check[disabled] ~ div {
     height: 0px;
     transition: 1s;
   }
-  /* line 1032, ../scss/_design-price.scss */
+  /* line 1071, ../scss/_design-price.scss */
   header nav.active {
     background: rgba(0, 0, 0, 0.5);
     padding-top: 30px;
     height: 100%;
     z-index: 99999;
   }
-  /* line 1039, ../scss/_design-price.scss */
+  /* line 1078, ../scss/_design-price.scss */
   header nav a {
     display: block;
     font-size: 24px;
@@ -1214,13 +1282,13 @@ input.services-check[disabled] ~ div {
     padding: 10px 40px;
   }
 
-  /* line 1047, ../scss/_design-price.scss */
+  /* line 1086, ../scss/_design-price.scss */
   .nav_mob {
     width: 22px;
     height: 18px;
   }
 
-  /* line 1052, ../scss/_design-price.scss */
+  /* line 1091, ../scss/_design-price.scss */
   .nav_mob span {
     height: 2px;
     width: 100%;
@@ -1229,130 +1297,130 @@ input.services-check[disabled] ~ div {
     border-radius: 3px;
     transition: 1s;
   }
-  /* line 1060, ../scss/_design-price.scss */
+  /* line 1099, ../scss/_design-price.scss */
   .nav_mob span.n2 {
     margin: 6px 0;
   }
 
-  /* line 1066, ../scss/_design-price.scss */
+  /* line 1105, ../scss/_design-price.scss */
   .navFixed2 .n1 {
     transform: rotate(-45deg);
     position: relative;
     top: 8px;
   }
-  /* line 1072, ../scss/_design-price.scss */
+  /* line 1111, ../scss/_design-price.scss */
   .navFixed2 .nav_mob span.n2 {
     margin: 0;
     opacity: 0;
   }
-  /* line 1077, ../scss/_design-price.scss */
+  /* line 1116, ../scss/_design-price.scss */
   .navFixed2 .n3 {
     transform: rotate(45deg);
     position: relative;
     top: 4px;
   }
 
-  /* line 1084, ../scss/_design-price.scss */
+  /* line 1123, ../scss/_design-price.scss */
   header .conteiner .row {
     flex-wrap: wrap;
   }
 
-  /* line 1088, ../scss/_design-price.scss */
+  /* line 1127, ../scss/_design-price.scss */
   .logo {
     width: 180px;
   }
 
-  /* line 1092, ../scss/_design-price.scss */
+  /* line 1131, ../scss/_design-price.scss */
   section .content {
     margin: 20vh auto 0;
   }
 
-  /* line 1096, ../scss/_design-price.scss */
+  /* line 1135, ../scss/_design-price.scss */
   div.h1 {
     margin-top: -10%;
     margin-left: calc(-21vw - 16vw);
   }
 
-  /* line 1101, ../scss/_design-price.scss */
+  /* line 1140, ../scss/_design-price.scss */
   span.h1 {
     font-size: 16vw;
   }
 
-  /* line 1105, ../scss/_design-price.scss */
+  /* line 1144, ../scss/_design-price.scss */
   .homeimg img {
     max-width: 86%;
   }
 
-  /* line 1109, ../scss/_design-price.scss */
+  /* line 1148, ../scss/_design-price.scss */
   .left-p .h3 {
     font-size: 5.5vw;
   }
 
-  /* line 1113, ../scss/_design-price.scss */
+  /* line 1152, ../scss/_design-price.scss */
   .description {
     width: auto;
   }
 
-  /* line 1117, ../scss/_design-price.scss */
+  /* line 1156, ../scss/_design-price.scss */
   .conteiner .row.flex.center {
     justify-content: flex-start;
   }
 
-  /* line 1121, ../scss/_design-price.scss */
+  /* line 1160, ../scss/_design-price.scss */
   .description .description-body,
   .description .description-title {
     text-align: left;
   }
 
-  /* line 1126, ../scss/_design-price.scss */
+  /* line 1165, ../scss/_design-price.scss */
   .manprice {
     width: 50vw;
     margin-bottom: 50px;
     margin-top: 20px;
   }
 
-  /* line 1132, ../scss/_design-price.scss */
+  /* line 1171, ../scss/_design-price.scss */
   .box-arrow-link span {
     padding: 10px 6px;
     font-size: 12px;
   }
 
-  /* line 1137, ../scss/_design-price.scss */
+  /* line 1176, ../scss/_design-price.scss */
   .box-arrow-link .box-arrow-1 img,
   .box-arrow-link .box-arrow-2 img {
     vertical-align: middle;
   }
 
-  /* line 1142, ../scss/_design-price.scss */
+  /* line 1181, ../scss/_design-price.scss */
   .box-arrow-link:hover .box-arrow-1 {
     opacity: 1;
     padding: 10px 6px;
   }
 
-  /* line 1149, ../scss/_design-price.scss */
+  /* line 1188, ../scss/_design-price.scss */
   .price,
   .line.white {
     display: none;
   }
 
-  /* line 1154, ../scss/_design-price.scss */
+  /* line 1193, ../scss/_design-price.scss */
   p.links {
     display: flex;
     flex-wrap: wrap;
   }
 
-  /* line 1159, ../scss/_design-price.scss */
+  /* line 1198, ../scss/_design-price.scss */
   p.links a {
     margin-right: 15px;
   }
 
-  /* line 1163, ../scss/_design-price.scss */
+  /* line 1202, ../scss/_design-price.scss */
   .row.flex.footer {
     flex-wrap: wrap;
   }
 }
 @media (max-height: 450px) {
-  /* line 1171, ../scss/_design-price.scss */
+  /* line 1210, ../scss/_design-price.scss */
   .revers {
     display: flex;
     justify-content: center;
@@ -1366,7 +1434,7 @@ input.services-check[disabled] ~ div {
     background: black;
     color: white;
   }
-  /* line 1184, ../scss/_design-price.scss */
+  /* line 1223, ../scss/_design-price.scss */
   .revers p {
     margin-right: 15px;
   }

@@ -13,18 +13,26 @@
         .swiper-slide {
             width: 185px;
             height: 120px;
-            
+
         }
-        .services {overflow-x: visible;}
-        .services:first-child{
-            overflow:visible;
+
+        .services {
+            overflow-x: visible;
         }
-        .culculator-description, .currency{
+
+        .services:first-child {
+            overflow: visible;
+        }
+
+        .culculator-description,
+        .currency {
             width: 100%;
         }
-        .slide-mob-price{
+
+        .slide-mob-price {
             overflow: hidden;
         }
+
     </style>
     <title>Document</title>
 </head>
@@ -348,7 +356,7 @@
                                 <span id="add-dev" class="hide">Доп. услуги по разработке сайта: от <span>0</span>$</span>
                             </div>
                             <div id="total-cost">Общая стоимость: от <span>0</span>$</div>
-                            <a href="#!" class="button link-modal">Заказать</a>
+                            <a href="#ex2" data-modal class="button link-modal">Заказать</a>
                         </div>
                     </from>
                 </div>
@@ -472,6 +480,32 @@
             </div>
         </div>
     </div>
+    <div id="ex2" class="modal">
+        <div class="top-footer">
+            <div class="conteiner">
+                <div class="row">
+                    <div class="forma">
+                        <p class="h4">Крутые проекты начинаются с заполнения этой формы</p>
+                        <p>Расчёт с калькулятора будет отправлен к нам на почту, через эту форму</p>
+                        <form action="">
+                            <input type="text" required placeholder="Имя*">
+                            <input type="phone" required placeholder="Телефон*">
+                            <input type="email" placeholder="Email">
+                            <button class="button">Отправить</button>
+
+                            <div class="contact">
+                                <a href="#!"><i class="phone">
+                                        <img src="img/icon/phone_black.svg" alt="phone">
+                                    </i>+375297521500</a>
+                                <a href="#!">test@test.test</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/lib/jquery.js"></script>
     <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
     <script src="js/lib/tilt.js"></script>
@@ -488,7 +522,7 @@
 
         function Slider() {
             if ($(window).width() <= 1000) {
-//                $(".slide-mob-price .services-list").addClass("swiper-slide");
+                //                $(".slide-mob-price .services-list").addClass("swiper-slide");
                 let swiper = new Swiper('.slide-mob-price', {
                     slidesPerView: 'auto',
                     spaceBetween: 30,

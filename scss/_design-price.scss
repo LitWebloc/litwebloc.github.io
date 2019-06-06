@@ -1,6 +1,10 @@
+$color: #3B5B51;
+$color2: #345047;
+
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -282,7 +286,7 @@ header {
 
 .page_bg {
     background: $color;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .page_bg_2 {
@@ -570,7 +574,7 @@ section .content {
     height: 242px;
     position: absolute;
     border-radius: 100%;
-    overflow: auto;
+    overflow: hidden;
     border: 1px solid #000000;
     box-sizing: border-box;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -704,6 +708,8 @@ button {
     padding-top: 50px;
 }
 
+
+
 .modal {
     max-width: 1300px;
     z-index: 999999;
@@ -720,15 +726,32 @@ button {
         bottom: 0;
         left: -15px;
     }
+    .contact {
 
+        a {
+            color: black;
+            margin-right: 25px;
+            font-weight: bold;
+        }
+    }
     .line.black {
         margin-bottom: 60px;
     }
 
-    .contact a {
-        color: black;
-        margin-right: 25px;
-        font-weight: bold;
+
+}
+
+#ex2.modal {
+    max-width: 500px;
+
+    .contact {
+        margin-top: 20px;
+
+        a {
+            color: black;
+            margin-right: 25px;
+            font-weight: bold;
+        }
     }
 }
 
@@ -739,7 +762,7 @@ button {
 }
 
 footer {
-    overflow: auto;
+    overflow: hidden;
 
     a {
         color: #000;
@@ -768,6 +791,7 @@ footer {
 
 .blur,
 header.navFixed,
+header,
 header.navFixed2 {
     transition: 1s;
 
@@ -960,13 +984,17 @@ input.services-check[disabled] ~ div {
         font-size: 11px;
     }
 
-    footer .h4 {
+    footer .h4, #ex2 .h4 {
         font-size: 18px;
         line-height: 21px;
     }
-    .currency{
+    #ex2 p{
+        font-size: 12px;
+    }
+    .currency {
         justify-content: flex-start;
     }
+
     .footer-text,
     .image.contact,
     .recent_work {
@@ -977,11 +1005,22 @@ input.services-check[disabled] ~ div {
         margin: auto;
         margin-bottom: 50px;
     }
-    .slide-mob-price{
+
+    #ex2 {
+        .top-footer{
+            padding-top: 0;
+        }
+        .forma {
+            margin-bottom: 0;
+        }
+    }
+
+    .slide-mob-price {
         width: 100%;
     }
-    #top-the-cost{
-        .hide{
+
+    #top-the-cost {
+        .hide {
             display: block;
         }
     }

@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Pattaya&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i&subset=cyrillic");
-/* line 19, ../scss/_var.scss */
+/* line 18, ../scss/_var.scss */
 .fadeBox { transition: 1s; height: 50%; }
-/* line 23, ../scss/_var.scss */
+/* line 22, ../scss/_var.scss */
 .fadeBox.fade { opacity: 0; transform: scale(0.8); }
 
-/* line 29, ../scss/_var.scss */
+/* line 28, ../scss/_var.scss */
 .h2 { font-size: 60px; font-weight: bold; line-height: 60px; text-transform: uppercase; margin: 0 0 20px; }
 
-/* line 36, ../scss/_var.scss */
+/* line 35, ../scss/_var.scss */
 .h3 { font-size: 36px; text-transform: uppercase; font-weight: bold; }
 
-/* line 41, ../scss/_var.scss */
+/* line 40, ../scss/_var.scss */
 .h4 { font-size: 24px; text-transform: uppercase; font-weight: bold; }
 
 /* line 1, ../scss/_mobile.scss */

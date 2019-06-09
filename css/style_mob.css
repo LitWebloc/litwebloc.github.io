@@ -14,6 +14,9 @@
 /* line 40, ../scss/_var.scss */
 .h4 { font-size: 24px; text-transform: uppercase; font-weight: bold; }
 
+/* line 45, ../scss/_var.scss */
+header nav a.active span { animation: navLine 1s ease-in-out; width: 60%; }
+
 /* line 1, ../scss/_mobile.scss */
 div.h1 { margin-top: -5%; margin-left: calc(-21vw - 16vw); }
 

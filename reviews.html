@@ -45,7 +45,7 @@
                         <a href="#!" class="">О нас
                             <span class="wiggle"></span>
                         </a>
-                        <a href="#!" class="">Отзывы
+                        <a href="reviews.html" class="">Отзывы
                             <span class="wiggle"></span>
                         </a>
                     </nav>
@@ -76,19 +76,11 @@
             <div class="conteiner fadeBox">
                 <div class="row flex">
                     <div class="left-p">
-                        <!--
-                    <div class="shadow">
-                        <p class="h3">РАЗРАБОТКА<br>
-                            ДИЗАЙН<br>
-                            МАРКЕТИНГ</p>
-                    </div>
--->
                         <div class="">
                             <p class="h3 wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">НЕ БУДЬТЕ<br>РАВНОДУШНЫМИ,<br>ОСТАВТЕ СВОЁ<br>МНЕНИЕ</p>
                         </div>
                     </div>
                     <div class="homeimg js-tilt">
-                        <!--<img src="img/characters/homeimg2.png" alt="" class="shadow">-->
                         <img class="" src="img/characters/twopeopledivan.png" alt="">
                         <div class="h1">
                             <span class="h1 shadow">Отзывы</span>
@@ -96,18 +88,6 @@
                         </div>
                     </div>
                     <div class="right-p">
-                        <!--
-                    <div class="shadow">
-                        <p class="h3">130+</p>
-                        <p>просмотров на<br>Behance</p>
-                        <br>
-                        <p class="h3">350+</p>
-                        <p>выполненных<br>проектов</p>
-                        <br>
-                        <p class="h3">2года</p>
-                        <p>лет опыта<br>на рынке</p>
-                    </div>
--->
                         <div class="">
                             <p class="h3 wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">130+</p>
                             <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">просмотров на<br>Behance</p>
@@ -355,21 +335,10 @@
         <script src="js/lib/wow.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
         <script>
-            $('.about-no-bg .about-design').waypoint(function() {
+            $('.reviews-list .center').waypoint(function() {
                 $('.recent_work').hasClass("fade") ? $('.recent_work').removeClass('fade') : $('.recent_work').addClass('fade');
                 $('.ledge').hasClass('ledge-deg') ? $('.ledge').removeClass('ledge-deg') : $('.ledge').addClass('ledge-deg');
             });
-
-            function Slider() {
-                if ($(window).width() <= 1000) {
-                    let swiper = new Swiper('.portfolio', {
-                        slidesPerView: 'auto',
-                        spaceBetween: 15,
-                        freeMode: true,
-                    });
-                }
-            }
-            Slider();
         </script>
         <script src="js/script.js"></script>
 </body>

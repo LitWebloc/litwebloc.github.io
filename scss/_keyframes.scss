@@ -121,3 +121,12 @@ $h4: 24px;
     }
 }
 
+@keyframes navLine {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}

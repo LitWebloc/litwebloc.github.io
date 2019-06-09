@@ -219,7 +219,7 @@ header {
     }
 
     nav {
-        a {
+        a{
             margin-right: 15px;
             color: #fff;
             text-decoration: none;
@@ -255,6 +255,7 @@ header {
             }
 
         }
+
     }
 
     .wiggle {
@@ -310,7 +311,7 @@ header {
 
 div.h1 {
     position: absolute;
-    margin-left: calc(0vw - 7vw);
+    margin-left: calc(-6vw - 7vw);
     margin-top: -5%;
 }
 
@@ -1113,8 +1114,8 @@ header.navFixed2 {
     }
 
     div.h1 {
-        margin-top: -10%;
-        margin-left: calc(-4vw - 16vw);
+        margin-top: -7%;
+        margin-left: calc(-11vw - 16vw);
     }
 
     span.h1 {
@@ -1127,7 +1128,7 @@ header.navFixed2 {
     }
 
     .left-p .h3 {
-        font-size: 5.5vw;
+        font-size: 4.5vw;
     }
 
     .description {

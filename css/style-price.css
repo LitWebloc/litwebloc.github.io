@@ -36,6 +36,12 @@
   font-weight: bold;
 }
 
+/* line 45, ../scss/_var.scss */
+header nav a.active span {
+  animation: navLine 1s ease-in-out;
+  width: 60%;
+}
+
 /* line 11, ../scss/_keyframes.scss */
 .fadeBox {
   transition: 1s;
@@ -137,6 +143,14 @@
   }
   100% {
     fill: #fff;
+  }
+}
+@keyframes navLine {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
   }
 }
 /* line 4, ../scss/_design-price.scss */

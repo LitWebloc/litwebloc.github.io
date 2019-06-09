@@ -13,6 +13,10 @@ $('.nav_mob').click(function () {
 
 $(window).on('load', function () {
     $('.onload').fadeOut('slow');
+    console.log(window.location.pathname);
+    if($("#menu a").attr("href") == window.location.pathname){
+        $(this).addClass("active");
+    }
 });
 $('.fadeBox').waypoint(function () {
     $('header').hasClass('navFixed') ? $('header').removeClass('navFixed') : $('header').addClass('navFixed');

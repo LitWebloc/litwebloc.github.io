@@ -16,6 +16,9 @@
 /* line 40, ../scss/_var.scss */
 .h4 { font-size: 24px; text-transform: uppercase; font-weight: bold; }
 
+/* line 45, ../scss/_var.scss */
+header nav a.active span { animation: navLine 1s ease-in-out; width: 60%; }
+
 /* line 11, ../scss/_keyframes.scss */
 .fadeBox { transition: 1s; height: 50%; }
 /* line 15, ../scss/_keyframes.scss */
@@ -46,6 +49,8 @@
   30% { stroke: #fff; }
   80% { stroke-dasharray: 2500; fill: rgba(255, 255, 255, 0); }
   100% { fill: #fff; } }
+@keyframes navLine { 0% { width: 0%; }
+  100% { width: 60%; } }
 /* line 4, ../scss/_design-about.scss */
 body { margin: 0; padding: 0; overflow-x: hidden; }
 

@@ -278,6 +278,7 @@ header {
 .page_bg {
     background: $color;
     overflow: hidden;
+    margin-top: -1px;
 }
 
 .page_bg_2 {
@@ -341,6 +342,7 @@ span.h1.shadow {
     align-items: center;
     margin-top: 100px;
     transition: 1s;
+    padding-left: 10px;
 
     p {
         margin: 0;
@@ -931,6 +933,7 @@ header.navFixed2 {
             font-size: 24px;
             text-align: right;
             padding: 10px 40px;
+            margin-right: 0;
         }
     }
 

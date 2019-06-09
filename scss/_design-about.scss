@@ -1,5 +1,5 @@
-$color: #69A0Af;
-$color2: #E5E5E5;
+$color: #6C6B6A;
+$color2: #EEE;
 
 body {
     margin: 0;
@@ -288,7 +288,7 @@ header {
 
 div.h1 {
     position: absolute;
-    margin-left: calc(-9vw - 7vw);
+    margin-left: calc(0vw - 7vw);
     margin-top: -5%;
 }
 
@@ -299,6 +299,7 @@ span.h1 {
     position: absolute;
     z-index: 3;
     color: white;
+    width: 17vw;
     margin-top: 20px;
 }
 
@@ -380,6 +381,30 @@ span.h1.shadow {
     }
 }
 
+.about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: $footer_bg;
+}
+.about-no-bg{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.about-design {
+    width: 50%;
+    margin: auto 0;
+}
+
+.design {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    img {
+        width: 100%;
+    }
+}
+
 .arrow_down {
     position: absolute;
     left: 50%;
@@ -395,136 +420,37 @@ svg.arrow_down_top {
     position: absolute;
 }
 
-.portfolio {
-    margin: 120px 0;
-    overflow: hidden;
-
-    .button {
-        display: inline-block;
-        padding: 14px 44px;
-        font-size: 14px;
-    }
-
-    .center {
-        text-align: center;
-    }
-}
-
-ul.portfolio-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    padding: 0;
-    width: 100%;
-
-    li {
-        width: 48%;
-        height: 360px;
-        border-radius: 5px;
-        list-style-type: none;
-        position: relative;
-        cursor: pointer;
-        margin-bottom: 56px;
-        overflow: hidden;
-
-        .portfolio-content {
-            position: absolute;
-            text-align: center;
-            color: white;
-            top: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            opacity: 0;
-            width: calc(100% - 154px);
-            z-index: 3;
-            transition: .4s;
-            padding: 10px 77px;
-
-            p {
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 16px;
-                letter-spacing: 0.05em;
-                text-transform: uppercase;
-            }
-        }
-
-        a {
-            display: block;
-            height: 100%;
-        }
-
-        .title {
-            font-size: 48px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        &:hover .portfolio-content {
-            opacity: 1;
-            transition: 1s;
-        }
-
-        .line {
-            width: 130px;
-            background: white;
-            height: 3px;
-            margin: auto;
-        }
-
-        &:hover .bg {
-            background: linear-gradient(0deg, rgba(17, 0, 43, 0.5), rgba(17, 0, 43, 0.5));
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-        }
-
-        span {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            color: $color_link;
-            font-weight: bold;
-            font-size: 13px;
-            text-transform: uppercase;
-        }
-    }
-}
-
-ul.portfolio-list li:hover img {
-    top: -100%;
-}
-
-ul.portfolio-list li img {
-    width: 100%;
-    position: absolute;
+.description {
+    text-transform: uppercase;
+    color: #fff;
     transition: 1s;
-    top: 0%;
-}
 
-.portfolio-filter {
-    margin-bottom: 26px;
+    &.fade {
+        opacity: 0;
+    }
 
-    a {
-        font-size: 14px;
-        margin-right: 20px;
-        text-transform: uppercase;
-        color: black;
-        cursor: pointer;
+    .description-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
 
-        &.active {
-            color: $color_link;
+        h1 {
+            font-size: 24px;
+            margin: 0;
         }
 
-        &:hover {
-            color: $color_link;
+        img {
+            margin-right: 17px;
+        }
+    }
+
+    .description-body {
+        width: 70%;
+        margin-bottom: 160px;
+
+        h2 {
+            font-size: 36px;
+            margin: 0;
         }
     }
 }
@@ -922,11 +848,12 @@ header.navFixed2 {
     }
 
     div.h1 {
-        margin-left: calc(-15vw - 11vw);
+        margin-left: calc(0vw - 11vw);
     }
 
     span.h1 {
         font-size: 11vw;
+        width: 30vw;
     }
 
     .homeimg img {
@@ -950,6 +877,16 @@ header.navFixed2 {
         line-height: 25px;
     }
 
+    .description .description-title h1 {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .description .description-body h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
     .price-title {
         font-size: 11px;
     }
@@ -957,12 +894,6 @@ header.navFixed2 {
     footer .h4 {
         font-size: 18px;
         line-height: 21px;
-    }
-
-    ul.portfolio-list li .portfolio-content {
-        width: calc(100% - 70px);
-        padding: 30px 35px 10px;
-        height: calc(100% - 40px);
     }
 
     .footer-text,
@@ -981,6 +912,10 @@ header.navFixed2 {
 @media (max-width: 770px) {
     .onload .onload_logo svg {
         width: 13vw;
+    }
+
+    .description .description-body {
+        width: 100%;
     }
 
     .arrow_down {
@@ -1086,11 +1021,12 @@ header.navFixed2 {
 
     div.h1 {
         margin-top: -10%;
-        margin-left: calc(-21vw - 16vw);
+        margin-left: calc(-4vw - 16vw);
     }
 
     span.h1 {
         font-size: 16vw;
+        width: 50vw;
     }
 
     .homeimg img {
@@ -1136,6 +1072,51 @@ header.navFixed2 {
 
     }
 
+    .description {
+        width: auto;
+    }
+
+    .conteiner .row.flex.center {
+        justify-content: flex-start;
+    }
+
+    .description .description-body,
+    .description .description-title {
+        text-align: left;
+    }
+
+    .about {
+        height: auto;
+    }
+.about-no-bg{
+    .conteiner .row.flex {
+    display: table;
+        .about-design{
+            display: table-header-group;
+        }
+        .design {
+                display: table-footer-group;
+        }
+}
+}
+    .about-design {
+        width: 100%;
+        margin: 40px 0;
+
+        .h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+
+
+    .design {
+        width: 100%;
+    }
 
     .price,
     .line.white {
@@ -1155,34 +1136,6 @@ header.navFixed2 {
         flex-wrap: wrap;
     }
 
-    ul.portfolio-list {
-
-
-        li {
-            width: 100%;
-            height: 30vh;
-
-            .title {
-                font-size: 5vw;
-            }
-
-            .bg {
-                background: linear-gradient(0deg, rgba(17, 0, 43, 0.5), rgba(17, 0, 43, 0.5));
-                top: 0;
-                height: 100%;
-            }
-
-            .portfolio-content {
-                opacity: 1;
-                z-index: 4;
-
-                p {
-                    font-size: 2.8vw;
-                    line-height: 4vw;
-                }
-            }
-        }
-    }
 }
 
 

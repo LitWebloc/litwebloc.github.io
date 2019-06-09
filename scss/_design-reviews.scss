@@ -1,5 +1,27 @@
-$color: #69A0Af;
-$color2: #E5E5E5;
+$color: #554D4E;
+$color2: #EEE;
+
+/* Demonstrate a "mostly customized" scrollbar
+ * (won't be visible otherwise if width/height is specified) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: lighten($color, 40%);
+    /* or add it to the track */
+}
+
+/* Add a thumb */
+::-webkit-scrollbar-thumb {
+    background: darken($color, 40%);
+
+    &:hover {
+        background: darken($color, 15%);
+    }
+
+    &:active {
+        background: lighten($color, 15%);
+    }
+}
 
 body {
     margin: 0;
@@ -288,7 +310,7 @@ header {
 
 div.h1 {
     position: absolute;
-    margin-left: calc(-9vw - 7vw);
+    margin-left: calc(0vw - 7vw);
     margin-top: -5%;
 }
 
@@ -299,6 +321,7 @@ span.h1 {
     position: absolute;
     z-index: 3;
     color: white;
+    width: 17vw;
     margin-top: 20px;
 }
 
@@ -380,6 +403,86 @@ span.h1.shadow {
     }
 }
 
+.about-no-bg {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.about-design {
+    width: 50%;
+    margin: auto 0;
+
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.list-content {
+    width: calc(90% - 325px);
+
+    p {
+        height: 130px;
+        overflow: auto;
+    }
+}
+
+.reviews-title .h3 {
+    font-size: 18px;
+}
+
+.reviews-list {
+
+    a.button {
+        display: inline-block;
+        padding: 10px 44px;
+        font-size: 14px;
+    }
+
+    .center {
+        text-align: center;
+    }
+}
+
+.rating {
+    width: 125px;
+}
+
+span.star {
+    background: url(../img/icon/star.svg) no-repeat center / cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+span.star.active {
+    background: url(../img/icon/star-active.svg) no-repeat center / cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.list-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.design {
+    display: flex;
+    align-items: center;
+    width: 40%;
+
+    img {
+        width: 100%;
+    }
+}
+
 .arrow_down {
     position: absolute;
     left: 50%;
@@ -393,140 +496,6 @@ span.h1.shadow {
 
 svg.arrow_down_top {
     position: absolute;
-}
-
-.portfolio {
-    margin: 120px 0;
-    overflow: hidden;
-
-    .button {
-        display: inline-block;
-        padding: 14px 44px;
-        font-size: 14px;
-    }
-
-    .center {
-        text-align: center;
-    }
-}
-
-ul.portfolio-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    padding: 0;
-    width: 100%;
-
-    li {
-        width: 48%;
-        height: 360px;
-        border-radius: 5px;
-        list-style-type: none;
-        position: relative;
-        cursor: pointer;
-        margin-bottom: 56px;
-        overflow: hidden;
-
-        .portfolio-content {
-            position: absolute;
-            text-align: center;
-            color: white;
-            top: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            opacity: 0;
-            width: calc(100% - 154px);
-            z-index: 3;
-            transition: .4s;
-            padding: 10px 77px;
-
-            p {
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 16px;
-                letter-spacing: 0.05em;
-                text-transform: uppercase;
-            }
-        }
-
-        a {
-            display: block;
-            height: 100%;
-        }
-
-        .title {
-            font-size: 48px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        &:hover .portfolio-content {
-            opacity: 1;
-            transition: 1s;
-        }
-
-        .line {
-            width: 130px;
-            background: white;
-            height: 3px;
-            margin: auto;
-        }
-
-        &:hover .bg {
-            background: linear-gradient(0deg, rgba(17, 0, 43, 0.5), rgba(17, 0, 43, 0.5));
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-        }
-
-        span {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            color: $color_link;
-            font-weight: bold;
-            font-size: 13px;
-            text-transform: uppercase;
-        }
-    }
-}
-
-ul.portfolio-list li:hover img {
-    top: -100%;
-}
-
-ul.portfolio-list li img {
-    width: 100%;
-    position: absolute;
-    transition: 1s;
-    top: 0%;
-}
-
-.portfolio-filter {
-    margin-bottom: 26px;
-
-    a {
-        font-size: 14px;
-        margin-right: 20px;
-        text-transform: uppercase;
-        color: black;
-        cursor: pointer;
-
-        &.active {
-            color: $color_link;
-        }
-
-        &:hover {
-            color: $color_link;
-        }
-    }
 }
 
 .ledge {
@@ -789,6 +758,14 @@ button {
     margin-bottom: 114px;
 }
 
+.line.black.small {
+    border-bottom: 3px solid #000;
+    width: 109px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    display: inline-block;
+}
+
 .forma {
     form {
         text-align: center;
@@ -905,6 +882,32 @@ header.navFixed2 {
     z-index: 99999;
 }
 
+.reviews {
+    background: $color;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.right-reviews {
+    a.button {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+}
+
+.reviews-title {
+    align-items: center;
+
+    .h3 {
+        color: white;
+    }
+}
+
+.currency {
+    display: none;
+}
+
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -922,11 +925,12 @@ header.navFixed2 {
     }
 
     div.h1 {
-        margin-left: calc(-15vw - 11vw);
+        margin-left: calc(0vw - 11vw);
     }
 
     span.h1 {
         font-size: 11vw;
+        width: 30vw;
     }
 
     .homeimg img {
@@ -940,16 +944,6 @@ header.navFixed2 {
         line-height: 39px;
     }
 
-    .description .description-title h1 {
-        font-size: 10px;
-        line-height: 14px;
-    }
-
-    .description .description-body h2 {
-        font-size: 18px;
-        line-height: 25px;
-    }
-
     .price-title {
         font-size: 11px;
     }
@@ -957,12 +951,6 @@ header.navFixed2 {
     footer .h4 {
         font-size: 18px;
         line-height: 21px;
-    }
-
-    ul.portfolio-list li .portfolio-content {
-        width: calc(100% - 70px);
-        padding: 30px 35px 10px;
-        height: calc(100% - 40px);
     }
 
     .footer-text,
@@ -974,6 +962,46 @@ header.navFixed2 {
     .forma {
         margin: auto;
         margin-bottom: 50px;
+    }
+
+    .right-reviews {
+        a.button {
+            display: none;
+        }
+
+    }
+
+    .currency {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        a {
+            display: block;
+            background: url("../img/icon/currency.svg") center no-repeat / cover;
+            text-align: center;
+            width: 42px;
+            height: 52px;
+            position: relative;
+            right: -11px;
+
+            &:first-child {
+                right: -14px;
+
+                img {
+                    position: relative;
+                    top: 16px;
+                    width: 18px;
+                }
+            }
+
+            img {
+                width: 17px;
+                position: relative;
+                top: 16px;
+            }
+        }
+
     }
 
 }
@@ -1086,11 +1114,12 @@ header.navFixed2 {
 
     div.h1 {
         margin-top: -10%;
-        margin-left: calc(-21vw - 16vw);
+        margin-left: calc(-4vw - 16vw);
     }
 
     span.h1 {
         font-size: 16vw;
+        width: 50vw;
     }
 
     .homeimg img {
@@ -1136,6 +1165,48 @@ header.navFixed2 {
 
     }
 
+    .description {
+        width: auto;
+    }
+
+    .conteiner .row.flex.center {
+        justify-content: flex-start;
+    }
+
+    .description .description-body,
+    .description .description-title {
+        text-align: left;
+    }
+
+    .about-no-bg {
+        padding: 0;
+    }
+
+    .about-design {
+        width: 100%;
+        margin: 40px 0;
+        text-align: center;
+
+        .h3 {
+            font-size: 18px;
+        }
+
+        .h4 {
+            font-size: 14px
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .line.black.small {
+        display: none;
+    }
+
+    .design {
+        width: 100%;
+    }
 
     .price,
     .line.white {
@@ -1147,6 +1218,11 @@ header.navFixed2 {
         flex-wrap: wrap;
     }
 
+    .rating {
+        position: relative;
+        left: calc(100% - 125px);
+    }
+
     p.links a {
         margin-right: 15px;
     }
@@ -1155,33 +1231,17 @@ header.navFixed2 {
         flex-wrap: wrap;
     }
 
-    ul.portfolio-list {
+    .list {
+        flex-wrap: wrap;
+    }
 
+    .list-content {
+        width: calc(100% - 70px);
+    }
 
-        li {
-            width: 100%;
-            height: 30vh;
-
-            .title {
-                font-size: 5vw;
-            }
-
-            .bg {
-                background: linear-gradient(0deg, rgba(17, 0, 43, 0.5), rgba(17, 0, 43, 0.5));
-                top: 0;
-                height: 100%;
-            }
-
-            .portfolio-content {
-                opacity: 1;
-                z-index: 4;
-
-                p {
-                    font-size: 2.8vw;
-                    line-height: 4vw;
-                }
-            }
-        }
+    .list-img {
+        width: 50px;
+        height: 50px;
     }
 }
 

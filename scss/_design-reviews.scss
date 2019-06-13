@@ -1035,7 +1035,22 @@ header.navFixed2 {
             }
         }
     }
+.form-modal-phone {
+    text-align: right;
+    position: absolute;
+    width: calc(100% - 80px);
+    top: calc(100vh - 320px);
+    padding: 0 40px;
+}
 
+a.button.link-modal.form-modal {
+    display: inline-block;
+}
+
+a.phone.mobile {
+    padding: 15px 0;
+    font-size: 18px
+}
     header nav {
         position: fixed;
         top: 90px;

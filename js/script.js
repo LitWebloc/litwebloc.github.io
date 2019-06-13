@@ -71,11 +71,11 @@ $(".services-head .services-check[data-change='dev-design']").change(function ()
     }
 });
 
-$(function(){
+$(function () {
     $(".culculator").find("input").each(function (i) {
-        if($(".currency p").text() == "$"){
-        $(this).parent().find(".number").html($(this).val());
-        }else{
+        if ($(".currency p").text() == "$") {
+            $(this).parent().find(".number").html($(this).val());
+        } else {
             $(this).parent().find(".number").html($(this).val() * 2.1);
         }
     });
@@ -84,20 +84,21 @@ $(function(){
 function Currency() {
     $(".currency-value").html($(".currency p").text());
 }
+
 function Price() {
-    
+
     $(".culculator").find("input").each(function (i) {
-        if($(".currency p").text() == "$"){
-        console.log($(this).val());
-        $(this).val($(this).val() / 2.1);
-        }else{
-        console.log($(this).val());
-        $(this).val($(this).val() * 2.1);
+        if ($(".currency p").text() == "$") {
+            console.log($(this).val());
+            $(this).val($(this).val() / 2.1);
+        } else {
+            console.log($(this).val());
+            $(this).val($(this).val() * 2.1);
         }
         $(this).parent().find(".number").html($(this).val());
 
     });
-    
+
 }
 Currency();
 $(".currency span").click(function () {
@@ -164,8 +165,8 @@ $(".services-head").change(function () {
     });
 });
 
-function Culculator(){
-        let theCost = 0,
+function Culculator() {
+    let theCost = 0,
         checked = [],
         dev_site = 0,
         devChecked = [],
@@ -230,8 +231,31 @@ function Culculator(){
     $("#total-cost .result").text(theCost);
 }
 
-
+function iframeClose(){
+    $(".iframe").addClass("hide");
+    $("iframe").remove();
+    $(".iframe-title").addClass("hide");
+    $("body").removeAttr( 'style' );
+}
 
 $(".services").change(function () {
     Culculator();
+});
+$(".iframe").ready(function () {
+    $(".iframe-title .close").click(function () {
+        iframeClose();
+    });
+    $(".iframe-title .openBrowser").click(function () {
+        $(".openBrowser").attr("href", $('a[rel="nofollow"]').attr("href"));
+        iframeClose();
+    });
+});
+
+$('a[rel="nofollow"]').click(function () {
+    $(".iframe").removeClass("hide");
+    $(".iframe-title").removeClass("hide");
+    $(".iframe").append('<iframe name="iframe1" src="'+ $(this).attr("href") +'"></iframe>');
+//    $("body").css("overflow", "hidden");
+//    $(".iframe iframe").attr("src", $(this).attr("href"));
+    $("body").css("overflow", "hidden");
 });

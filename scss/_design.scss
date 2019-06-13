@@ -1,5 +1,6 @@
 $color: #504D55;
 $color2: #44404A;
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -19,6 +20,7 @@ $color2: #44404A;
         background: lighten($color, 15%);
     }
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -834,6 +836,10 @@ header.navFixed2 {
     z-index: 99999;
 }
 
+.form-modal-phone {
+    display: none;
+}
+
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -898,37 +904,50 @@ header.navFixed2 {
         margin: auto;
         margin-bottom: 50px;
     }
+    .imag.contact img {
+    width: 80%;
+}
+
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 795px) {
+    header .wiggle {
+        display: none;
+    }
+
     .onload .onload_logo svg {
         width: 13vw;
     }
-.form-modal-phone {
-    text-align: right;
-    position: absolute;
-    width: calc(100% - 80px);
-    top: calc(100vh - 270px);
-    padding: 0 40px;
-}
 
-a.button.link-modal.form-modal {
-    display: inline-block;
-}
+    .form-modal-phone {
+        display: block;
+        text-align: right;
+        position: absolute;
+        width: calc(100% - 80px);
+        top: calc(100vh - 270px);
+        padding: 0 40px;
+    }
 
-a.phone.mobile {
-    padding: 15px 0;
-    font-size: 18px
-}
+    a.button.link-modal.form-modal {
+        display: inline-block;
+    }
+
+    a.phone.mobile {
+        padding: 15px 0;
+        font-size: 18px
+    }
+
     .arrow_down {
         top: calc(100vh - 160px);
         left: calc(50% - 11px);
 
     }
-    .imag.contact{
+
+    .imag.contact {
         display: none;
     }
+
     header .container .row {
         height: 90px;
     }
@@ -1094,15 +1113,26 @@ a.phone.mobile {
     .row.flex.footer {
         flex-wrap: wrap;
     }
-    .h2{
+
+    .h2 {
         font-size: 9vw;
+        line-height: 1;
     }
-    .h3, .h4{
-    font-size: 6vw;
-}
+
+    .h3,
+    .h4 {
+        font-size: 6vw;
+    }
+.left-p{
+        display: none;
+    }
 }
 
-
+@media (max-width: 480px) {
+    .left-p{
+        display: flex;
+    }
+}
 
 @media (max-height: 450px) {
     .revers {

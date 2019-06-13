@@ -262,29 +262,18 @@
                 </div>
             </div>
         </div>
+    </div>
         <script src="js/lib/jquery.js"></script>
         <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
         <script src="js/lib/tilt.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <script src="js/lib/wow.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
         <script>
             $('.about-no-bg .about-design').waypoint(function() {
                 $('.recent_work').hasClass("fade") ? $('.recent_work').removeClass('fade') : $('.recent_work').addClass('fade');
                 $('.ledge').hasClass('ledge-deg') ? $('.ledge').removeClass('ledge-deg') : $('.ledge').addClass('ledge-deg');
             });
-
-            function Slider() {
-                if ($(window).width() <= 1000) {
-                    let swiper = new Swiper('.portfolio', {
-                        slidesPerView: 'auto',
-                        spaceBetween: 15,
-                        freeMode: true,
-                    });
-                }
-            }
-            Slider();
 
         </script>
         <script src="js/script.js"></script>
@@ -295,5 +284,4 @@
             </div>
         </div>
 </body>
-
 </html>

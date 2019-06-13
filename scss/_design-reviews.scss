@@ -910,7 +910,9 @@ header.navFixed2 {
 .currency {
     display: none;
 }
-
+.form-modal-phone{
+    display: none;
+}
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -1006,14 +1008,23 @@ header.navFixed2 {
         }
 
     }
+    .imag.contact img {
+    width: 80%;
+}
+
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 795px) {
+        header .wiggle{
+        display: none;
+    }
     .onload .onload_logo svg {
         width: 13vw;
     }
-
+    .imag.contact{
+        display: none;
+    }
     .arrow_down {
         top: calc(100vh - 160px);
         left: calc(50% - 11px);
@@ -1040,6 +1051,7 @@ header.navFixed2 {
     }
 
     .form-modal-phone {
+        display: block;
         text-align: right;
         position: absolute;
         width: calc(100% - 80px);
@@ -1269,13 +1281,21 @@ header.navFixed2 {
 
     .h2 {
         font-size: 9vw;
+        line-height: 1;
     }
     .h3, .h4{
     font-size: 6vw;
 }
+.left-p{
+        display: none;
+    }
 }
 
-
+@media (max-width: 480px) {
+    .left-p{
+        display: flex;
+    }
+}
 
 @media (max-height: 450px) {
     .revers {

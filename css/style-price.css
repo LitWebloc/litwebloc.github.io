@@ -1225,137 +1225,158 @@ input.services-check[disabled] ~ div {
   background: #3b5b51;
 }
 
+/* line 1009, ../scss/_design-price.scss */
+.form-modal-phone {
+  display: none;
+}
+
 @media (max-width: 1400px) {
-  /* line 1011, ../scss/_design-price.scss */
+  /* line 1013, ../scss/_design-price.scss */
   .homeimg img {
     max-width: 40%;
   }
 }
 @media (max-width: 1200px) {
-  /* line 1017, ../scss/_design-price.scss */
+  /* line 1019, ../scss/_design-price.scss */
   .right-p {
     display: none;
   }
 
-  /* line 1021, ../scss/_design-price.scss */
+  /* line 1023, ../scss/_design-price.scss */
   .left-p,
   .right-p {
     margin-top: 25vh;
     margin-left: auto;
   }
 
-  /* line 1027, ../scss/_design-price.scss */
+  /* line 1029, ../scss/_design-price.scss */
   div.h1 {
     margin-left: calc(-15vw - 11vw);
   }
 
-  /* line 1031, ../scss/_design-price.scss */
+  /* line 1033, ../scss/_design-price.scss */
   span.h1 {
     font-size: 11vw;
   }
 
-  /* line 1035, ../scss/_design-price.scss */
+  /* line 1037, ../scss/_design-price.scss */
   .homeimg img {
     max-width: 55%;
   }
 
-  /* line 1039, ../scss/_design-price.scss */
+  /* line 1041, ../scss/_design-price.scss */
   .services-list:hover .info {
     display: none;
   }
 }
 @media (max-width: 1000px) {
-  /* line 1045, ../scss/_design-price.scss */
+  /* line 1047, ../scss/_design-price.scss */
   .h2 {
     font-size: 36px;
     line-height: 39px;
   }
 
-  /* line 1050, ../scss/_design-price.scss */
+  /* line 1052, ../scss/_design-price.scss */
   .description .description-title h1 {
     font-size: 10px;
     line-height: 14px;
   }
 
-  /* line 1055, ../scss/_design-price.scss */
+  /* line 1057, ../scss/_design-price.scss */
   .description .description-body h2 {
     font-size: 18px;
     line-height: 25px;
   }
 
-  /* line 1060, ../scss/_design-price.scss */
+  /* line 1062, ../scss/_design-price.scss */
   .price-title {
     font-size: 11px;
   }
 
-  /* line 1064, ../scss/_design-price.scss */
+  /* line 1066, ../scss/_design-price.scss */
   footer .h4,
   #ex2 .h4 {
     font-size: 18px;
     line-height: 21px;
   }
 
-  /* line 1070, ../scss/_design-price.scss */
+  /* line 1072, ../scss/_design-price.scss */
   #ex2 p {
     font-size: 12px;
   }
 
-  /* line 1074, ../scss/_design-price.scss */
+  /* line 1076, ../scss/_design-price.scss */
   .currency {
     justify-content: flex-start;
   }
 
-  /* line 1078, ../scss/_design-price.scss */
+  /* line 1080, ../scss/_design-price.scss */
   .footer-text,
   .imag.contact,
   .recent_work {
     display: none;
   }
 
-  /* line 1084, ../scss/_design-price.scss */
+  /* line 1086, ../scss/_design-price.scss */
   .forma {
     margin: auto;
     margin-bottom: 50px;
   }
 
-  /* line 1090, ../scss/_design-price.scss */
+  /* line 1092, ../scss/_design-price.scss */
   #ex2 .top-footer {
     padding-top: 0;
   }
-  /* line 1094, ../scss/_design-price.scss */
+  /* line 1096, ../scss/_design-price.scss */
   #ex2 .forma {
     margin-bottom: 0;
   }
 
-  /* line 1099, ../scss/_design-price.scss */
+  /* line 1101, ../scss/_design-price.scss */
   #dev-site,
   #dev-design {
     margin: 0;
   }
 
-  /* line 1104, ../scss/_design-price.scss */
+  /* line 1106, ../scss/_design-price.scss */
   .slide-mob-price {
     width: 100%;
   }
 
-  /* line 1109, ../scss/_design-price.scss */
+  /* line 1111, ../scss/_design-price.scss */
   #top-the-cost .hide {
     display: block;
   }
 
-  /* line 1114, ../scss/_design-price.scss */
+  /* line 1116, ../scss/_design-price.scss */
   .slide-mob-price {
     padding-left: 5px;
   }
+
+  /* line 1119, ../scss/_design-price.scss */
+  .imag.contact img {
+    width: 80%;
+  }
 }
-@media (max-width: 770px) {
-  /* line 1120, ../scss/_design-price.scss */
+@media (max-width: 795px) {
+  /* line 1126, ../scss/_design-price.scss */
+  header .wiggle {
+    display: none;
+  }
+
+  /* line 1129, ../scss/_design-price.scss */
   .onload .onload_logo svg {
     width: 13vw;
   }
 
-  /* line 1124, ../scss/_design-price.scss */
+  /* line 1132, ../scss/_design-price.scss */
+  .imag.contact {
+    display: none;
+  }
+
+  /* line 1135, ../scss/_design-price.scss */
   .form-modal-phone {
+    display: block;
     text-align: right;
     position: absolute;
     width: calc(100% - 80px);
@@ -1363,37 +1384,37 @@ input.services-check[disabled] ~ div {
     padding: 0 40px;
   }
 
-  /* line 1132, ../scss/_design-price.scss */
+  /* line 1144, ../scss/_design-price.scss */
   a.button.link-modal.form-modal {
     display: inline-block;
   }
 
-  /* line 1136, ../scss/_design-price.scss */
+  /* line 1148, ../scss/_design-price.scss */
   a.phone.mobile {
     padding: 15px 0;
     font-size: 18px;
   }
 
-  /* line 1141, ../scss/_design-price.scss */
+  /* line 1153, ../scss/_design-price.scss */
   .arrow_down {
     top: calc(100vh - 160px);
     left: calc(50% - 11px);
   }
 
-  /* line 1147, ../scss/_design-price.scss */
+  /* line 1159, ../scss/_design-price.scss */
   header .container .row {
     height: 90px;
   }
 
-  /* line 1151, ../scss/_design-price.scss */
+  /* line 1163, ../scss/_design-price.scss */
   header .communication {
     bottom: -12px;
   }
-  /* line 1154, ../scss/_design-price.scss */
+  /* line 1166, ../scss/_design-price.scss */
   header .communication .child {
     display: none;
   }
-  /* line 1157, ../scss/_design-price.scss */
+  /* line 1169, ../scss/_design-price.scss */
   header .communication .child:nth-child(3n) {
     display: block;
     margin-left: 0;
@@ -1401,7 +1422,7 @@ input.services-check[disabled] ~ div {
     text-align: center;
   }
 
-  /* line 1166, ../scss/_design-price.scss */
+  /* line 1178, ../scss/_design-price.scss */
   header nav {
     position: fixed;
     top: 90px;
@@ -1413,14 +1434,14 @@ input.services-check[disabled] ~ div {
     height: 0px;
     transition: 1s;
   }
-  /* line 1177, ../scss/_design-price.scss */
+  /* line 1189, ../scss/_design-price.scss */
   header nav.active {
     background: rgba(0, 0, 0, 0.5);
     padding-top: 30px;
     height: calc(100vh - 112px);
     z-index: 99999;
   }
-  /* line 1184, ../scss/_design-price.scss */
+  /* line 1196, ../scss/_design-price.scss */
   header nav a {
     display: block;
     font-size: 24px;
@@ -1429,13 +1450,13 @@ input.services-check[disabled] ~ div {
     margin-right: 0;
   }
 
-  /* line 1193, ../scss/_design-price.scss */
+  /* line 1205, ../scss/_design-price.scss */
   .nav_mob {
     width: 22px;
     height: 18px;
   }
 
-  /* line 1198, ../scss/_design-price.scss */
+  /* line 1210, ../scss/_design-price.scss */
   .nav_mob span {
     height: 2px;
     width: 100%;
@@ -1444,140 +1465,152 @@ input.services-check[disabled] ~ div {
     border-radius: 3px;
     transition: 1s;
   }
-  /* line 1206, ../scss/_design-price.scss */
+  /* line 1218, ../scss/_design-price.scss */
   .nav_mob span.n2 {
     margin: 6px 0;
   }
 
-  /* line 1212, ../scss/_design-price.scss */
+  /* line 1224, ../scss/_design-price.scss */
   .navFixed2 .n1 {
     transform: rotate(-45deg);
     position: relative;
     top: 8px;
   }
-  /* line 1218, ../scss/_design-price.scss */
+  /* line 1230, ../scss/_design-price.scss */
   .navFixed2 .nav_mob span.n2 {
     margin: 0;
     opacity: 0;
   }
-  /* line 1223, ../scss/_design-price.scss */
+  /* line 1235, ../scss/_design-price.scss */
   .navFixed2 .n3 {
     transform: rotate(45deg);
     position: relative;
     top: 4px;
   }
 
-  /* line 1230, ../scss/_design-price.scss */
+  /* line 1242, ../scss/_design-price.scss */
   header .container .row {
     flex-wrap: wrap;
   }
 
-  /* line 1234, ../scss/_design-price.scss */
+  /* line 1246, ../scss/_design-price.scss */
   .logo {
     width: 180px;
   }
 
-  /* line 1238, ../scss/_design-price.scss */
+  /* line 1250, ../scss/_design-price.scss */
   section .content {
     margin: 20vh auto 0;
   }
 
-  /* line 1242, ../scss/_design-price.scss */
+  /* line 1254, ../scss/_design-price.scss */
   div.h1 {
     margin-top: -10%;
     margin-left: calc(-21vw - 16vw);
   }
 
-  /* line 1247, ../scss/_design-price.scss */
+  /* line 1259, ../scss/_design-price.scss */
   span.h1 {
     font-size: 16vw;
   }
 
-  /* line 1251, ../scss/_design-price.scss */
+  /* line 1263, ../scss/_design-price.scss */
   .homeimg img {
     max-width: 86%;
   }
 
-  /* line 1255, ../scss/_design-price.scss */
+  /* line 1267, ../scss/_design-price.scss */
   .left-p .h3 {
     font-size: 5.5vw;
   }
 
-  /* line 1259, ../scss/_design-price.scss */
+  /* line 1271, ../scss/_design-price.scss */
   .description {
     width: auto;
   }
 
-  /* line 1263, ../scss/_design-price.scss */
+  /* line 1275, ../scss/_design-price.scss */
   .container .row.flex.center {
     justify-content: flex-start;
   }
 
-  /* line 1267, ../scss/_design-price.scss */
+  /* line 1279, ../scss/_design-price.scss */
   .description .description-body,
   .description .description-title {
     text-align: left;
   }
 
-  /* line 1272, ../scss/_design-price.scss */
+  /* line 1284, ../scss/_design-price.scss */
   .manprice {
     width: 50vw;
     margin-bottom: 50px;
     margin-top: 20px;
   }
 
-  /* line 1278, ../scss/_design-price.scss */
+  /* line 1290, ../scss/_design-price.scss */
   .box-arrow-link span {
     padding: 10px 6px;
     font-size: 12px;
   }
 
-  /* line 1283, ../scss/_design-price.scss */
+  /* line 1295, ../scss/_design-price.scss */
   .box-arrow-link .box-arrow-1 img,
   .box-arrow-link .box-arrow-2 img {
     vertical-align: middle;
   }
 
-  /* line 1288, ../scss/_design-price.scss */
+  /* line 1300, ../scss/_design-price.scss */
   .box-arrow-link:hover .box-arrow-1 {
     opacity: 1;
     padding: 10px 6px;
   }
 
-  /* line 1295, ../scss/_design-price.scss */
+  /* line 1307, ../scss/_design-price.scss */
   .price,
   .line.white {
     display: none;
   }
 
-  /* line 1300, ../scss/_design-price.scss */
+  /* line 1312, ../scss/_design-price.scss */
   p.links {
     display: flex;
     flex-wrap: wrap;
   }
 
-  /* line 1305, ../scss/_design-price.scss */
+  /* line 1317, ../scss/_design-price.scss */
   p.links a {
     margin-right: 15px;
   }
 
-  /* line 1309, ../scss/_design-price.scss */
+  /* line 1321, ../scss/_design-price.scss */
   .row.flex.footer {
     flex-wrap: wrap;
   }
 
-  /* line 1313, ../scss/_design-price.scss */
+  /* line 1325, ../scss/_design-price.scss */
   .h2 {
     font-size: 9vw;
+    line-height: 1;
   }
 
-  /* line 1316, ../scss/_design-price.scss */
+  /* line 1329, ../scss/_design-price.scss */
   .h3, .h4 {
     font-size: 6vw;
   }
+
+  /* line 1332, ../scss/_design-price.scss */
+  .left-p {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 1338, ../scss/_design-price.scss */
+  .left-p {
+    display: flex;
+  }
 }
 @media (max-height: 450px) {
-  /* line 1324, ../scss/_design-price.scss */
+  /* line 1343, ../scss/_design-price.scss */
   .revers {
     display: flex;
     justify-content: center;
@@ -1591,7 +1624,7 @@ input.services-check[disabled] ~ div {
     background: black;
     color: white;
   }
-  /* line 1337, ../scss/_design-price.scss */
+  /* line 1356, ../scss/_design-price.scss */
   .revers p {
     margin-right: 15px;
   }

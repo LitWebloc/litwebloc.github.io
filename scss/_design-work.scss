@@ -1,5 +1,6 @@
-$color: #69A0Af;
-$color2: #E5E5E5;
+$color: #333;
+$color2: #EEE;
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -19,6 +20,7 @@ $color2: #E5E5E5;
         background: lighten($color, 15%);
     }
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -177,6 +179,18 @@ small {
     }
 }
 
+.headerfirst {
+    background: rgba(39, 39, 39, 0.6);
+}
+
+.headerfirst.navFixed2 {
+    background: rgba(56, 56, 56, 0.85);
+}
+
+.box-shadow {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.51);
+}
+
 header {
     position: fixed;
     z-index: 999;
@@ -186,9 +200,8 @@ header {
     transition: 1s;
     animation: opacity_revers .8s ease-in-out;
 
-    &.navFixed,
     &.navFixed2 {
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(41, 41, 41, 0.8);
     }
 
 
@@ -284,9 +297,8 @@ header {
 }
 
 .pagefirst {
-    padding-top: 70px;
-    background: $color;
-    height: 100vh;
+    padding-top: 200px;
+
 }
 
 .page_bg {
@@ -304,97 +316,57 @@ header {
     }
 }
 
-div.h1 {
-    position: absolute;
-    margin-left: calc(-9vw - 7vw);
-    margin-top: -5%;
+header .container .breadcrumbs-row .row {
+    height: 40px;
 }
 
-span.h1 {
-    font-family: $fspan, sans-serif;
-    font-size: 7vw;
-    transform: rotate(-15deg);
-    position: absolute;
-    z-index: 3;
-    color: white;
-    margin-top: 20px;
+header .container .breadcrumbs-row {
+    background: rgba(39, 39, 39, 0.63);
+    font-size: 12px;
+
+    a {
+        color: #F39A4A;
+        padding-right: 9px;
+        font-style: italic;
+
+        &:after {
+            content: ">";
+            position: absolute;
+            color: white;
+            font-style: italic;
+            right: 0;
+        }
+    }
+
+    span {
+        color: white;
+        font-style: italic;
+    }
 }
 
-span.h1.shadow {
-    color: $color_home_shadow;
-    position: absolute;
-    margin: 15px 7px;
-    z-index: 3;
+.about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: $footer_bg;
 }
 
-.homeimg {
-    position: absolute;
+.about-no-bg {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.about-design {
+    width: 50%;
+    margin: auto 0;
+}
+
+.design {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 85vh;
-    z-index: 5;
-    width: calc(100% - 80px);
-    max-width: 1300px;
+    width: 40%;
 
     img {
-        max-width: 50%;
-        margin-top: 0;
-        transform-style: preserve-3d;
-        transform: translateZ(20px);
-        z-index: 1;
-    }
-
-    img.shadow {
-        margin: 0 25px;
-    }
-}
-
-.left-p,
-.right-p {
-    display: flex;
-    align-items: center;
-    margin-top: 100px;
-    transition: 1s;
-    padding-left: 10px;
-
-    p {
-        margin: 0;
-        font-style: italic;
-        font-weight: bold;
-        letter-spacing: 0.05em;
-        color: #FFFFFF;
-        transform: rotate(-15deg);
-        font-size: 13px;
-    }
-
-    .h3 {
-        font-size: $h3;
-    }
-}
-
-.left-p {
-    .shadow {
-        position: absolute;
-        margin: -4px -4px 0;
-
-        p {
-            color: $color_home_shadow;
-        }
-    }
-}
-
-.right-p {
-    margin-right: 50px;
-    transform: rotate(-4deg);
-
-    .shadow {
-        position: absolute;
-        margin: -4px 4px 0;
-
-        p {
-            color: $color_home_shadow;
-        }
+        width: 100%;
     }
 }
 
@@ -413,138 +385,61 @@ svg.arrow_down_top {
     position: absolute;
 }
 
-.portfolio {
-    margin: 120px 0;
-    overflow: hidden;
-
-    .button {
-        display: inline-block;
-        padding: 14px 44px;
-        font-size: 14px;
-    }
-
-    .center {
-        text-align: center;
-    }
-}
-
-ul.portfolio-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    padding: 0;
-    width: 100%;
-
-    li {
-        width: 48%;
-        height: 360px;
-        border-radius: 5px;
-        list-style-type: none;
-        position: relative;
-        cursor: pointer;
-        margin-bottom: 56px;
-        overflow: hidden;
-
-        .portfolio-content {
-            position: absolute;
-            text-align: center;
-            color: white;
-            top: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            opacity: 0;
-            width: calc(100% - 154px);
-            z-index: 3;
-            transition: .4s;
-            padding: 10px 77px;
-
-            p {
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 16px;
-                letter-spacing: 0.05em;
-                text-transform: uppercase;
-            }
-        }
-
-        a {
-            display: block;
-            height: 100%;
-        }
-
-        .title {
-            font-size: 48px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        &:hover .portfolio-content {
-            opacity: 1;
-            transition: 1s;
-        }
-
-        .line {
-            width: 130px;
-            background: white;
-            height: 3px;
-            margin: auto;
-        }
-
-        &:hover .bg {
-            background: linear-gradient(0deg, rgba(17, 0, 43, 0.5), rgba(17, 0, 43, 0.5));
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-        }
-
-        span {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            color: $color_link;
-            font-weight: bold;
-            font-size: 13px;
-            text-transform: uppercase;
-        }
-    }
-}
-
-ul.portfolio-list li:hover img {
-    top: -100%;
-}
-
-ul.portfolio-list li img {
-    width: 100%;
-    position: absolute;
+.description {
+    text-transform: uppercase;
     transition: 1s;
-    top: 0%;
-}
 
-.portfolio-filter {
-    margin-bottom: 26px;
+    &.fade {
+        opacity: 0;
+    }
 
-    a {
-        font-size: 14px;
-        margin-right: 20px;
-        text-transform: uppercase;
-        color: black;
-        cursor: pointer;
+    p {
+        text-transform: none;
+        margin-bottom: 54px;
+        width: 50%;
+    }
 
-        &.active {
-            color: $color_link;
+    .description-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
         }
 
-        &:hover {
-            color: $color_link;
+        img {
+            margin-right: 17px;
+        }
+
+        .line.black {
+            margin-bottom: 0;
+            width: 90px;
+            margin-left: 15px;
+            border-bottom: 4px solid black;
         }
     }
+
+    .description-body {
+        width: 70%;
+        margin-bottom: 120px;
+
+        h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+    }
+}
+
+.image {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 .ledge {
@@ -940,11 +835,12 @@ header.navFixed2 {
     }
 
     div.h1 {
-        margin-left: calc(-15vw - 11vw);
+        margin-left: calc(0vw - 11vw);
     }
 
     span.h1 {
         font-size: 11vw;
+        width: 30vw;
     }
 
     .homeimg img {
@@ -968,19 +864,25 @@ header.navFixed2 {
         line-height: 25px;
     }
 
+    .description .description-title h1 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .description .description-body h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
     .price-title {
         font-size: 11px;
     }
 
-    footer .h4 {
-        font-size: 18px;
-        line-height: 21px;
-    }
-
-    ul.portfolio-list li .portfolio-content {
-        width: calc(100% - 70px);
-        padding: 30px 35px 10px;
-        height: calc(100% - 40px);
+    footer {
+        .h4 {
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
 
     .footer-text,
@@ -999,6 +901,14 @@ header.navFixed2 {
 @media (max-width: 770px) {
     .onload .onload_logo svg {
         width: 13vw;
+    }
+
+    .description .description-body {
+        width: 100%;
+    }
+
+    .description p {
+        width: 100%;
     }
 
     .arrow_down {
@@ -1038,7 +948,7 @@ header.navFixed2 {
         transition: 1s;
 
         &.active {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(56, 56, 56, 0.85);
             padding-top: 30px;
             height: 100%;
             z-index: 99999;
@@ -1104,11 +1014,12 @@ header.navFixed2 {
 
     div.h1 {
         margin-top: -10%;
-        margin-left: calc(-21vw - 16vw);
+        margin-left: calc(-4vw - 16vw);
     }
 
     span.h1 {
         font-size: 16vw;
+        width: 50vw;
     }
 
     .homeimg img {
@@ -1154,6 +1065,55 @@ header.navFixed2 {
 
     }
 
+    .description {
+        width: auto;
+    }
+
+    .container .row.flex.center {
+        justify-content: flex-start;
+    }
+
+    .description .description-body,
+    .description .description-title {
+        text-align: left;
+    }
+
+    .about {
+        height: auto;
+    }
+
+    .about-no-bg {
+        .container .row.flex {
+            display: table;
+
+            .about-design {
+                display: table-header-group;
+            }
+
+            .design {
+                display: table-footer-group;
+            }
+        }
+    }
+
+    .about-design {
+        width: 100%;
+        margin: 40px 0;
+
+        .h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+
+
+    .design {
+        width: 100%;
+    }
 
     .price,
     .line.white {
@@ -1173,34 +1133,6 @@ header.navFixed2 {
         flex-wrap: wrap;
     }
 
-    ul.portfolio-list {
-
-
-        li {
-            width: 100%;
-            height: 30vh;
-
-            .title {
-                font-size: 5vw;
-            }
-
-            .bg {
-                background: linear-gradient(0deg, rgba(17, 0, 43, 0.5), rgba(17, 0, 43, 0.5));
-                top: 0;
-                height: 100%;
-            }
-
-            .portfolio-content {
-                opacity: 1;
-                z-index: 4;
-
-                p {
-                    font-size: 2.8vw;
-                    line-height: 4vw;
-                }
-            }
-        }
-    }
 }
 
 

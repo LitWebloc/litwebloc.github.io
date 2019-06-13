@@ -1,8 +1,6 @@
 $color: #554D4E;
 $color2: #EEE;
 
-/* Demonstrate a "mostly customized" scrollbar
- * (won't be visible otherwise if width/height is specified) */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -22,6 +20,7 @@ $color2: #EEE;
         background: lighten($color, 15%);
     }
 }
+
 
 body {
     margin: 0;
@@ -118,7 +117,7 @@ textarea {
     color: #ccc;
 }
 
-.conteiner {
+.container {
 
     .row {
         max-width: 1300px;
@@ -278,7 +277,7 @@ header {
         background: url(../img/icon/line.svg) repeat-x center center/7px 3px;
     }
 
-    .conteiner {
+    .container {
         .row {
             display: flex;
             justify-content: space-between;
@@ -805,11 +804,11 @@ button {
         background: white;
     }
 
-    .conteiner .row {
+    .container .row {
         padding: 0;
     }
 
-    .image.contact {
+    .imag.contact {
         bottom: 0;
         left: -15px;
     }
@@ -825,7 +824,7 @@ button {
     }
 }
 
-.image.contact {
+.imag.contact {
     position: relative;
     bottom: -90px;
     z-index: 1;
@@ -955,7 +954,7 @@ header.navFixed2 {
     }
 
     .footer-text,
-    .image.contact,
+    .imag.contact,
     .recent_work {
         display: none;
     }
@@ -1018,7 +1017,7 @@ header.navFixed2 {
 
     }
 
-    header .conteiner .row {
+    header .container .row {
         height: 90px;
     }
 
@@ -1101,7 +1100,7 @@ header.navFixed2 {
         }
     }
 
-    header .conteiner .row {
+    header .container .row {
         flex-wrap: wrap;
     }
 
@@ -1135,7 +1134,7 @@ header.navFixed2 {
         width: auto;
     }
 
-    .conteiner .row.flex.center {
+    .container .row.flex.center {
         justify-content: flex-start;
     }
 
@@ -1170,7 +1169,7 @@ header.navFixed2 {
         width: auto;
     }
 
-    .conteiner .row.flex.center {
+    .container .row.flex.center {
         justify-content: flex-start;
     }
 

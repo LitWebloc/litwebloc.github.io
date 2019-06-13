@@ -1,6 +1,24 @@
 $color: #6C6B6A;
 $color2: #EEE;
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: lighten($color, 40%);
+    /* or add it to the track */
+}
 
+/* Add a thumb */
+::-webkit-scrollbar-thumb {
+    background: darken($color, 40%);
+
+    &:hover {
+        background: darken($color, 15%);
+    }
+
+    &:active {
+        background: lighten($color, 15%);
+    }
+}
 body {
     margin: 0;
     padding: 0;
@@ -96,7 +114,7 @@ textarea {
     color: #ccc;
 }
 
-.conteiner {
+.container {
 
     .row {
         max-width: 1300px;
@@ -255,7 +273,7 @@ header {
         background: url(../img/icon/line.svg) repeat-x center center/7px 3px;
     }
 
-    .conteiner {
+    .container {
         .row {
             display: flex;
             justify-content: space-between;
@@ -753,11 +771,11 @@ button {
         background: white;
     }
 
-    .conteiner .row {
+    .container .row {
         padding: 0;
     }
 
-    .image.contact {
+    .imag.contact {
         bottom: 0;
         left: -15px;
     }
@@ -773,7 +791,7 @@ button {
     }
 }
 
-.image.contact {
+.imag.contact {
     position: relative;
     bottom: -90px;
     z-index: 1;
@@ -897,7 +915,7 @@ header.navFixed2 {
     }
 
     .footer-text,
-    .image.contact,
+    .imag.contact,
     .recent_work {
         display: none;
     }
@@ -924,7 +942,7 @@ header.navFixed2 {
 
     }
 
-    header .conteiner .row {
+    header .container .row {
         height: 90px;
     }
 
@@ -1007,7 +1025,7 @@ header.navFixed2 {
         }
     }
 
-    header .conteiner .row {
+    header .container .row {
         flex-wrap: wrap;
     }
 
@@ -1041,7 +1059,7 @@ header.navFixed2 {
         width: auto;
     }
 
-    .conteiner .row.flex.center {
+    .container .row.flex.center {
         justify-content: flex-start;
     }
 
@@ -1076,7 +1094,7 @@ header.navFixed2 {
         width: auto;
     }
 
-    .conteiner .row.flex.center {
+    .container .row.flex.center {
         justify-content: flex-start;
     }
 
@@ -1089,7 +1107,7 @@ header.navFixed2 {
         height: auto;
     }
 .about-no-bg{
-    .conteiner .row.flex {
+    .container .row.flex {
     display: table;
         .about-design{
             display: table-header-group;

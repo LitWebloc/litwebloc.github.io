@@ -61,7 +61,7 @@
 
     <section class="pagefirst">
         <header>
-            <div class="conteiner">
+            <div class="container">
                 <div class="row">
                     <div class="logo">
                         <a href="/"><img src="img/logo.svg" alt=""></a>
@@ -104,7 +104,7 @@
             </div>
         </header>
         <div class="blur">
-            <div class="conteiner fadeBox">
+            <div class="container fadeBox">
                 <div class="row flex">
                     <div class="left-p">
                         <!--
@@ -167,7 +167,7 @@
     </section>
     <div class="blur">
         <section class="page_bg">
-            <div class="conteiner">
+            <div class="container">
                 <div class="row description flex wrap">
                     <div class="description-title">
                         <!--                  <img src="img/icon/line_long.svg" alt="line_long">-->
@@ -181,7 +181,7 @@
             </div>
         </section>
         <section class="page_bg">
-            <div class="conteiner">
+            <div class="container">
                 <div class="row culculator flex wrap">
                     <from style="width: 100%;">
                         <div class="flex wrap">
@@ -199,15 +199,20 @@
                             <div class="swiper-wrapper services services-head">
                                 <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/site.jpg') bottom no-repeat / cover;">
                                     <label>
-                                        <input type="checkbox" value="20" class="services-check site" data-change="dev-site">
+                                        <input type="checkbox" value="0" class="services-check site" data-change="dev-site">
                                         <div class="services-content">
                                             <p>Создание сайта</p>
                                         </div>
                                     </label>
+                                    <div class="info">
+                                        <div class="image">
+                                        <img src="img/work/work01/Group%206.jpg" alt=""></div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, quibusdam?</p>
+                                    </div>
                                 </div>
                                 <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/design.jpg') bottom no-repeat / cover;">
                                     <label>
-                                        <input type="checkbox" value="20" class="services-check design" data-change="dev-design">
+                                        <input type="checkbox" value="0" class="services-check design" data-change="dev-design">
                                         <div class="services-content">
                                             <p>Дизайн</p>
                                         </div>
@@ -215,7 +220,7 @@
                                 </div>
                                 <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/price/add.jpg') bottom no-repeat / cover;">
                                     <label>
-                                        <input type="checkbox" value="3" class="services-check add" data-change="add-dev">
+                                        <input type="checkbox" value="0" class="services-check add" data-change="add-dev">
                                         <div class="services-content">
                                             <p>Дополнительнае услуги</p>
                                         </div>
@@ -235,14 +240,19 @@
                                             <input type="checkbox" name="contact" value="1" class="services-check">
                                             <div class="services-content">
                                                 <p>Создание сайта</p>
+                                                <span class="price-value">от <span class="number">30</span><span class="currency-value">$</span></span>
                                             </div>
                                         </label>
+                                        <div class="info">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, quibusdam?</p>
+                                    </div>
                                     </div>
                                     <div class="services-list swiper-slide" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/work.jpg') bottom no-repeat / cover;">
                                         <label>
                                             <input type="checkbox" name="contact" value="30" class="services-check">
                                             <div class="services-content">
                                                 <p>SEO</p>
+                                                <span class="price-value">от <span class="number">30</span><span class="currency-value">$</span></span>
                                             </div>
                                         </label>
                                     </div>
@@ -251,6 +261,7 @@
                                             <input type="checkbox" name="contact" value="60" class="services-check">
                                             <div class="services-content">
                                                 <p>Реклама</p>
+                                                <span class="price-value">от <span class="number">30</span><span class="currency-value">$</span></span>
                                             </div>
                                         </label>
                                     </div>
@@ -259,6 +270,7 @@
                                             <input type="checkbox" name="contact" value="1" class="services-check">
                                             <div class="services-content">
                                                 <p>Дополнительнае услуги</p>
+                                                <span class="price-value">от <span class="number">30</span><span class="currency-value">$</span></span>
                                             </div>
                                         </label>
                                     </div>
@@ -277,6 +289,7 @@
                                             <input type="checkbox" name="contact" value="1" class="services-check">
                                             <div class="services-content">
                                                 <p>Создание сайта</p>
+                                                <span class="price-value">от <span class="number">30</span><span class="currency-value">$</span></span>
                                             </div>
                                         </label>
                                     </div>
@@ -285,6 +298,7 @@
                                             <input type="checkbox" name="contact" value="30" class="services-check">
                                             <div class="services-content">
                                                 <p>SEO</p>
+                                                <span class="price-value">от <span class="number">30</span><span class="currency-value">$</span></span>
                                             </div>
                                         </label>
                                     </div>
@@ -351,11 +365,11 @@
                         </div>
                         <div id="the-cost">
                             <div id="top-the-cost">
-                                <span id="dev-site" class="hide">Разработка сайта: от <span>0</span>$</span>
-                                <span id="dev-design" class="hide">Дизайн: от <span>0</span>$</span>
-                                <span id="add-dev" class="hide">Доп. услуги по разработке сайта: от <span>0</span>$</span>
+                                <span id="dev-site" class="hide">Разработка сайта: от <span class="result">0</span><span class="currency-value">$</span></span>
+                                <span id="dev-design" class="hide">Дизайн: от <span class="result">0</span><span class="currency-value">$</span></span>
+                                <span id="add-dev" class="hide">Доп. услуги по разработке сайта: от <span class="result">0</span><span class="currency-value">$</span></span>
                             </div>
-                            <div id="total-cost">Общая стоимость: от <span>0</span>$</div>
+                            <div id="total-cost">Общая стоимость: от <span class="result">0</span><span class="currency-value">$</span></div>
                             <a href="#ex2" data-modal class="button link-modal">Заказать</a>
                         </div>
                     </from>
@@ -376,7 +390,7 @@
                     </a>
                 </div>
             </div>
-            <div class="conteiner">
+            <div class="container">
                 <div class="row">
                     <a href="#!" class="one recent_work circle">
                         <div class="recent_info">
@@ -401,7 +415,7 @@
         </section>
         <footer>
             <div class="top-footer">
-                <div class="conteiner">
+                <div class="container">
                     <div class="row flex">
                         <div class="footer-text">
                             <p class="h3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".3s">Не будь незнакомцем, просто поздоровайся.</p>
@@ -414,7 +428,7 @@
                                 <a href="#!">test@test.test</a>
                             </div>
                         </div>
-                        <div class="image contact wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                        <div class="imag contact wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                             <img src="img/characters/peoplecontact.png" alt="">
                         </div>
                         <div class="forma">
@@ -429,7 +443,7 @@
                     </div>
                 </div>
             </div>
-            <div class="conteiner">
+            <div class="container">
                 <div class="row flex footer">
                     <p class="links">
                         <a href="">Сотрудничество</a>
@@ -451,7 +465,7 @@
     </div>
     <div id="ex1" class="modal">
         <div class="top-footer">
-            <div class="conteiner">
+            <div class="container">
                 <div class="row flex">
                     <div class="footer-text">
                         <p class="h3">Не будь незнакомцем, просто поздоровайся.</p>
@@ -464,7 +478,7 @@
                             <a href="#!">test@test.test</a>
                         </div>
                     </div>
-                    <div class="image contact">
+                    <div class="imag contact">
                         <img src="img/characters/man_phone.png" alt="">
                     </div>
                     <div class="forma">
@@ -482,7 +496,7 @@
     </div>
     <div id="ex2" class="modal">
         <div class="top-footer">
-            <div class="conteiner">
+            <div class="container">
                 <div class="row">
                     <div class="forma">
                         <p class="h4">Крутые проекты начинаются с заполнения этой формы</p>

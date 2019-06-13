@@ -13,10 +13,6 @@ $('.nav_mob').click(function () {
 
 $(window).on('load', function () {
     $('.onload').fadeOut('slow');
-    console.log(window.location.pathname);
-    if($("#menu a").attr("href") == window.location.pathname){
-        $(this).addClass("active");
-    }
 });
 $('.fadeBox').waypoint(function () {
     $('header').hasClass('navFixed') ? $('header').removeClass('navFixed') : $('header').addClass('navFixed');
@@ -75,9 +71,47 @@ $(".services-head .services-check[data-change='dev-design']").change(function ()
     }
 });
 
+$(function(){
+    $(".culculator").find("input").each(function (i) {
+        if($(".currency p").text() == "$"){
+        $(this).parent().find(".number").html($(this).val());
+        }else{
+            $(this).parent().find(".number").html($(this).val() * 2.1);
+        }
+    });
+});
 
+function Currency() {
+    $(".currency-value").html($(".currency p").text());
+}
+function Price() {
+    
+    $(".culculator").find("input").each(function (i) {
+        if($(".currency p").text() == "$"){
+        console.log($(this).val());
+        $(this).val($(this).val() / 2.1);
+        }else{
+        console.log($(this).val());
+        $(this).val($(this).val() * 2.1);
+        }
+        $(this).parent().find(".number").html($(this).val());
 
-
+    });
+    
+}
+Currency();
+$(".currency span").click(function () {
+    if ($(".currency p").text() == "$") {
+        $(".currency p").text("Br");
+        Currency();
+        Price();
+    } else {
+        $(".currency p").text("$");
+        Currency();
+        Price();
+    }
+    Culculator();
+});
 $(".services.hide").css("max-height", "0");
 $("#top-the-cost .hide").fadeOut(0);
 //Скрывание и появление элементов в калькуляторе
@@ -130,12 +164,8 @@ $(".services-head").change(function () {
     });
 });
 
-
-
-
-
-$(".services").change(function () {
-    let theCost = 0,
+function Culculator(){
+        let theCost = 0,
         checked = [],
         dev_site = 0,
         devChecked = [],
@@ -143,7 +173,6 @@ $(".services").change(function () {
         seoChecked = [],
         dev_add = 0,
         addChecked = [];
-
     $(".culculator input").each(function (i) {
         if ($(this).prop("checked") == true) {
             checked[i] = $(this).val();
@@ -195,13 +224,14 @@ $(".services").change(function () {
         dev_add += +filtered4[i];
     }
 
-    $("#dev-site span").text(dev_site);
-    $("#dev-design span").text(dev_seo);
-    $("#add-dev span").text(dev_add);
-    $("#total-cost span").text(theCost);
-    //        console.log("Общая стоимость:" + theCost);
-    //        console.log("Сайт:" + dev_site);
-    //        console.log("SEO:" + dev_seo);
-    //        console.log("Доп. услуги:" + dev_add);
-    //        console.log('\n');
+    $("#dev-site .result").text(dev_site);
+    $("#dev-design .result").text(dev_seo);
+    $("#add-dev .result").text(dev_add);
+    $("#total-cost .result").text(theCost);
+}
+
+
+
+$(".services").change(function () {
+    Culculator();
 });

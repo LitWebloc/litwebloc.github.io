@@ -849,7 +849,7 @@ button {
         padding: 0;
     }
 
-    .imag.contact {
+    .image.contact {
         bottom: 0;
         left: -15px;
     }
@@ -865,7 +865,7 @@ button {
     }
 }
 
-.imag.contact {
+.image.contact {
     position: relative;
     bottom: -90px;
     z-index: 1;
@@ -922,9 +922,7 @@ header.navFixed2 {
     background: none;
     z-index: 99999;
 }
-    .form-modal {
-        display: none !important;
-    }
+
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -959,9 +957,7 @@ header.navFixed2 {
         font-size: 36px;
         line-height: 39px;
     }
-    .form-modal {
-        display: inline-block !important;
-    }
+
     .description .description-title h1 {
         font-size: 10px;
         line-height: 14px;
@@ -988,7 +984,7 @@ header.navFixed2 {
     }
 
     .footer-text,
-    .imag.contact,
+    .image.contact,
     .recent_work {
         display: none;
     }
@@ -997,35 +993,29 @@ header.navFixed2 {
         margin: auto;
         margin-bottom: 50px;
     }
-    .form-modal {
-    position: fixed;
-    display: inline-block;
-    bottom: 10px;
-    right: 10px;
-    border-radius: 100%;
-    width: 36px;
-    height: 36px;
-    padding: 15px !important;
-    transition: 1s;
-    z-index: 99;
-    animation: 10s form-modal infinite;
-        img{
-            width: 100%;
-        }
-}
-.phone.mobile {
-    position: absolute;
-    right: 0;
-    top: calc(100vh - 154px);
-    font-size: 20px;
-}
+
 }
 
 @media (max-width: 770px) {
     .onload .onload_logo svg {
         width: 13vw;
     }
+.form-modal-phone {
+    text-align: right;
+    position: absolute;
+    width: calc(100% - 80px);
+    top: calc(100vh - 235px);
+    padding: 0 40px;
+}
 
+a.button.link-modal.form-modal {
+    display: inline-block;
+}
+
+a.phone.mobile {
+    padding: 15px 0;
+    font-size: 18px
+}
     .arrow_down {
         top: calc(100vh - 150px);
         left: calc(50% - 11px);
@@ -1065,7 +1055,7 @@ header.navFixed2 {
         &.active {
             background: rgba(0, 0, 0, 0.5);
             padding-top: 30px;
-            height: 100%;
+            height: calc(100vh - 122px);
             z-index: 99999;
         }
 

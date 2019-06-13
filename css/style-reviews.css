@@ -422,146 +422,135 @@ footer .contact a:first-child { margin-left: 0; }
 /* line 907, ../scss/_design-reviews.scss */
 .currency { display: none; }
 
-/* line 910, ../scss/_design-reviews.scss */
-.form-modal { display: none !important; }
-
-@media (max-width: 1400px) { /* line 914, ../scss/_design-reviews.scss */
+@media (max-width: 1400px) { /* line 912, ../scss/_design-reviews.scss */
   .homeimg img { max-width: 40%; } }
-@media (max-width: 1200px) { /* line 920, ../scss/_design-reviews.scss */
+@media (max-width: 1200px) { /* line 918, ../scss/_design-reviews.scss */
   .right-p { display: none; }
-  /* line 924, ../scss/_design-reviews.scss */
+  /* line 922, ../scss/_design-reviews.scss */
   .left-p, .right-p { margin-top: 17vh; }
-  /* line 929, ../scss/_design-reviews.scss */
+  /* line 927, ../scss/_design-reviews.scss */
   div.h1 { margin-left: calc(0vw - 11vw); }
-  /* line 933, ../scss/_design-reviews.scss */
+  /* line 931, ../scss/_design-reviews.scss */
   span.h1 { font-size: 11vw; width: 30vw; }
-  /* line 938, ../scss/_design-reviews.scss */
+  /* line 936, ../scss/_design-reviews.scss */
   .homeimg img { max-width: 55%; } }
-@media (max-width: 1000px) { /* line 944, ../scss/_design-reviews.scss */
+@media (max-width: 1000px) { /* line 942, ../scss/_design-reviews.scss */
   .h2 { font-size: 36px; line-height: 39px; }
-  /* line 948, ../scss/_design-reviews.scss */
-  .form-modal { display: inline-block !important; }
-  /* line 951, ../scss/_design-reviews.scss */
+  /* line 947, ../scss/_design-reviews.scss */
   .price-title { font-size: 11px; }
-  /* line 955, ../scss/_design-reviews.scss */
+  /* line 951, ../scss/_design-reviews.scss */
   footer .h4 { font-size: 18px; line-height: 21px; }
-  /* line 960, ../scss/_design-reviews.scss */
+  /* line 956, ../scss/_design-reviews.scss */
   .footer-text, .imag.contact, .recent_work { display: none; }
-  /* line 966, ../scss/_design-reviews.scss */
+  /* line 962, ../scss/_design-reviews.scss */
   .forma { margin: auto; margin-bottom: 50px; }
-  /* line 972, ../scss/_design-reviews.scss */
+  /* line 968, ../scss/_design-reviews.scss */
   .right-reviews a.button { display: none; }
-  /* line 978, ../scss/_design-reviews.scss */
+  /* line 974, ../scss/_design-reviews.scss */
   .currency { display: flex; align-items: center; justify-content: flex-end; }
-  /* line 983, ../scss/_design-reviews.scss */
+  /* line 979, ../scss/_design-reviews.scss */
   .currency a { display: block; background: url("../img/icon/currency.svg") center no-repeat/cover; text-align: center; width: 42px; height: 52px; position: relative; right: -11px; }
-  /* line 992, ../scss/_design-reviews.scss */
+  /* line 988, ../scss/_design-reviews.scss */
   .currency a:first-child { right: -14px; }
-  /* line 995, ../scss/_design-reviews.scss */
+  /* line 991, ../scss/_design-reviews.scss */
   .currency a:first-child img { position: relative; top: 16px; width: 18px; }
-  /* line 1002, ../scss/_design-reviews.scss */
-  .currency a img { width: 17px; position: relative; top: 16px; }
-  /* line 1010, ../scss/_design-reviews.scss */
-  .form-modal { position: fixed; display: inline-block; bottom: 10px; right: 10px; border-radius: 100%; width: 36px; height: 36px; padding: 15px !important; transition: 1s; z-index: 99; animation: 10s form-modal infinite; }
-  /* line 1022, ../scss/_design-reviews.scss */
-  .form-modal img { width: 100%; }
-  /* line 1026, ../scss/_design-reviews.scss */
-  .phone.mobile { position: absolute; right: 0; top: calc(100vh - 154px); font-size: 20px; } }
-@media (max-width: 770px) { /* line 1036, ../scss/_design-reviews.scss */
+  /* line 998, ../scss/_design-reviews.scss */
+  .currency a img { width: 17px; position: relative; top: 16px; } }
+@media (max-width: 770px) { /* line 1010, ../scss/_design-reviews.scss */
   .onload .onload_logo svg { width: 13vw; }
-  /* line 1040, ../scss/_design-reviews.scss */
+  /* line 1014, ../scss/_design-reviews.scss */
   .arrow_down { top: calc(100vh - 150px); left: calc(50% - 11px); }
-  /* line 1046, ../scss/_design-reviews.scss */
+  /* line 1020, ../scss/_design-reviews.scss */
   header .container .row { height: 90px; }
-  /* line 1050, ../scss/_design-reviews.scss */
+  /* line 1024, ../scss/_design-reviews.scss */
   header .communication { bottom: -12px; }
-  /* line 1053, ../scss/_design-reviews.scss */
+  /* line 1027, ../scss/_design-reviews.scss */
   header .communication .child { display: none; }
-  /* line 1056, ../scss/_design-reviews.scss */
+  /* line 1030, ../scss/_design-reviews.scss */
   header .communication .child:nth-child(3n) { display: block; margin-left: 0; margin-top: 6px; text-align: center; }
-  /* line 1065, ../scss/_design-reviews.scss */
+  /* line 1039, ../scss/_design-reviews.scss */
   header nav { position: fixed; top: 90px; left: 0; right: 0; bottom: 0; overflow: hidden; padding-top: 0px; height: 0px; transition: 1s; }
-  /* line 1076, ../scss/_design-reviews.scss */
-  header nav.active { background: rgba(0, 0, 0, 0.5); padding-top: 30px; height: 100%; z-index: 99999; }
-  /* line 1083, ../scss/_design-reviews.scss */
+  /* line 1050, ../scss/_design-reviews.scss */
+  header nav.active { background: rgba(0, 0, 0, 0.5); padding-top: 30px; height: calc(100vh - 122px); z-index: 99999; }
+  /* line 1057, ../scss/_design-reviews.scss */
   header nav a { display: block; font-size: 24px; text-align: right; padding: 10px 40px; margin-right: 0; }
-  /* line 1092, ../scss/_design-reviews.scss */
+  /* line 1066, ../scss/_design-reviews.scss */
   .nav_mob { width: 22px; height: 18px; }
-  /* line 1097, ../scss/_design-reviews.scss */
+  /* line 1071, ../scss/_design-reviews.scss */
   .nav_mob span { height: 2px; width: 100%; display: block; background: white; border-radius: 3px; transition: 1s; }
-  /* line 1105, ../scss/_design-reviews.scss */
+  /* line 1079, ../scss/_design-reviews.scss */
   .nav_mob span.n2 { margin: 6px 0; }
-  /* line 1111, ../scss/_design-reviews.scss */
+  /* line 1085, ../scss/_design-reviews.scss */
   .navFixed2 .n1 { transform: rotate(-45deg); position: relative; top: 8px; }
-  /* line 1117, ../scss/_design-reviews.scss */
+  /* line 1091, ../scss/_design-reviews.scss */
   .navFixed2 .nav_mob span.n2 { margin: 0; opacity: 0; }
-  /* line 1122, ../scss/_design-reviews.scss */
+  /* line 1096, ../scss/_design-reviews.scss */
   .navFixed2 .n3 { transform: rotate(45deg); position: relative; top: 4px; }
-  /* line 1129, ../scss/_design-reviews.scss */
+  /* line 1103, ../scss/_design-reviews.scss */
   header .container .row { flex-wrap: wrap; }
-  /* line 1133, ../scss/_design-reviews.scss */
+  /* line 1107, ../scss/_design-reviews.scss */
   .logo { width: 180px; }
-  /* line 1137, ../scss/_design-reviews.scss */
+  /* line 1111, ../scss/_design-reviews.scss */
   section .content { margin: 20vh auto 0; }
-  /* line 1141, ../scss/_design-reviews.scss */
+  /* line 1115, ../scss/_design-reviews.scss */
   div.h1 { margin-top: -7%; margin-left: calc(-11vw - 16vw); }
-  /* line 1146, ../scss/_design-reviews.scss */
+  /* line 1120, ../scss/_design-reviews.scss */
   span.h1 { font-size: 16vw; width: 50vw; }
-  /* line 1151, ../scss/_design-reviews.scss */
+  /* line 1125, ../scss/_design-reviews.scss */
   .homeimg img { max-width: 86%; }
-  /* line 1155, ../scss/_design-reviews.scss */
+  /* line 1129, ../scss/_design-reviews.scss */
   .left-p .h3 { font-size: 4.5vw; }
-  /* line 1159, ../scss/_design-reviews.scss */
+  /* line 1133, ../scss/_design-reviews.scss */
   .description { width: auto; }
-  /* line 1163, ../scss/_design-reviews.scss */
+  /* line 1137, ../scss/_design-reviews.scss */
   .container .row.flex.center { justify-content: flex-start; }
-  /* line 1167, ../scss/_design-reviews.scss */
+  /* line 1141, ../scss/_design-reviews.scss */
   .description .description-body, .description .description-title { text-align: left; }
-  /* line 1172, ../scss/_design-reviews.scss */
+  /* line 1146, ../scss/_design-reviews.scss */
   .manprice { width: 50vw; margin-bottom: 50px; margin-top: 20px; }
-  /* line 1178, ../scss/_design-reviews.scss */
+  /* line 1152, ../scss/_design-reviews.scss */
   .box-arrow-link span { padding: 10px 6px; font-size: 12px; }
-  /* line 1183, ../scss/_design-reviews.scss */
+  /* line 1157, ../scss/_design-reviews.scss */
   .box-arrow-link .box-arrow-1 img, .box-arrow-link .box-arrow-2 img { vertical-align: middle; }
-  /* line 1188, ../scss/_design-reviews.scss */
+  /* line 1162, ../scss/_design-reviews.scss */
   .box-arrow-link:hover .box-arrow-1 { opacity: 1; padding: 10px 6px; }
-  /* line 1194, ../scss/_design-reviews.scss */
+  /* line 1168, ../scss/_design-reviews.scss */
   .description { width: auto; }
-  /* line 1198, ../scss/_design-reviews.scss */
+  /* line 1172, ../scss/_design-reviews.scss */
   .container .row.flex.center { justify-content: flex-start; }
-  /* line 1202, ../scss/_design-reviews.scss */
+  /* line 1176, ../scss/_design-reviews.scss */
   .description .description-body, .description .description-title { text-align: left; }
-  /* line 1207, ../scss/_design-reviews.scss */
+  /* line 1181, ../scss/_design-reviews.scss */
   .about-no-bg { padding: 0; }
-  /* line 1211, ../scss/_design-reviews.scss */
+  /* line 1185, ../scss/_design-reviews.scss */
   .about-design { width: 100%; margin: 40px 0; text-align: center; }
-  /* line 1216, ../scss/_design-reviews.scss */
+  /* line 1190, ../scss/_design-reviews.scss */
   .about-design .h3 { font-size: 18px; }
-  /* line 1220, ../scss/_design-reviews.scss */
+  /* line 1194, ../scss/_design-reviews.scss */
   .about-design .h4 { font-size: 14px; }
-  /* line 1224, ../scss/_design-reviews.scss */
+  /* line 1198, ../scss/_design-reviews.scss */
   .about-design p { font-size: 12px; }
-  /* line 1229, ../scss/_design-reviews.scss */
+  /* line 1203, ../scss/_design-reviews.scss */
   .line.black.small { display: none; }
-  /* line 1233, ../scss/_design-reviews.scss */
+  /* line 1207, ../scss/_design-reviews.scss */
   .design { width: 100%; }
-  /* line 1237, ../scss/_design-reviews.scss */
+  /* line 1211, ../scss/_design-reviews.scss */
   .price, .line.white { display: none; }
-  /* line 1242, ../scss/_design-reviews.scss */
+  /* line 1216, ../scss/_design-reviews.scss */
   p.links { display: flex; flex-wrap: wrap; }
-  /* line 1247, ../scss/_design-reviews.scss */
+  /* line 1221, ../scss/_design-reviews.scss */
   .rating { position: relative; left: calc(100% - 125px); }
-  /* line 1252, ../scss/_design-reviews.scss */
+  /* line 1226, ../scss/_design-reviews.scss */
   p.links a { margin-right: 15px; }
-  /* line 1256, ../scss/_design-reviews.scss */
+  /* line 1230, ../scss/_design-reviews.scss */
   .row.flex.footer { flex-wrap: wrap; }
-  /* line 1260, ../scss/_design-reviews.scss */
+  /* line 1234, ../scss/_design-reviews.scss */
   .list { flex-wrap: wrap; }
-  /* line 1264, ../scss/_design-reviews.scss */
+  /* line 1238, ../scss/_design-reviews.scss */
   .list-content { width: calc(100% - 70px); }
-  /* line 1268, ../scss/_design-reviews.scss */
+  /* line 1242, ../scss/_design-reviews.scss */
   .list-img { width: 50px; height: 50px; } }
-@media (max-height: 450px) { /* line 1277, ../scss/_design-reviews.scss */
+@media (max-height: 450px) { /* line 1251, ../scss/_design-reviews.scss */
   .revers { display: flex; justify-content: center; align-items: center; position: fixed; top: 0; bottom: 0; right: 0; left: 0; z-index: 9999; background: black; color: white; }
-  /* line 1290, ../scss/_design-reviews.scss */
+  /* line 1264, ../scss/_design-reviews.scss */
   .revers p { margin-right: 15px; } }

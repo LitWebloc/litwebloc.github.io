@@ -873,9 +873,7 @@ header.navFixed2 {
 header .mobile {
     display: none;
 }
-.form-modal {
-    display: none !important;
-}
+
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -905,7 +903,9 @@ header .mobile {
         max-width: 55%;
     }
 }
-
+.form-modal {
+    display: none;
+}
 @media (max-width: 1000px) {
     .h2 {
         font-size: 36px;
@@ -944,9 +944,7 @@ header .mobile {
             line-height: 21px;
         }
     }
-    .form-modal {
-        display: inline-block !important;
-    }
+
     .footer-text,
     .imag.contact,
     .recent_work {
@@ -976,7 +974,7 @@ header .mobile {
 .phone.mobile {
     position: absolute;
     right: 0;
-    top: calc(100vh - 154px);
+    bottom: 24px;
     font-size: 20px;
 }
 }
@@ -985,7 +983,22 @@ header .mobile {
     .onload .onload_logo svg {
         width: 13vw;
     }
+.form-modal-phone {
+    text-align: right;
+    position: absolute;
+    width: calc(100% - 80px);
+    top: calc(100vh - 235px);
+    padding: 0 40px;
+}
 
+a.button.link-modal.form-modal {
+    display: inline-block;
+}
+
+a.phone.mobile {
+    padding: 15px 0;
+    font-size: 18px
+}
     .description .description-body {
         width: 100%;
     }
@@ -1033,7 +1046,7 @@ header .mobile {
         &.active {
             background: rgba(56, 56, 56, 0.85);
             padding-top: 30px;
-            height: 100%;
+            height: calc(100vh - 122px);
             z-index: 99999;
         }
 

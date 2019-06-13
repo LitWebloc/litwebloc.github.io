@@ -1002,9 +1002,7 @@ input.services-check[disabled] ~ div {
     opacity: 0.5;
     background: #3b5b51;
 }
-    .form-modal {
-        display: none !important;
-    }
+
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -1058,9 +1056,7 @@ input.services-check[disabled] ~ div {
     .price-title {
         font-size: 11px;
     }
-    .form-modal {
-        display: inline-block !important;
-    }
+
     footer .h4,
     #ex2 .h4 {
         font-size: 18px;
@@ -1110,35 +1106,28 @@ input.services-check[disabled] ~ div {
     .slide-mob-price{
         padding-left: 5px;
     }
-    .form-modal {
-    position: fixed;
-    display: inline-block;
-    bottom: 10px;
-    right: 10px;
-    border-radius: 100%;
-    width: 36px;
-    height: 36px;
-    padding: 15px !important;
-    transition: 1s;
-    z-index: 99;
-    animation: 10s form-modal infinite;
-        img{
-            width: 100%;
-        }
-}
-.phone.mobile {
-    position: absolute;
-    right: 0;
-    top: calc(100vh - 154px);
-    font-size: 20px;
-}
 }
 
 @media (max-width: 770px) {
     .onload .onload_logo svg {
         width: 13vw;
     }
+.form-modal-phone {
+    text-align: right;
+    position: absolute;
+    width: calc(100% - 80px);
+    top: calc(100vh - 235px);
+    padding: 0 40px;
+}
 
+a.button.link-modal.form-modal {
+    display: inline-block;
+}
+
+a.phone.mobile {
+    padding: 15px 0;
+    font-size: 18px
+}
     .arrow_down {
         top: calc(100vh - 150px);
         left: calc(50% - 11px);
@@ -1178,7 +1167,7 @@ input.services-check[disabled] ~ div {
         &.active {
             background: rgba(0, 0, 0, 0.5);
             padding-top: 30px;
-            height: 100%;
+            height: calc(100vh - 122px);
             z-index: 99999;
         }
 

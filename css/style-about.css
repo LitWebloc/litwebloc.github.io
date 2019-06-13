@@ -446,7 +446,7 @@ footer .contact a:first-child { margin-left: 0; }
   /* line 970, ../scss/_design-about.scss */
   header .communication .child:nth-child(3n) { display: block; margin-left: 0; margin-top: 6px; text-align: center; }
   /* line 978, ../scss/_design-about.scss */
-  .form-modal-phone { text-align: right; position: absolute; width: calc(100% - 80px); top: calc(100vh - 320px); padding: 0 40px; }
+  .form-modal-phone { text-align: right; position: absolute; width: calc(100% - 80px); top: calc(100vh - 270px); padding: 0 40px; }
   /* line 986, ../scss/_design-about.scss */
   a.button.link-modal.form-modal { display: inline-block; }
   /* line 990, ../scss/_design-about.scss */

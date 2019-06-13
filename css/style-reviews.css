@@ -469,7 +469,7 @@ footer .contact a:first-child { margin-left: 0; }
   /* line 1030, ../scss/_design-reviews.scss */
   header .communication .child:nth-child(3n) { display: block; margin-left: 0; margin-top: 6px; text-align: center; }
   /* line 1038, ../scss/_design-reviews.scss */
-  .form-modal-phone { text-align: right; position: absolute; width: calc(100% - 80px); top: calc(100vh - 320px); padding: 0 40px; }
+  .form-modal-phone { text-align: right; position: absolute; width: calc(100% - 80px); top: calc(100vh - 270px); padding: 0 40px; }
   /* line 1046, ../scss/_design-reviews.scss */
   a.button.link-modal.form-modal { display: inline-block; }
   /* line 1050, ../scss/_design-reviews.scss */

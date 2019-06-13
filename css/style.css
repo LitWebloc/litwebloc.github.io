@@ -413,7 +413,7 @@ footer .contact a:first-child { margin-left: 0; }
 @media (max-width: 770px) { /* line 902, ../scss/_design.scss */
   .onload .onload_logo svg { width: 13vw; }
   /* line 905, ../scss/_design.scss */
-  .form-modal-phone { text-align: right; position: absolute; width: calc(100% - 80px); top: calc(100vh - 320px); padding: 0 40px; }
+  .form-modal-phone { text-align: right; position: absolute; width: calc(100% - 80px); top: calc(100vh - 270px); padding: 0 40px; }
   /* line 913, ../scss/_design.scss */
   a.button.link-modal.form-modal { display: inline-block; }
   /* line 917, ../scss/_design.scss */

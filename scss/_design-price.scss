@@ -302,17 +302,20 @@ header {
     padding-top: 70px;
     background: $color;
     height: 100vh;
+    width: 100%;
 }
 
 .page_bg {
     background: $color;
     overflow: hidden;
     margin-top: -1px;
+    width: 100%;
 }
 
 .page_bg_2 {
     background: $color2;
     overflow: hidden;
+    width: 100%;
 }
 
 div.h1 {
@@ -982,7 +985,8 @@ header.navFixed2 {
     margin-bottom: 34px;
 }
 
-#dev-site, #dev-design {
+#dev-site,
+#dev-design {
     margin-right: 50px;
 }
 
@@ -991,7 +995,7 @@ header.navFixed2 {
 }
 
 .culculator {
-    margin-top: 200px !important;
+    margin-top: 120px !important;
 }
 
 .culculator-description .h4 {
@@ -1032,7 +1036,7 @@ input.services-check[disabled] ~ div {
         max-width: 55%;
     }
 
-    .services-list:hover .info{
+    .services-list:hover .info {
         display: none;
     }
 }
@@ -1091,9 +1095,12 @@ input.services-check[disabled] ~ div {
             margin-bottom: 0;
         }
     }
-    #dev-site, #dev-design{
+
+    #dev-site,
+    #dev-design {
         margin: 0;
     }
+
     .slide-mob-price {
         width: 100%;
     }
@@ -1103,7 +1110,8 @@ input.services-check[disabled] ~ div {
             display: block;
         }
     }
-    .slide-mob-price{
+
+    .slide-mob-price {
         padding-left: 5px;
     }
 }
@@ -1112,24 +1120,26 @@ input.services-check[disabled] ~ div {
     .onload .onload_logo svg {
         width: 13vw;
     }
-.form-modal-phone {
-    text-align: right;
-    position: absolute;
-    width: calc(100% - 80px);
-    top: calc(100vh - 270px);
-    padding: 0 40px;
-}
 
-a.button.link-modal.form-modal {
-    display: inline-block;
-}
+    .form-modal-phone {
+        text-align: right;
+        position: absolute;
+        width: calc(100% - 80px);
+        top: calc(100vh - 270px);
+        padding: 0 40px;
+    }
 
-a.phone.mobile {
-    padding: 15px 0;
-    font-size: 18px
-}
+    a.button.link-modal.form-modal {
+        display: inline-block;
+    }
+
+    a.phone.mobile {
+        padding: 15px 0;
+        font-size: 18px
+    }
+
     .arrow_down {
-        top: calc(100vh - 150px);
+        top: calc(100vh - 160px);
         left: calc(50% - 11px);
 
     }
@@ -1167,7 +1177,7 @@ a.phone.mobile {
         &.active {
             background: rgba(0, 0, 0, 0.5);
             padding-top: 30px;
-            height: calc(100vh - 122px);
+            height: calc(100vh - 112px);
             z-index: 99999;
         }
 
@@ -1299,6 +1309,13 @@ a.phone.mobile {
     .row.flex.footer {
         flex-wrap: wrap;
     }
+
+    .h2 {
+        font-size: 9vw;
+    }
+    .h3, .h4{
+    font-size: 6vw;
+}
 }
 
 

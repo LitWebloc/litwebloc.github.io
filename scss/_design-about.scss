@@ -1,5 +1,6 @@
 $color: #6C6B6A;
 $color2: #EEE;
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -19,6 +20,7 @@ $color2: #EEE;
         background: lighten($color, 15%);
     }
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -287,17 +289,20 @@ header {
     padding-top: 70px;
     background: $color;
     height: 100vh;
+    width: 100%;
 }
 
 .page_bg {
     background: $color;
     overflow: hidden;
     margin-top: -1px;
+    width: 100%;
 }
 
 .page_bg_2 {
     background: $color2;
     overflow: hidden;
+    width: 100%;
 
     .content {
         margin: 15vh auto 0;
@@ -404,7 +409,8 @@ span.h1.shadow {
     padding-bottom: 150px;
     background: $footer_bg;
 }
-.about-no-bg{
+
+.about-no-bg {
     padding-top: 150px;
     padding-bottom: 150px;
 }
@@ -418,6 +424,7 @@ span.h1.shadow {
     display: flex;
     align-items: center;
     width: 40%;
+
     img {
         width: 100%;
     }
@@ -931,28 +938,30 @@ header.navFixed2 {
     .onload .onload_logo svg {
         width: 13vw;
     }
-.form-modal-phone {
-    text-align: right;
-    position: absolute;
-    width: calc(100% - 80px);
-    top: calc(100vh - 235px);
-    padding: 0 40px;
-}
 
-a.button.link-modal.form-modal {
-    display: inline-block;
-}
+    .form-modal-phone {
+        text-align: right;
+        position: absolute;
+        width: calc(100% - 80px);
+        top: calc(100vh - 235px);
+        padding: 0 40px;
+    }
 
-a.phone.mobile {
-    padding: 15px 0;
-    font-size: 18px
-}
+    a.button.link-modal.form-modal {
+        display: inline-block;
+    }
+
+    a.phone.mobile {
+        padding: 15px 0;
+        font-size: 18px
+    }
+
     .description .description-body {
         width: 100%;
     }
 
     .arrow_down {
-        top: calc(100vh - 150px);
+        top: calc(100vh - 160px);
         left: calc(50% - 11px);
 
     }
@@ -975,22 +984,24 @@ a.phone.mobile {
             }
         }
     }
-.form-modal-phone {
-    text-align: right;
-    position: absolute;
-    width: calc(100% - 80px);
-    top: calc(100vh - 270px);
-    padding: 0 40px;
-}
 
-a.button.link-modal.form-modal {
-    display: inline-block;
-}
+    .form-modal-phone {
+        text-align: right;
+        position: absolute;
+        width: calc(100% - 80px);
+        top: calc(100vh - 270px);
+        padding: 0 40px;
+    }
 
-a.phone.mobile {
-    padding: 15px 0;
-    font-size: 18px
-}
+    a.button.link-modal.form-modal {
+        display: inline-block;
+    }
+
+    a.phone.mobile {
+        padding: 15px 0;
+        font-size: 18px
+    }
+
     header nav {
         position: fixed;
         top: 90px;
@@ -1005,7 +1016,7 @@ a.phone.mobile {
         &.active {
             background: rgba(0, 0, 0, 0.5);
             padding-top: 30px;
-            height: calc(100vh - 122px);
+            height: calc(100vh - 112px);
             z-index: 99999;
         }
 
@@ -1136,17 +1147,21 @@ a.phone.mobile {
     .about {
         height: auto;
     }
-.about-no-bg{
-    .container .row.flex {
-    display: table;
-        .about-design{
-            display: table-header-group;
-        }
-        .design {
+
+    .about-no-bg {
+        .container .row.flex {
+            display: table;
+
+            .about-design {
+                display: table-header-group;
+            }
+
+            .design {
                 display: table-footer-group;
+            }
         }
-}
-}
+    }
+
     .about-design {
         width: 100%;
         margin: 40px 0;
@@ -1184,6 +1199,12 @@ a.phone.mobile {
         flex-wrap: wrap;
     }
 
+    .h2 {
+        font-size: 9vw;
+    }
+    .h3, .h4{
+    font-size: 6vw;
+}
 }
 
 

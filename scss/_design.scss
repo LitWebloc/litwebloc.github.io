@@ -291,17 +291,20 @@ header {
     padding-top: 70px;
     background: $color;
     height: 100vh;
+    width: 100%;
 }
 
 .page_bg {
     background: $color;
     overflow: hidden;
     margin-top: -1px;
+    width: 100%;
 }
 
 .page_bg_2 {
     background: $color2;
     overflow: hidden;
+    width: 100%;
 
     .content {
         margin: 15vh auto 0;
@@ -757,7 +760,7 @@ button {
         padding: 0;
     }
 
-    .image.contact {
+    .imag.contact {
         bottom: 0;
         left: -15px;
     }
@@ -773,7 +776,7 @@ button {
     }
 }
 
-.image.contact {
+.imag.contact {
     position: relative;
     bottom: -90px;
     z-index: 1;
@@ -919,11 +922,13 @@ a.phone.mobile {
     font-size: 18px
 }
     .arrow_down {
-        top: calc(100vh - 150px);
+        top: calc(100vh - 160px);
         left: calc(50% - 11px);
 
     }
-
+    .imag.contact{
+        display: none;
+    }
     header .container .row {
         height: 90px;
     }
@@ -957,7 +962,7 @@ a.phone.mobile {
         &.active {
             background: rgba(0, 0, 0, 0.5);
             padding-top: 30px;
-            height: calc(100vh - 122px);
+            height: calc(100vh - 112px);
             z-index: 99999;
         }
 
@@ -1089,6 +1094,12 @@ a.phone.mobile {
     .row.flex.footer {
         flex-wrap: wrap;
     }
+    .h2{
+        font-size: 9vw;
+    }
+    .h3, .h4{
+    font-size: 6vw;
+}
 }
 
 

@@ -357,11 +357,13 @@ header {
     background: $color;
     overflow: hidden;
     margin-top: -1px;
+    width: 100%;
 }
 
 .page_bg_2 {
     background: $color2;
     overflow: hidden;
+    width: 100%;
 
     .content {
         margin: 15vh auto 0;
@@ -420,21 +422,6 @@ header .container .breadcrumbs-row {
     img {
         width: 100%;
     }
-}
-
-.arrow_down {
-    position: absolute;
-    left: 50%;
-    z-index: 10;
-    top: calc(100vh - 130px);
-
-    a {
-        animation: arrow_down 1.3s infinite ease-in-out;
-    }
-}
-
-svg.arrow_down_top {
-    position: absolute;
 }
 
 .description {
@@ -903,14 +890,17 @@ header .mobile {
         max-width: 55%;
     }
 }
+
 @media (max-width: 1000px) {
     .h2 {
         font-size: 36px;
         line-height: 39px;
     }
-    header .mobile{
+
+    header .mobile {
         display: block;
     }
+
     .description .description-title h1 {
         font-size: 10px;
         line-height: 14px;
@@ -959,22 +949,24 @@ header .mobile {
     .onload .onload_logo svg {
         width: 13vw;
     }
-.form-modal-phone {
-    text-align: right;
-    position: absolute;
-    width: calc(100% - 80px);
-    top: calc(100vh - 270px);
-    padding: 0 40px;
-}
 
-a.button.link-modal.form-modal {
-    display: inline-block;
-}
+    .form-modal-phone {
+        text-align: right;
+        position: absolute;
+        width: calc(100% - 80px);
+        top: calc(100vh - 270px);
+        padding: 0 40px;
+    }
 
-a.phone.mobile {
-    padding: 15px 0;
-    font-size: 18px
-}
+    a.button.link-modal.form-modal {
+        display: inline-block;
+    }
+
+    a.phone.mobile {
+        padding: 15px 0;
+        font-size: 18px
+    }
+
     .description .description-body {
         width: 100%;
     }
@@ -983,11 +975,6 @@ a.phone.mobile {
         width: 100%;
     }
 
-    .arrow_down {
-        top: calc(100vh - 150px);
-        left: calc(50% - 11px);
-
-    }
 
     header .container .row {
         height: 90px;
@@ -1022,7 +1009,7 @@ a.phone.mobile {
         &.active {
             background: rgba(56, 56, 56, 0.85);
             padding-top: 30px;
-            height: calc(100vh - 122px);
+            height: calc(100vh - 112px);
             z-index: 99999;
         }
 
@@ -1206,6 +1193,13 @@ a.phone.mobile {
         flex-wrap: wrap;
     }
 
+    .h2 {
+        font-size: 9vw;
+    }
+    .h3, .h4{
+    font-size: 6vw;
+}
+    
 }
 
 

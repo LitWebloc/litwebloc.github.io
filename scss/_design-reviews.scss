@@ -218,7 +218,7 @@ header {
     }
 
     nav {
-        a{
+        a {
             margin-right: 15px;
             color: #fff;
             text-decoration: none;
@@ -291,17 +291,20 @@ header {
     padding-top: 70px;
     background: $color;
     height: 100vh;
+    width: 100%;
 }
 
 .page_bg {
     background: $color;
     overflow: hidden;
     margin-top: -1px;
+    width: 100%;
 }
 
 .page_bg_2 {
     background: $color2;
     overflow: hidden;
+    width: 100%;
 
     .content {
         margin: 15vh auto 0;
@@ -1012,7 +1015,7 @@ header.navFixed2 {
     }
 
     .arrow_down {
-        top: calc(100vh - 150px);
+        top: calc(100vh - 160px);
         left: calc(50% - 11px);
 
     }
@@ -1035,22 +1038,24 @@ header.navFixed2 {
             }
         }
     }
-.form-modal-phone {
-    text-align: right;
-    position: absolute;
-    width: calc(100% - 80px);
-    top: calc(100vh - 270px);
-    padding: 0 40px;
-}
 
-a.button.link-modal.form-modal {
-    display: inline-block;
-}
+    .form-modal-phone {
+        text-align: right;
+        position: absolute;
+        width: calc(100% - 80px);
+        top: calc(100vh - 270px);
+        padding: 0 40px;
+    }
 
-a.phone.mobile {
-    padding: 15px 0;
-    font-size: 18px
-}
+    a.button.link-modal.form-modal {
+        display: inline-block;
+    }
+
+    a.phone.mobile {
+        padding: 15px 0;
+        font-size: 18px
+    }
+
     header nav {
         position: fixed;
         top: 90px;
@@ -1065,7 +1070,7 @@ a.phone.mobile {
         &.active {
             background: rgba(0, 0, 0, 0.5);
             padding-top: 30px;
-            height: calc(100vh - 122px);
+            height: calc(100vh - 112px);
             z-index: 99999;
         }
 
@@ -1213,6 +1218,9 @@ a.phone.mobile {
         p {
             font-size: 12px;
         }
+        .h3 {
+    font-size: 6vw;
+}
     }
 
     .line.black.small {
@@ -1258,6 +1266,13 @@ a.phone.mobile {
         width: 50px;
         height: 50px;
     }
+
+    .h2 {
+        font-size: 9vw;
+    }
+    .h3, .h4{
+    font-size: 6vw;
+}
 }
 
 

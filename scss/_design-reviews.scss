@@ -907,7 +907,9 @@ header.navFixed2 {
 .currency {
     display: none;
 }
-
+    .form-modal {
+        display: none !important;
+    }
 @media (max-width: 1400px) {
     .homeimg img {
         max-width: 40%;
@@ -943,7 +945,9 @@ header.navFixed2 {
         font-size: 36px;
         line-height: 39px;
     }
-
+    .form-modal {
+        display: inline-block !important;
+    }
     .price-title {
         font-size: 11px;
     }
@@ -1003,6 +1007,28 @@ header.navFixed2 {
         }
 
     }
+        .form-modal {
+    position: fixed;
+    display: inline-block;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    padding: 15px !important;
+    transition: 1s;
+    z-index: 99;
+    animation: 10s form-modal infinite;
+        img{
+            width: 100%;
+        }
+}
+.phone.mobile {
+    position: absolute;
+    right: 0;
+    top: calc(100vh - 154px);
+    font-size: 20px;
+}
 
 }
 

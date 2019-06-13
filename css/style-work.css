@@ -51,6 +51,11 @@ header nav a.active span { animation: navLine 1s ease-in-out; width: 60%; }
   100% { fill: #fff; } }
 @keyframes navLine { 0% { width: 0%; }
   100% { width: 60%; } }
+@keyframes form-modal { 0% { transform: scale(1) rotate(0); }
+  89% { transform: scale(1) rotate(0); }
+  90% { transform: scale(0.9) rotate(5deg); }
+  95% { transform: scale(0.9) rotate(-5deg); }
+  100% { transform: scale(1) rotate(0deg); } }
 /* line 4, ../scss/_design-work.scss */
 ::-webkit-scrollbar { width: 8px; height: 8px; background: #999999; /* or add it to the track */ }
 
@@ -400,129 +405,145 @@ footer .contact a:first-child { margin-left: 0; }
 /* line 868, ../scss/_design-work.scss */
 .blocker { background: none; z-index: 99999; }
 
-@media (max-width: 1400px) { /* line 874, ../scss/_design-work.scss */
+/* line 873, ../scss/_design-work.scss */
+header .mobile { display: none; }
+
+/* line 876, ../scss/_design-work.scss */
+.form-modal { display: none !important; }
+
+@media (max-width: 1400px) { /* line 880, ../scss/_design-work.scss */
   .homeimg img { max-width: 40%; } }
-@media (max-width: 1200px) { /* line 880, ../scss/_design-work.scss */
+@media (max-width: 1200px) { /* line 886, ../scss/_design-work.scss */
   .right-p { display: none; }
-  /* line 884, ../scss/_design-work.scss */
+  /* line 890, ../scss/_design-work.scss */
   .left-p, .right-p { margin-top: 17vh; }
-  /* line 889, ../scss/_design-work.scss */
+  /* line 895, ../scss/_design-work.scss */
   div.h1 { margin-left: calc(0vw - 11vw); }
-  /* line 893, ../scss/_design-work.scss */
+  /* line 899, ../scss/_design-work.scss */
   span.h1 { font-size: 11vw; width: 30vw; }
-  /* line 898, ../scss/_design-work.scss */
+  /* line 904, ../scss/_design-work.scss */
   .homeimg img { max-width: 55%; } }
-@media (max-width: 1000px) { /* line 904, ../scss/_design-work.scss */
+@media (max-width: 1000px) { /* line 910, ../scss/_design-work.scss */
   .h2 { font-size: 36px; line-height: 39px; }
-  /* line 909, ../scss/_design-work.scss */
-  .description .description-title h1 { font-size: 10px; line-height: 14px; }
   /* line 914, ../scss/_design-work.scss */
+  header .mobile { display: block; }
+  /* line 917, ../scss/_design-work.scss */
+  .description .description-title h1 { font-size: 10px; line-height: 14px; }
+  /* line 922, ../scss/_design-work.scss */
   .description .description-body h2 { font-size: 18px; line-height: 25px; }
-  /* line 919, ../scss/_design-work.scss */
+  /* line 927, ../scss/_design-work.scss */
   .description .description-title h1 { font-size: 12px; line-height: 14px; }
-  /* line 924, ../scss/_design-work.scss */
+  /* line 932, ../scss/_design-work.scss */
   .description .description-body h2 { font-size: 20px; line-height: 25px; }
-  /* line 929, ../scss/_design-work.scss */
+  /* line 937, ../scss/_design-work.scss */
   .price-title { font-size: 11px; }
-  /* line 934, ../scss/_design-work.scss */
+  /* line 942, ../scss/_design-work.scss */
   footer .h4 { font-size: 18px; line-height: 21px; }
-  /* line 940, ../scss/_design-work.scss */
+  /* line 947, ../scss/_design-work.scss */
+  .form-modal { display: inline-block !important; }
+  /* line 950, ../scss/_design-work.scss */
   .footer-text, .imag.contact, .recent_work { display: none; }
-  /* line 946, ../scss/_design-work.scss */
-  .forma { margin: auto; margin-bottom: 50px; } }
-@media (max-width: 770px) { /* line 954, ../scss/_design-work.scss */
-  .onload .onload_logo svg { width: 13vw; }
-  /* line 958, ../scss/_design-work.scss */
-  .description .description-body { width: 100%; }
-  /* line 962, ../scss/_design-work.scss */
-  .description p { width: 100%; }
-  /* line 966, ../scss/_design-work.scss */
-  .arrow_down { top: calc(100vh - 150px); left: calc(50% - 11px); }
+  /* line 956, ../scss/_design-work.scss */
+  .forma { margin: auto; margin-bottom: 50px; }
+  /* line 960, ../scss/_design-work.scss */
+  .form-modal { position: fixed; display: inline-block; bottom: 10px; right: 10px; border-radius: 100%; width: 36px; height: 36px; padding: 15px !important; transition: 1s; z-index: 99; animation: 10s form-modal infinite; }
   /* line 972, ../scss/_design-work.scss */
-  header .container .row { height: 90px; }
+  .form-modal img { width: 100%; }
   /* line 976, ../scss/_design-work.scss */
+  .phone.mobile { position: absolute; right: 0; top: calc(100vh - 154px); font-size: 20px; } }
+@media (max-width: 770px) { /* line 985, ../scss/_design-work.scss */
+  .onload .onload_logo svg { width: 13vw; }
+  /* line 989, ../scss/_design-work.scss */
+  .description .description-body { width: 100%; }
+  /* line 993, ../scss/_design-work.scss */
+  .description p { width: 100%; }
+  /* line 997, ../scss/_design-work.scss */
+  .arrow_down { top: calc(100vh - 150px); left: calc(50% - 11px); }
+  /* line 1003, ../scss/_design-work.scss */
+  header .container .row { height: 90px; }
+  /* line 1007, ../scss/_design-work.scss */
   header .communication { bottom: -12px; }
-  /* line 979, ../scss/_design-work.scss */
+  /* line 1010, ../scss/_design-work.scss */
   header .communication .child { display: none; }
-  /* line 982, ../scss/_design-work.scss */
+  /* line 1013, ../scss/_design-work.scss */
   header .communication .child:nth-child(3n) { display: block; margin-left: 0; margin-top: 6px; text-align: center; }
-  /* line 991, ../scss/_design-work.scss */
+  /* line 1022, ../scss/_design-work.scss */
   header nav { position: fixed; top: 90px; left: 0; right: 0; bottom: 0; overflow: hidden; padding-top: 0px; height: 0px; transition: 1s; }
-  /* line 1002, ../scss/_design-work.scss */
+  /* line 1033, ../scss/_design-work.scss */
   header nav.active { background: rgba(56, 56, 56, 0.85); padding-top: 30px; height: 100%; z-index: 99999; }
-  /* line 1009, ../scss/_design-work.scss */
+  /* line 1040, ../scss/_design-work.scss */
   header nav a { display: block; font-size: 24px; text-align: right; padding: 10px 40px; margin-right: 0; }
-  /* line 1018, ../scss/_design-work.scss */
+  /* line 1049, ../scss/_design-work.scss */
   .nav_mob { width: 22px; height: 18px; }
-  /* line 1023, ../scss/_design-work.scss */
+  /* line 1054, ../scss/_design-work.scss */
   .nav_mob span { height: 2px; width: 100%; display: block; background: white; border-radius: 3px; transition: 1s; }
-  /* line 1031, ../scss/_design-work.scss */
+  /* line 1062, ../scss/_design-work.scss */
   .nav_mob span.n2 { margin: 6px 0; }
-  /* line 1037, ../scss/_design-work.scss */
+  /* line 1068, ../scss/_design-work.scss */
   .navFixed2 .n1 { transform: rotate(-45deg); position: relative; top: 8px; }
-  /* line 1043, ../scss/_design-work.scss */
+  /* line 1074, ../scss/_design-work.scss */
   .navFixed2 .nav_mob span.n2 { margin: 0; opacity: 0; }
-  /* line 1048, ../scss/_design-work.scss */
+  /* line 1079, ../scss/_design-work.scss */
   .navFixed2 .n3 { transform: rotate(45deg); position: relative; top: 4px; }
-  /* line 1055, ../scss/_design-work.scss */
+  /* line 1086, ../scss/_design-work.scss */
   header .container .row { flex-wrap: wrap; }
-  /* line 1059, ../scss/_design-work.scss */
+  /* line 1090, ../scss/_design-work.scss */
   .logo { width: 180px; }
-  /* line 1063, ../scss/_design-work.scss */
+  /* line 1094, ../scss/_design-work.scss */
   section .content { margin: 20vh auto 0; }
-  /* line 1067, ../scss/_design-work.scss */
-  div.h1 { margin-top: -10%; margin-left: calc(-4vw - 16vw); }
-  /* line 1072, ../scss/_design-work.scss */
-  span.h1 { font-size: 16vw; width: 50vw; }
-  /* line 1077, ../scss/_design-work.scss */
-  .homeimg img { max-width: 86%; }
-  /* line 1081, ../scss/_design-work.scss */
-  .left-p .h3 { font-size: 5.5vw; }
-  /* line 1085, ../scss/_design-work.scss */
-  .description { width: auto; }
-  /* line 1089, ../scss/_design-work.scss */
-  .container .row.flex.center { justify-content: flex-start; }
-  /* line 1093, ../scss/_design-work.scss */
-  .description .description-body, .description .description-title { text-align: left; }
   /* line 1098, ../scss/_design-work.scss */
-  .manprice { width: 50vw; margin-bottom: 50px; margin-top: 20px; }
-  /* line 1104, ../scss/_design-work.scss */
-  .box-arrow-link span { padding: 10px 6px; font-size: 12px; vertical-align: sub; }
-  /* line 1110, ../scss/_design-work.scss */
-  .box-arrow-link .box-arrow-1 img, .box-arrow-link .box-arrow-2 img { vertical-align: middle; }
-  /* line 1115, ../scss/_design-work.scss */
-  .box-arrow-link:hover .box-arrow-1 { opacity: 1; padding: 10px 6px; }
-  /* line 1121, ../scss/_design-work.scss */
+  div.h1 { margin-top: -10%; margin-left: calc(-4vw - 16vw); }
+  /* line 1103, ../scss/_design-work.scss */
+  span.h1 { font-size: 16vw; width: 50vw; }
+  /* line 1108, ../scss/_design-work.scss */
+  .homeimg img { max-width: 86%; }
+  /* line 1112, ../scss/_design-work.scss */
+  .left-p .h3 { font-size: 5.5vw; }
+  /* line 1116, ../scss/_design-work.scss */
   .description { width: auto; }
-  /* line 1125, ../scss/_design-work.scss */
+  /* line 1120, ../scss/_design-work.scss */
   .container .row.flex.center { justify-content: flex-start; }
-  /* line 1129, ../scss/_design-work.scss */
+  /* line 1124, ../scss/_design-work.scss */
   .description .description-body, .description .description-title { text-align: left; }
-  /* line 1134, ../scss/_design-work.scss */
-  .about { height: auto; }
-  /* line 1139, ../scss/_design-work.scss */
-  .about-no-bg .container .row.flex { display: table; }
-  /* line 1142, ../scss/_design-work.scss */
-  .about-no-bg .container .row.flex .about-design { display: table-header-group; }
+  /* line 1129, ../scss/_design-work.scss */
+  .manprice { width: 50vw; margin-bottom: 50px; margin-top: 20px; }
+  /* line 1135, ../scss/_design-work.scss */
+  .box-arrow-link span { padding: 10px 6px; font-size: 12px; vertical-align: sub; }
+  /* line 1141, ../scss/_design-work.scss */
+  .box-arrow-link .box-arrow-1 img, .box-arrow-link .box-arrow-2 img { vertical-align: middle; }
   /* line 1146, ../scss/_design-work.scss */
-  .about-no-bg .container .row.flex .design { display: table-footer-group; }
+  .box-arrow-link:hover .box-arrow-1 { opacity: 1; padding: 10px 6px; }
   /* line 1152, ../scss/_design-work.scss */
-  .about-design { width: 100%; margin: 40px 0; }
+  .description { width: auto; }
   /* line 1156, ../scss/_design-work.scss */
-  .about-design .h3 { font-size: 18px; }
+  .container .row.flex.center { justify-content: flex-start; }
   /* line 1160, ../scss/_design-work.scss */
+  .description .description-body, .description .description-title { text-align: left; }
+  /* line 1165, ../scss/_design-work.scss */
+  .about { height: auto; }
+  /* line 1170, ../scss/_design-work.scss */
+  .about-no-bg .container .row.flex { display: table; }
+  /* line 1173, ../scss/_design-work.scss */
+  .about-no-bg .container .row.flex .about-design { display: table-header-group; }
+  /* line 1177, ../scss/_design-work.scss */
+  .about-no-bg .container .row.flex .design { display: table-footer-group; }
+  /* line 1183, ../scss/_design-work.scss */
+  .about-design { width: 100%; margin: 40px 0; }
+  /* line 1187, ../scss/_design-work.scss */
+  .about-design .h3 { font-size: 18px; }
+  /* line 1191, ../scss/_design-work.scss */
   .about-design p { font-size: 12px; }
-  /* line 1167, ../scss/_design-work.scss */
+  /* line 1198, ../scss/_design-work.scss */
   .design { width: 100%; }
-  /* line 1171, ../scss/_design-work.scss */
+  /* line 1202, ../scss/_design-work.scss */
   .price, .line.white { display: none; }
-  /* line 1176, ../scss/_design-work.scss */
-  p.links { display: flex; flex-wrap: wrap; }
-  /* line 1181, ../scss/_design-work.scss */
-  p.links a { margin-right: 15px; }
-  /* line 1185, ../scss/_design-work.scss */
-  .row.flex.footer { flex-wrap: wrap; } }
-@media (max-height: 450px) { /* line 1194, ../scss/_design-work.scss */
-  .revers { display: flex; justify-content: center; align-items: center; position: fixed; top: 0; bottom: 0; right: 0; left: 0; z-index: 9999; background: black; color: white; }
   /* line 1207, ../scss/_design-work.scss */
+  p.links { display: flex; flex-wrap: wrap; }
+  /* line 1212, ../scss/_design-work.scss */
+  p.links a { margin-right: 15px; }
+  /* line 1216, ../scss/_design-work.scss */
+  .row.flex.footer { flex-wrap: wrap; } }
+@media (max-height: 450px) { /* line 1225, ../scss/_design-work.scss */
+  .revers { display: flex; justify-content: center; align-items: center; position: fixed; top: 0; bottom: 0; right: 0; left: 0; z-index: 9999; background: black; color: white; }
+  /* line 1238, ../scss/_design-work.scss */
   .revers p { margin-right: 15px; } }

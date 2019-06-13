@@ -52,6 +52,9 @@
                         <a href="#!" class="">Отзывы
                             <span class="wiggle"></span>
                         </a>
+                        <a href="tel:+375(29)752 15 06" class="phone mobile"><i class="phone">
+                                <img src="img/icon/phone.svg" alt="phone">
+                            </i>+375(29)752 15 06</a>
                     </nav>
                     <div class="communication">
                         <div class="nav_mob">
@@ -153,30 +156,30 @@
                 </div>
             </div>
             <div class="about">
-            <div class="container">
-                <div class="row flex wrap">
-                    <div class="about-design">
-                        <div class="h3">Наши дизайнеры</div>
-                        <p>Наша комада не большая, поэтому мы стараемся брать не много заказов но делать их качественно и с душой подходить к каждому проекту</p>
-                    </div>
-                    <div class="design">
-                    <img src="img/characters/paintman.png" alt="">
+                <div class="container">
+                    <div class="row flex wrap">
+                        <div class="about-design">
+                            <div class="h3">Наши дизайнеры</div>
+                            <p>Наша комада не большая, поэтому мы стараемся брать не много заказов но делать их качественно и с душой подходить к каждому проекту</p>
+                        </div>
+                        <div class="design">
+                            <img src="img/characters/paintman.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div class="about-no-bg">
-            <div class="container">
-                <div class="row flex wrap">
-                    <div class="design">
-                    <img src="img/characters/interviewmans.png" alt="">
-                    </div>
-                    <div class="about-design">
-                        <div class="h3">Наши дизайнеры</div>
-                        <p>Наша комада не большая, поэтому мы стараемся брать не много заказов но делать их качественно и с душой подходить к каждому проекту</p>
+                <div class="container">
+                    <div class="row flex wrap">
+                        <div class="design">
+                            <img src="img/characters/interviewmans.png" alt="">
+                        </div>
+                        <div class="about-design">
+                            <div class="h3">Наши дизайнеры</div>
+                            <p>Наша комада не большая, поэтому мы стараемся брать не много заказов но делать их качественно и с душой подходить к каждому проекту</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <section class="waipoint" style="padding-bottom: 25%; overflow: hidden;">
                 <div class="ledge"></div>
@@ -265,6 +268,9 @@
                 </div>
             </footer>
         </div>
+                <a href="#ex1" data-modal class="button link-modal form-modal mobile">
+            <img src="img/icon/form.svg" alt="">
+        </a>
         <div id="ex1" class="modal">
             <div class="top-footer">
                 <div class="container">
@@ -308,17 +314,20 @@
                 $('.recent_work').hasClass("fade") ? $('.recent_work').removeClass('fade') : $('.recent_work').addClass('fade');
                 $('.ledge').hasClass('ledge-deg') ? $('.ledge').removeClass('ledge-deg') : $('.ledge').addClass('ledge-deg');
             });
+
             function Slider() {
-            if ($(window).width() <= 1000) {
-                let swiper = new Swiper('.portfolio', {
-                    slidesPerView: 'auto',
-                    spaceBetween: 15,
-                    freeMode: true,
-                });
+                if ($(window).width() <= 1000) {
+                    let swiper = new Swiper('.portfolio', {
+                        slidesPerView: 'auto',
+                        spaceBetween: 15,
+                        freeMode: true,
+                    });
+                }
             }
-        }
-        Slider();
+            Slider();
+
         </script>
         <script src="js/script.js"></script>
 </body>
+
 </html>

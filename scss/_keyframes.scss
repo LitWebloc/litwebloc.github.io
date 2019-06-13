@@ -130,3 +130,21 @@ $h4: 24px;
         width: 60%;
     }
 }
+@keyframes form-modal {
+    0% {
+        transform: scale(1) rotate(0);
+    }
+    89% {
+        transform: scale(1) rotate(0);
+    }
+    90% {
+        transform: scale(.9) rotate(5deg);
+    }
+    95% {
+        transform: scale(.9) rotate(-5deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+    
